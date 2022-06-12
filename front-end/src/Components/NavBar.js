@@ -14,7 +14,7 @@ function NavBar({ setLoginText }) {
   };
 
   
-  let text = localStorage.getItem("userID") ? (
+  let Login_Logout = localStorage.getItem("userID") ? (
     <div className="profile-logout-container">
       <Link to="/" onClick={handleLogout}>Logout</Link>
     
@@ -42,11 +42,13 @@ function NavBar({ setLoginText }) {
                 <h4 className="nav-btns">Our Mission</h4>
         </Link> */}
       </div>
-      <div className="navbar-text">MEALS 4 NYC</div>
-
+      <div className="navbar-text">Products</div>
+      <div className="navbar-text">Locations</div>
+      <div className="navbar-text">Our Mission</div>
+      <div className="navbar-text">Contact</div>
       <div className="cart">
         <div>
-          {text}
+          {Login_Logout}
         </div>
       </div>
       </div>

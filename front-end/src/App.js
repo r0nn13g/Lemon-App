@@ -25,7 +25,7 @@ function App() {
 
   const [loginText, setLoginText] = useState(false);
   const [carts, setCarts] = useState([]);
-  const [checkedOut, setCheckedOut] = useState(false);
+  const [ setCheckedOut ] = useState(false);
 
   useEffect( ()=> {
     let userId = localStorage.getItem("userID")
