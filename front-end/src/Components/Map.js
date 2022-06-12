@@ -10,6 +10,8 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
 const API = process.env.REACT_APP_API_URL;
 
+console.log(API)
+
 function Map(){
   const [restaurants, setRestaurants] = useState([]);
     useEffect(() => {
