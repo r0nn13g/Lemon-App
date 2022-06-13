@@ -23,6 +23,7 @@ function Home({ loginText }) {
         </div>
         ) : (
           <div className="mapView">
+              <CarouselComp/>
           <input
             type="checkbox"
             className="mapView"
@@ -34,13 +35,11 @@ function Home({ loginText }) {
           /> MAP VIEW
           {isChecked ? (
             <div>
-              <CarouselComp/>
               <Map/>
             </div>
           ):(
             <div className="loggedInDisplay-container">
               <div className="c-container">
-                <CarouselComp/>
               </div>
               <div className="f-container">
                 <FilterBar />

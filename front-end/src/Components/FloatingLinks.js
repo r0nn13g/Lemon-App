@@ -1,8 +1,8 @@
-import React from 'react'
-// import {Link} from 'react-router-dom'
-import"../Styles/floatingLinks.css"
-import Slideshow from "../Components/Slideshow.js"
-import Map from "./Map"
+import React from 'react';
+// import {Link} from 'react-router-dom';
+import"../Styles/floatingLinks.css";
+import Slideshow from "../Components/Slideshow.js";
+import Map from "./Map";
 
 //images
 import splashImage1 from "../assets/splashImage1.jpeg";
@@ -30,7 +30,6 @@ function FloatingLinks() {
             {sampleText1}
           </div>
         </div>
-
         <div className='map-container'>
             <h1>Restaurants near me</h1>
           <Map />

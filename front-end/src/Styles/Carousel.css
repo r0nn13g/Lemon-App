@@ -1,7 +1,6 @@
 .ad-container{
-    /* border: 2px solid brown; */
     height: 200px;
-    background-color:rgb(78, 111, 218);
+    background-color:rgb(78, 185, 218);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
@@ -11,10 +10,10 @@
 }
 
 .adText-container{
-    /* color: rgb(255, 255, 255); */
+    color: rgb(255, 255, 255);
     grid-area: text;
     margin: 10px;
-    background-color: rgb(78, 111, 218);
+    background-color: rgb(78, 185, 218);
 }
 
 .adText-container h2, h4 {
@@ -29,8 +28,7 @@
 }
 .adImage-container img {
     object-fit: contain;
-    max-width: 800px;
-    /* max-height: 300px; */
+    max-width: 630px;
 }
 
 .hr{
