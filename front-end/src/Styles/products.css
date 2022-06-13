@@ -13,7 +13,6 @@ body{
   justify-content: center;
   margin: 110px;
   gap: 150px;
-  /* border: 2px solid black; */
 }
 
 .individual-product{ 
@@ -29,21 +28,16 @@ body{
   text-align: left;
 }
 
-/* #restaurant-sprite{
-
-} */
-
 #product-image{
   height: 250px;
 }
 
 #add-to-cart-btn{
-  background-color: rgb(91, 201, 203); /* Green */
+  background-color: rgb(78, 111, 218);
   border: none;
   color: rgb(255, 255, 255);
   padding: 15px 32px;
   text-align: center;
-  /* height: 40px; */
   font-size: 16px;
   border-radius: 8px;
   transition-duration: 0.2s;
@@ -72,21 +66,18 @@ body{
 .restaurant-details{
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
-  /* color: rgb(250, 250, 250); */
+  color: rgb(78, 111, 218);
   text-align: left;
-  /* margin-top: 100px; */
-  padding: 20px;
-  /* border: 2px solid black; */
+  padding: 5px;
   background: rgb(117, 208, 216) url("https://st4.depositphotos.com/4177785/27354/v/1600/depositphotos_273546568-stock-illustration-food-vector-seamless-pattern-cuisine.jpg") no-repeat fixed center; 
 }
 
 #back-btn{
-  background-color: rgb(91, 201, 203); /* Green */
+  background-color: rgb(78, 111, 218); 
   border: none;
   color: rgb(255, 255, 255);
   padding: 15px 32px;
   text-align: center;
-  /* height: 40px; */
   font-size: 16px;
   border-radius: 8px;
   transition-duration: 0.2s;
@@ -96,11 +87,11 @@ body{
 
 #back-btn:hover{
   color: white;
-  background-color: #4CAF50;
+  background-color: aqua;
 }
 
 .modal-button {
-  background-color: rgb(91, 201, 203); /* Green */
+  background-color: rgb(78, 111, 218);
   border: none;
   color: rgb(255, 255, 255);
   padding: 15px 32px;
@@ -113,5 +104,5 @@ body{
 }
  .modal-button:hover{
   color: white;
-  background-color: #4CAF50; /* Green */
+  background-color: rgb(78, 111, 218);
  }

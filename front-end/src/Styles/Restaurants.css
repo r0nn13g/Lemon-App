@@ -2,9 +2,9 @@
     /* border: 10px solid saddlebrown; */
     margin: 20px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
     justify-items: start;
     align-items: center;
-    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 50px;
 }

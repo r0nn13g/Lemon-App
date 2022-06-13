@@ -17,7 +17,8 @@ justify-items: center;
 }
 
 .restaurant-name{
-    margin: 60px;
+    font-size: larger;
+    margin: 30px;
 }
 
 #food-img {
