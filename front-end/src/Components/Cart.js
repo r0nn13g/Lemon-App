@@ -80,7 +80,7 @@ function Cart({ carts, setCarts, setCheckedOut}) {
                 <div className="meal-details">
                   <p><b>Dietary Restriction: </b>{item.name}</p>
                   <div id="quantity">
-                    <b>Quantity:</b> <input type="number" id="quantity" name="quantity" min="1" max={item.quantity}/>
+                    <b>Quantity:</b> <input type="number" id="quantity" name="quantity" min="1" value="1" max={item.quantity}/>
                   </div>
                   {/* <button id="delete-item-btn" onClick={()=>handleDelete(item)}>Delete</button> */}
                 </div>
