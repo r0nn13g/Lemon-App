@@ -1,5 +1,4 @@
 body{
-  border: 1px solid black;
   margin:0;
   padding: 0;
 }
@@ -88,6 +87,12 @@ body{
 #back-btn:hover{
   color: white;
   background-color: aqua;
+}
+
+#modal-box{
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border: none;
 }
 
 .modal-button {
