@@ -14,8 +14,6 @@ function Home({ loginText }) {
     SetIsChecked(!isChecked);
   };
 
-
-
   return (
     <div>
       {!localStorage.getItem("userID") ? (
@@ -23,8 +21,8 @@ function Home({ loginText }) {
           <Splash />
           <FloatingLinks />
         </div>
-      ) : (
-        <div className="mapView">
+        ) : (
+          <div className="mapView">
           <input
             type="checkbox"
             className="mapView"
@@ -33,25 +31,23 @@ function Home({ loginText }) {
             value="map-view"
             checked={isChecked}
             onChange={handleCheckChange}
-          />Map View
+          /> MAP VIEW
           {isChecked ? (
             <div>
+              <CarouselComp/>
               <Map/>
             </div>
-
           ):(
             <div className="loggedInDisplay-container">
-              <div className="f-container">
-                <FilterBar />
-              </div>
               <div className="c-container">
                 <CarouselComp/>
               </div>
-
+              <div className="f-container">
+                <FilterBar />
+              </div>
               <div className="r-container"> 
                 <Restaurants />
               </div>
-              
             </div>
           )}
         </div>

@@ -1,29 +1,36 @@
 .ad-container{
     /* border: 2px solid brown; */
-    max-height: 200px;
-    background-color: ghostwhite;
+    height: 200px;
+    background-color:rgb(78, 111, 218);
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
-    "text img"
-    ;
+    "text text img";
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .adText-container{
+    /* color: rgb(255, 255, 255); */
     grid-area: text;
+    margin: 10px;
+    background-color: rgb(78, 111, 218);
+}
 
+.adText-container h2, h4 {
+    text-align: center;
+    margin: 40px;
 }
 
 .adImage-container{
+    width: 100px;
     grid-area: img;
 
 }
-.ad-container img {
-    /* max-width: 500px; */
-    max-height: 300px;
-    border-radius: 15px;
+.adImage-container img {
+    object-fit: contain;
+    max-width: 800px;
+    /* max-height: 300px; */
 }
 
 .hr{

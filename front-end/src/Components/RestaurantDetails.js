@@ -24,8 +24,8 @@ function RestaurantDetails() {
         <div className="restaurant-details">
             {/* <img id="restaurant-sprite" src={restaurant.restaurant_sprites} /> */}
             <div><h1>{restaurant.name}</h1></div>
-            <div><h4>{restaurant.cuisine_type}</h4></div>
-            <div><h4>{restaurant.add}</h4></div>
+            <div><h5>{restaurant.cuisine_type}</h5></div>
+            <div><h5>{restaurant.add}</h5></div>
         </div>
         <div className='button-link'>
                 <button id="back-btn" onClick={() => navigate(-1)}>Go Back</button>

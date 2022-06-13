@@ -1,8 +1,8 @@
 import React from 'react';
-import convenianceFoodImage from "../assets/convenianceFoodImage.jpeg";
+import indianFoodImage from "../assets/cropped-Indian-Food-wikicont-1.jpg";
 import shopping_cart_image from "../assets/shopping_cart_image.jpeg";
-import unitedStatedMap from "../assets/unitedStatesMap.png";
-import donutsImage from "../assets/donutsImage.png";
+import indianfoodbanner from "../assets/Indian-food-banner.jpg";
+import freshProduce from "../assets/fresh-produce.jpg";
 import "../Styles/Carousel.css";
 import Carousel from 'nuka-carousel';
 
@@ -11,22 +11,22 @@ function CarouselComp() {
         {
             headline: 'Ready to go meals',
             subtext: 'Prepped daily',
-            image: convenianceFoodImage
+            image: indianFoodImage
         },
         {
             headline: 'Variety of dietary categories available',
             subtext: 'Check restaurant menu',
-            image: shopping_cart_image
+            image: freshProduce
         },
         {
             headline: 'Bakery Goods 🍩 ',
             subtext: 'From participating locations',
-            image: donutsImage
+            image: freshProduce
         },
         {
             headline: 'Coming to a city near you',
-            subtext: 'New locations coming soon',
-            image: unitedStatedMap
+            subtext: 'New Restaurants',
+            image: indianfoodbanner
         }
     ];
 
@@ -49,7 +49,7 @@ function CarouselComp() {
     })
   return (
     <div>
-        <Carousel speed={1000} cellSpacing={30} autoplay="true" autoplayInterval={3700} wrapAround="true" style={{borderRadius:"15px"}}>
+        <Carousel speed={1000} cellSpacing={30} autoplay="true" autoplayInterval={3700} wrapAround="true">
             {carouselOptionsArray}
         </Carousel>
         <hr className='hr'/>

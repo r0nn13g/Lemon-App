@@ -1,11 +1,10 @@
 .loggedInDisplay-container{
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
-    /* grid-template-rows: auto; */
+    grid-template-columns: 1fr 2fr 2fr 2fr;
     grid-template-areas: 
-    "fil car car" 
-    "fil rest rest" 
-    "fil rest rest";
+    "car car car car" 
+    "fil rest rest rest" 
+    "fil rest rest rest";
 }
 
 .f-container{
@@ -24,8 +23,10 @@
 }
 
 .mapView{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    letter-spacing: 1px;
+    text-align: center;
+    letter-spacing: 2px;
     font-size: 1em;
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
