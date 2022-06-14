@@ -34,7 +34,7 @@ function App() {
     }else{
       setLoginText(false)
     }
-  },[])
+  },[checkedout])
 
   return (
     <div className="main">

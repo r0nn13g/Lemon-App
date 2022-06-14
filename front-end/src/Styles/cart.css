@@ -10,15 +10,15 @@
 }
 
 .active-cart-check{
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-align-items: baseline;
-justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: baseline;
+    justify-items: center;
 }
 
 .restaurant-name{
     font-size: larger;
-    margin: 30px;
+    margin: 10px;
 }
 
 #food-img {
@@ -26,7 +26,7 @@ justify-items: center;
 }
 
 #meal-img{
-flex:1;
+    flex:1;
 }
 
 .meal-details{
@@ -38,15 +38,15 @@ flex:1;
     display: flex;
     width: 100%;
     align-items: center;
+    margin: 40px;
     /* margin-right: 10vw; */
     margin-bottom: 5px;
     border-radius: 18px;
 }
 
 .meal-container:nth-child(even){
-    background-color: rgba(91, 201, 203, 0.312);
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.227);
-    
+    /* background-color: rgba(91, 201, 203, 0.312); */
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.227);
 }
 
 .meal-container button {
@@ -72,21 +72,30 @@ flex:1;
     max-height: 100%;
 }
 
+#delete-item-btn{
+    margin: 10px;
+}
+
+input{
+    height:  5px;
+    margin: 10px;
+}
+
 .cart-container button{
-    background-color: rgb(91, 201, 203); /* Green */
+    background-color:  rgb(78, 111, 218);
     border: none;
     color: rgb(255, 255, 255);
     padding: 15px 32px;
     text-align: center;
     font-size: 16px;
     border-radius: 8px;
-    transition-duration: 0.2s;
     line-height: 100%;
 }
 
 .cart-container button:hover{
     color: white;
-    background-color: #4CAF50;
+    transition-duration: 0.2s;
+    background-color: red;
 }
 
 .css-i4bv87-MuiSvgIcon-root{
@@ -94,7 +103,7 @@ flex:1;
 }
 
 .checkout-btn{
-    background-color: rgb(91, 201, 203);
+    background-color: black;
     color: white;
     padding: 10px;
     text-align: center;

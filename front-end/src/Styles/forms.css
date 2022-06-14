@@ -29,6 +29,7 @@ input[type=text] {
 }
 
 input{
+    height: 20px;
     padding: 10px;
     margin-bottom: 10px;
 }

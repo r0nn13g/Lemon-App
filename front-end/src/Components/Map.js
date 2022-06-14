@@ -49,7 +49,7 @@ function Map(){
               position={[restaurant.lat, restaurant.lon]}
               icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})} >
             <Popup>
-                <img id="restaurant-sprite" src={restaurant.restaurant_sprites} />
+                <img id="restaurant-sprite" alt="restaurant-images" src={restaurant.restaurant_sprites} />
                 <h1>{restaurant.name}</h1>
                 <p><em>{restaurant.cuisine_type}</em></p>
                 <p>{restaurant.add}</p>

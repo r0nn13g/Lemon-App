@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "../Styles/forms.css";
 
 const API= process.env.REACT_APP_API_URL;
@@ -29,7 +29,7 @@ const handleSubmit = (event) => {
       setLoginText(true)
       navigate("/")
     })
-}
+};
 
   return (
     <div className="form-container">

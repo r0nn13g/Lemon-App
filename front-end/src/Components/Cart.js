@@ -1,6 +1,5 @@
 import "../Styles/cart.css";
 import axios from "axios";
-import CancelIcon from '@mui/icons-material/Cancel';
 import food_container from "../assets/food_container.png"
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -49,7 +48,7 @@ function Cart({ carts, setCarts, setCheckedOut}) {
       console.log(err);
     });
   };
-  // console.log({userID})
+
   const handleCheckout = async () => {
     // console.log("checkout ")
     await getActiveCart();
@@ -59,31 +58,28 @@ function Cart({ carts, setCarts, setCheckedOut}) {
     })
     .catch((err) => {
       console.log(err)
-    })
-    
+    }) 
   }
-
   console.log(carts)
 
   const activeCart = carts?.map((product) => {
     return (
       <div key={product.orderNumber} className="active-cart">
         <div id="order-details">
-          <div id="order-num">Order: #{product.orderNumber}</div>
+          <div id="order-num"><h1>Order: # {product.orderNumber}</h1></div>
           
           {product.items.map((item) => {
             return (
               <div key={item.id} className="meal-container">
-                <CancelIcon/>
                   <img id="food-img" src={food_container} alt="food icon"/>
                 <div className="restaurant-name"><b>{product.restaurant}</b></div>
                 <div className="meal-details">
-                  <p><b>Dietary Restriction: </b>{item.name}</p>
+                  <p><b>Dietary: </b>{item.name}</p>
                   <div id="quantity">
-                    <b>Quantity:</b> <input type="number" id="quantity" name="quantity" min="1" value="1" max={item.quantity}/>
                   </div>
-                  {/* <button id="delete-item-btn" onClick={()=>handleDelete(item)}>Delete</button> */}
                 </div>
+                    Quantity: <input type="number" id="quantity" name="quantity" value="1" min="1" max={item.quantity}/>
+                  <button id="delete-item-btn" onClick={()=>handleDelete(item)}>Delete</button>
                 <hr />
               </div>
             );
@@ -91,7 +87,7 @@ function Cart({ carts, setCarts, setCheckedOut}) {
         </div>
       </div>
     );
-  });
+  })
 
   return (
     <div className="cart-container">

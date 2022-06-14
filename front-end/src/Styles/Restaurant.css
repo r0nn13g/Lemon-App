@@ -13,15 +13,14 @@
 }
 
 .restaurant-data{
-    padding: 2px;
     color: white;
     text-align: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* .restaurant-data:hover{
-    
-} */
+.restaurant-data:hover{
+    /* color: rgb(44, 212, 159); */
+}
 
 .image-container{
     max-height: 220px;
@@ -30,9 +29,17 @@
 }
 
 .image-container img{
-    height: 220px;
+    width: 344px;
+    height: 210px;
     border-radius: 0px;
     position: relative;
+}
+
+
+.image-container:hover img,
+.image-container:focus img{
+   transform: scale(1.1);
+   animation-duration: 1s;
 }
 
 .restaurant-image{
@@ -43,8 +50,11 @@
     margin: 10px;
 } 
 
+.restaurant-name:hover {
+    color: rgb(44, 212, 159);
+} 
+
 .restaurant-type{
-    color: rgb(40, 40, 146);
     margin: 30px;
 } 
 

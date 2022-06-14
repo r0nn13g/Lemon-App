@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import "../Styles/navBar.css";
 import logo from "../assets/dummy-logo.png";
+import userIcon from "../assets/user-icon.png";
 
 
 function NavBar({ setLoginText }) {
@@ -18,7 +19,7 @@ function NavBar({ setLoginText }) {
     <div className="profile-logout-container">
       <Link to="/" onClick={handleLogout}>Logout</Link>
     
-      <Link to="/carts/inactive">Profile</Link>
+      <Link to="/carts/inactive"><img className="user-icon" src={userIcon} alt="user-icon"></img>&nbsp;&nbsp;Profile</Link>
 
       <Link to="/carts">Cart</Link>
    

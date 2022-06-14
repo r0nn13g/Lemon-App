@@ -1,6 +1,5 @@
 import React from 'react';
 import indianFoodImage from "../assets/cropped-Indian-Food-wikicont-1.jpg";
-import shopping_cart_image from "../assets/shopping_cart_image.jpeg";
 import indianfoodbanner from "../assets/Indian-food-banner.jpg";
 import freshProduce from "../assets/fresh-produce.jpg";
 import "../Styles/Carousel.css";
