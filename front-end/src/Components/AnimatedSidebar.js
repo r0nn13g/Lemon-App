@@ -36,6 +36,8 @@ const sidebarNavItems = [
 ]
 
 const AnimatedSidebar = () => {
+    const [activeIndex, setActiveIndex] = useState(0);
+    const [stepHeight, setStepHeight] = useState(0);
       return (
         <div className="animated-sidebar-container">
 
