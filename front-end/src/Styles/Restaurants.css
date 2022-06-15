@@ -1,10 +1,9 @@
 .all-restaurants-container{
     /* border: 10px solid saddlebrown; */
-    margin: 20px;
+    /* text-align: center; */
+    margin-bottom: 20px;
     display: grid;
-    justify-items: start;
-    align-items: center;
+    justify-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    gap: 20px;
 }

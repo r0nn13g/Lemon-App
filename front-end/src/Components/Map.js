@@ -36,7 +36,6 @@ function Map(){
 
   return(
     <div  className="map-container">
-      <input id="restaurant-locator-search" type="text" placeholder="Search.."></input>
       <h4 id="map-heading">Restaurant Locator</h4>
       <MapContainer className="map" center={[40.756211, -73.923964]} zoom={13} scrollWheelZoom={false}>
         <TileLayer
