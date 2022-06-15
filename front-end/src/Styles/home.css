@@ -9,13 +9,12 @@
 
 .f-container{
     grid-area: fil;
-    margin-right: 80px;
+    /* margin-right: 80px; */
 }
 
 .r-container{
     grid-area: rest;
     place-content: center/center;
-
 }
 
 .c-container{
@@ -24,8 +23,6 @@
 
 .mapView{
     text-align: left;
-    letter-spacing: 2px;
-    font-size: 1em;
-    margin-top: 30px;
+    letter-spacing: 1px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

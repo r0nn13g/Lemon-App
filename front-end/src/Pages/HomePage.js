@@ -43,6 +43,7 @@ function Home({ loginText }) {
               </div>
               <div className="f-container">
                 <FilterBar />
+
               </div>
               <div className="r-container"> 
                 <Restaurants />

@@ -4,15 +4,15 @@
 }
 
 .button-container button{
-    background-color: rgb(91, 201, 203); /* Green */
+    background-color: rgb(78, 111, 218);
     border: none;
     color: rgb(255, 255, 255);
-    padding: 3px;
+    padding: 10px;
     text-align: center;
     /* height: 40px; */
-    font-size: 16px;
-    border-radius: 20px;
-    transition-duration: 0.2s;
+    font-size: 14px;
+    border-radius: 0px;
+    transition-duration: 1.2s;
     line-height: 100%;
 }
 
@@ -27,6 +27,6 @@
 }
 
 .button-container button:hover{
-    color: white;
-    background-color: #4CAF50;
+    color: black;
+    background-color: white;
 }

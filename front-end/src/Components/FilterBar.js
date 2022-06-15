@@ -8,8 +8,8 @@ import "../Styles/FilterBar.css"
 function FilterBar() {
   return (
     <div className='filterBar-container'>
-        <FbSort/>
         <FbDietary/>
+        <FbSort/>
     </div>
   )
 }
