@@ -3,7 +3,9 @@
 }
 
 .map{
-  margin: 100px;
+  margin-left: 300px;
+  margin-right: 50px;
+  margin-bottom: 100px;
   padding-bottom: 260px;
   height: 500px;
   text-align: center;

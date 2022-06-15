@@ -11,7 +11,7 @@
     text-align: center;
     /* height: 40px; */
     font-size: 14px;
-    border-radius: 0px;
+    border-radius: 10px;
     transition-duration: 1.2s;
     line-height: 100%;
 }

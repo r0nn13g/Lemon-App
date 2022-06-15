@@ -1,8 +1,8 @@
 .restaurant-container{
     z-index: 3;
     color: white;
-    max-width: 344px;
     margin: 10px;
+    max-width: 344px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color: rgb(78, 111, 218);
@@ -12,6 +12,7 @@
     z-index: 3;
     max-width: 344px;
     background-color: white;
+    /* border-bottom: 1px solid black; */
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -29,7 +30,7 @@
 
 .restaurant-data:hover{
     color: black;
-    transition-duration: 1.6s;
+    transition-duration: 1.2s;
 }
 
 .image-container{
