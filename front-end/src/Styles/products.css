@@ -189,4 +189,28 @@ body{
   color: white;
   background-color: aqua;
 }
+
+#modal-box{
+  width: 200px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+
+.modal-button {
+  background-color: rgb(78, 111, 218);
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  /* height: 40px; */
+  font-size: 16px;
+  border-radius: 8px;
+  transition-duration: 0.2s;
+  line-height: 100%;
+}
+ .modal-button:hover{
+  color: white;
+  background-color: rgb(59, 88, 183);
+ }
 }
