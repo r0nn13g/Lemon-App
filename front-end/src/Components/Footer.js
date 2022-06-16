@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className="footer">
       <div className="content-container">
-      <p>Food App</p>
+      <p>Helping Hand®</p>
       </div>
       
       </div>
