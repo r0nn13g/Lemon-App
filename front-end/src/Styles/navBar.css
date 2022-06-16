@@ -62,7 +62,7 @@ nav a {
 }
 
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 600px) {
     .navbar-text {
         margin-top: 36px;
         margin: 10px;
@@ -73,7 +73,7 @@ nav a {
     }
     }
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 600px) {
         .nav-container {
             margin: 2px;
             position: relative;

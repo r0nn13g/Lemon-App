@@ -111,3 +111,82 @@ body{
   color: white;
   background-color: rgb(59, 88, 183);
  }
+
+@media only screen and (max-width: 600px){
+
+  #add-to-cart-btn{
+    border: none;
+    font-size: 16px;
+    line-height: 100%;
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 8px;
+    transition-duration: 0.2s;
+    color: rgb(255, 255, 255);
+    background-color: rgb(78, 111, 218);
+  }
+  
+  #add-to-cart-btn:hover {
+    color: white;
+    background-color: #4CAF50; /* Green */
+  }
+
+  .restaurant-details{
+    font-size: 20px;
+    padding: 5px;
+    text-align: left;
+    color: white;
+    /* background: none; */
+    background-color: white; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+   .products-container{
+     gap: 160px;
+     margin: 30px;
+     display: grid;
+     justify-content: center;
+     grid-template-columns: repeat(1, 1fr);
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .individual-product{ 
+    /* text-align: center; */
+    margin: 200px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin:0;
+    padding: 0;
+  }
+  
+  .product-details{
+    display: block;
+    text-align: center;
+  }
+  
+  #product-image{
+    margin-left: 50px;
+    display: grid;
+    justify-content: center;
+    height: 200px;
+  }
+
+
+#back-btn{
+  background-color: rgb(78, 111, 218); 
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 8px;
+  transition-duration: 0.2s;
+  line-height: 100%;
+  margin: 15px 0px 0px 15px;
+}
+
+#back-btn:hover{
+  color: white;
+  background-color: aqua;
+}
+}
