@@ -64,6 +64,7 @@ nav a {
 
 @media only screen and (max-width: 600px) {
     .navbar-text {
+        letter-spacing:normal;
         margin-top: 36px;
         margin: 10px;
         text-align: left;
@@ -71,11 +72,24 @@ nav a {
         font-size: 20px;
         white-space: inherit;
     }
+
+    .navbar-text:after {
+        letter-spacing:normal;
+        margin-top: 36px;
+        margin: 10px;
+        text-align: left;
+        color: gray;
+        font-size: 20px;
+        white-space: inherit;
+    
+
     }
+
+}
 
     @media only screen and (max-width: 600px) {
         .nav-container {
-            margin: 2px;
+            /* margin: 2px; */
             position: relative;
         }
       }
