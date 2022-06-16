@@ -130,7 +130,7 @@ input{
     }
 
     .cart-container{
-        display: grid;
+        /* display: grid; */
         justify-content: center;
         max-height: 50px;
         grid-template-columns: repeat(1, 1fr);

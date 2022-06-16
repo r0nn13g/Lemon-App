@@ -31,7 +31,7 @@ function PreviousCarts() {
             </h3>
             </Link>
           
-          {/* {cart.items.map((products)=>{
+          {cart.items.map((products)=>{
             // console.log(products)
             return(
               <div key={products.id}>
@@ -39,7 +39,7 @@ function PreviousCarts() {
               <div className="info-quantity">Quantity: {products.quantity}</div>
               </div>
               )
-            })} */}
+            })}
       </div>
   
     );

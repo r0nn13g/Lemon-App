@@ -16,5 +16,11 @@ height: 4rem;
 @media only screen and (max-width: 600px) {
   .footer{
     position: fixed;
+    height: 2rem;
+  }
+
+  .content-container{
+    margin: 0px;
+    line-height: 5px;
   }
 }

@@ -12,7 +12,11 @@ body{
     background-color: rgba(245, 242, 237, 0.408);
 }
 
+.previous-btn-container{
+    text-align: center;  
+}
 .previous-btn{
+    margin-top: 50px;
     background-color: rgb(91, 201, 203); /* Green */
     border: none;
     color: rgb(255, 255, 255);
@@ -23,7 +27,21 @@ body{
     border-radius: 8px;
     transition-duration: 0.2s;
     line-height: 100%;
-    margin: 15px 0 0 15px;
+}
+
+
+.previous-btn button{
+    background-color: rgb(91, 201, 203); /* Green */
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    /* height: 40px; */
+    font-size: 16px;
+    border-radius: 8px;
+    transition-duration: 0.2s;
+    line-height: 100%;
+    margin: auto 0;
 }
 /* .order-info{
     margin:50px;
@@ -42,4 +60,35 @@ body{
 
 .successful-order-text{
   text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+    .order-success-container{
+        margin-top: 80px;
+    }
+    
+    .previous-btn{
+        margin-top: 50px;
+        background-color: rgb(91, 201, 203); /* Green */
+        border: none;
+        color: rgb(255, 255, 255);
+        padding: 15px 32px;
+        text-align: center;
+        /* height: 40px; */
+        font-size: 16px;
+        border-radius: 8px;
+        transition-duration: 0.2s;
+        line-height: 100%;
+    }
+
+    .order-processing-img{
+        height: 200px;
+        display:block;
+        margin: 0 auto;
+    }
+
+    .successful-order-text{
+        margin:20px;
+        text-align: center;
+      }
 }
