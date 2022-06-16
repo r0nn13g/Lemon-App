@@ -60,9 +60,33 @@
 } 
 
 .restaurant-type{
-    margin: 30px;
+    margin: 20px;
 } 
 
 .restaurant-address{
-    margin: 10px;
+    padding-bottom:20px;
+}
+
+@media only screen and (max-width: 600px){
+
+    .restaurant-container{
+        z-index: 3;
+        color: white;
+        display: inline-block;
+        margin: 20px;
+        max-width: 344px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: rgb(78, 111, 218);
+    }
+
+    .restaurant-address{
+        margin-top: 10px;
+        padding-bottom:20px;
+    }
+
+    .restaurant-type{
+        color: orange;
+        margin: 0px;
+    } 
 }

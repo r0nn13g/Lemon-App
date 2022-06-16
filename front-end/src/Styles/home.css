@@ -29,8 +29,18 @@
 
 /* Search Bar */
 #restaurant-locator-search{
-    margin-left: 630px;
-    width: 500px;
+    margin-left: 480px;
+    width: 363px;
+}
+.search-button{
+    height: 44px;
+    width: 50px;
+    border: none;
+    margin: 0px;
+    display: flexbox;
+    color: white;
+    background-color:rgb(78, 185, 218);
+
 }
 
 @media screen and (max-width: 600px) {
@@ -46,13 +56,13 @@
     #restaurant-locator-search{
             margin: auto 0;
             margin-top: 10px;
-            width: 244px;
+            width: 195px;
     }
     .search-button{
         height: 44px;
         width: 50px;
         border: none;
-        margin: 5px;
+        margin: 8px;
         display: flexbox;
         color: white;
         background-color:rgb(78, 185, 218);
