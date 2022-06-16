@@ -11,7 +11,7 @@
 @media screen and (max-width: 600px) {
     .all-restaurants-container{
         /* text-align: center; */
-        display: grid;
+        display: block;
         margin-bottom: 20px;
         justify-items: center;
         grid-template-rows: auto;
