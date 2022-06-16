@@ -1,11 +1,13 @@
+import React from "react";
 import "../Styles/home.css";
-import FloatingLinks from "../Components/FloatingLinks";
-import Splash from "../Components/Splash";
-import Restaurants from "../Components/Restaurants";
-import Map from "../Components/Map";
 import { useState } from "react";
+import Map from "../Components/Map";
+import Splash from "../Components/Splash";
+import Switch from '@mui/material/Switch';
 import FilterBar from "../Components/FilterBar";
+import Restaurants from "../Components/Restaurants";
 import CarouselComp from "../Components/CarouselComp";
+import FloatingLinks from "../Components/FloatingLinks";
 
 function Home({ loginText }) {
   const [isChecked, SetIsChecked] = useState(false);
@@ -24,15 +26,11 @@ function Home({ loginText }) {
         ) : (
           <div className="mapView">
               <CarouselComp/>
-          <input
-            type="checkbox"
-            className="mapView"
-            id="map-view"
-            name="map-view"
-            value="map-view"
+          <Switch
             checked={isChecked}
             onChange={handleCheckChange}
-          /> MAP VIEW
+            inputProps={{ 'aria-label': 'controlled' }}
+            /> MAP
           {isChecked ? (
             <div className="map-container-checked">
               <Map/>

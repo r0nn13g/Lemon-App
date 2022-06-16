@@ -163,4 +163,12 @@ input{
     /* background-color: rgba(91, 201, 203, 0.312); */
     box-shadow: none;
 }
+
+input{
+    /* display:contents; */
+    text-align: center;
+    width: 10px;
+    height:  5px;
+    margin: 10px;
+}
 }
