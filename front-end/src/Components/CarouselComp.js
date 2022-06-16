@@ -1,9 +1,9 @@
 import React from 'react';
+import "../Styles/Carousel.css";
+import Carousel from 'nuka-carousel';
 import indianFoodImage from "../assets/cropped-Indian-Food-wikicont-1.jpg";
 import indianfoodbanner from "../assets/Indian-food-banner.jpg";
 import freshProduce from "../assets/fresh-produce.jpg";
-import "../Styles/Carousel.css";
-import Carousel from 'nuka-carousel';
 
 function CarouselComp() {
     const carouselOptions = [
@@ -48,7 +48,7 @@ function CarouselComp() {
     })
   return (
     <div>
-        <Carousel speed={1000} cellSpacing={30} autoplay="true" autoplayInterval={3700} wrapAround="true">
+        <Carousel speed={800} cellSpacing={30} autoplay="true" autoplayInterval={4000} wrapAround="true">
             {carouselOptionsArray}
         </Carousel>
         <hr className='hr'/>

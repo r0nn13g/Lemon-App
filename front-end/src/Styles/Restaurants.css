@@ -7,3 +7,14 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
 }
+
+@media screen and (max-width: 600px) {
+    .all-restaurants-container{
+        /* text-align: center; */
+        display: grid;
+        margin-bottom: 20px;
+        justify-items: center;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(1, 1fr);
+    }
+};

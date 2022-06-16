@@ -38,16 +38,21 @@ function Cart({ carts, setCarts, setCheckedOut}) {
     //   });
   }, [userID]);
 
-
-  const handleDelete = (item) => {
+  const handleDelete = () => {
     axios.delete(`${API}/customers/${userID}/deleteItem`)
     .then((res) => {
-      window.alert("The item has been removed")
+      console.log("hello")
     })
     .catch((err) =>{
       console.log(err);
     });
   };
+  
+
+  // const consoleLogNothing = () => {
+  //   console.log("Its working")
+  // }
+
 
   const handleCheckout = async () => {
     // console.log("checkout ")
@@ -78,8 +83,8 @@ function Cart({ carts, setCarts, setCheckedOut}) {
                   <div id="quantity">
                   </div>
                 </div>
-                    Quantity: <input type="number" id="quantity" name="quantity" value="1" min="1" max={item.quantity}/>
-                  <button id="delete-item-btn" onClick={()=>handleDelete(item)}>Delete</button>
+                    Max Qty: <input type="number" id="quantity" name="quantity" value="1" min="1" max={item.quantity}/>
+                  <button onClick={()=>handleDelete()} id="delete-item-btn">Delete</button>
                 <hr />
               </div>
             );

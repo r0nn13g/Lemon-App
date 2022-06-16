@@ -3,8 +3,8 @@
 }
 
 .map{
-  margin-left: 300px;
-  margin-right: 50px;
+  /* margin-left: 300px; */
+  margin: 50px;
   margin-bottom: 100px;
   padding-bottom: 260px;
   height: 500px;
@@ -23,4 +23,18 @@
   height: 120px;
   margin: 5px;
   /* margin-top: 10px; */
+}
+
+@media screen and (max-width: 600px){
+  .map-container-checked{
+    text-align: center;
+  }
+  
+  .map{
+    margin: 0;
+    /* margin-bottom: 100px; */
+    padding-bottom: 260px;
+    height: 500px;
+    text-align: center;
+  }
 }

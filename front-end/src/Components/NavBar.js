@@ -43,10 +43,10 @@ function NavBar({ setLoginText }) {
                 <h4 className="nav-btns">Our Mission</h4>
         </Link> */}
       </div>
-      <div className="navbar-text">Products</div>
+      {/* <div className="navbar-text">Products</div>
       <div className="navbar-text">Locations</div>
       <div className="navbar-text">Our Mission</div>
-      <div className="navbar-text">Contact</div>
+      <div className="navbar-text">Contact</div> */}
       <div className="cart">
         <div>
           {Login_Logout}

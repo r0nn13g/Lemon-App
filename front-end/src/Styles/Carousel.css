@@ -34,3 +34,22 @@
 .hr{
     margin-top: 25px;
 }
+
+@media screen and (max-width: 600px) {
+    .ad-container{
+        display: grid;
+        height: 100px;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "text img img";
+        background-color:rgb(78, 185, 218);
+        grid-template-columns: repeat(1, 1fr);
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .adText-container h2, h4 {
+        text-align: center;
+        font-size: 14px;
+        margin: 8px;
+    }
+};

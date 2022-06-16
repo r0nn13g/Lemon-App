@@ -9,7 +9,7 @@ function FilterBar() {
   return (
     <div className='filterBar-container'>
         <FbDietary/>
-        <FbSort/>
+        {/* <FbSort/> */}
     </div>
   )
 }

@@ -30,3 +30,42 @@
     color: black;
     background-color: white;
 }
+
+@media screen and (max-width: 600px){
+    
+    .button-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 20px;
+        grid-template-areas: 
+        "btn btn";
+    }
+    
+    .button-container button{
+        width: 344px;
+        line-height: 10px;
+        grid-area: btn;
+        display: grid;
+        border: none;
+        padding: 10px;
+        text-align: center;
+        height: 80px;
+        font-size: 14px;
+        border-radius: 10px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(78, 111, 218);
+    }
+    
+    .button-image{
+        height: 20px;
+    }
+    
+    .button-text{
+        line-height: 20px;
+        font-size: 1em;
+        text-align: center;
+        letter-spacing: 2px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+  }

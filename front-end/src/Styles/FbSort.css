@@ -3,3 +3,11 @@
     letter-spacing: 1px;
     font-size: 1em;
 }
+
+
+@media screen and (max-width: 600px) {
+    .radio-container{
+        position: relative;
+        display: flex;
+    }
+};

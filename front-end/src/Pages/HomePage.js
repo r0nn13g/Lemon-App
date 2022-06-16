@@ -34,17 +34,17 @@ function Home({ loginText }) {
             onChange={handleCheckChange}
           /> MAP VIEW
           {isChecked ? (
-            <div>
+            <div className="map-container-checked">
               <Map/>
             </div>
           ):(
             <div className="loggedInDisplay-container">
               <div className="c-container">
-              <input id="restaurant-locator-search" type="text" placeholder="Search.."></input>
+                  <input id="restaurant-locator-search" type="text" placeholder="Search.."></input>
+                  <button type="submit" className="search-button" >Go</button>
               </div>
               <div className="f-container">
                 <FilterBar />
-
               </div>
               <div className="r-container"> 
                 <Restaurants />
