@@ -1,4 +1,4 @@
-# Capstone Project
+# Helping Hand application
 
 Food insecurity in America and across the globe is a huge problem. With the rising cost of inflation and New York population growing, the situation needs to be met with an applicable solution. Meals4NYC is a platform that connects restaurants to customers who are in need of a warm meal. New York residents locate restaurants on a map and browse through restaurant options. New York residents can reserve meal-kits provided by the restaurants and check out their order.
 
@@ -19,8 +19,6 @@ And finally to start the server that can be checked in your local browser just r
 
 ```npm start```
 
-## TLDR Online deployment 
+## TLDR Online deployment
 
-If you dont want to run locally and just want to see what was built please click [Here](https://neon-sunshine-d63a1f.netlify.app/). 
-
-and for the back-end you can click [Here](https://meals-4-nyc.herokuapp.com/)
+deployment link coming soon.
