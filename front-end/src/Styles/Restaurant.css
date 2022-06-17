@@ -79,6 +79,7 @@
         max-width: 344px;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
+        background-color: rgb(78, 111, 218);
     }
 
     .restaurant-address{
