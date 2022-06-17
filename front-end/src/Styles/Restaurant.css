@@ -8,13 +8,13 @@
     border-bottom-right-radius: 20px;
 }
 
-.restaurant-container:hover {
-    z-index: 3;
-    max-width: 344px;
+/* .restaurant-container:hover { */
+    /* z-index: 3; */
+    /* max-width: 344px; */
     /* border-bottom: 1px solid black; */
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
+    /* border-bottom-left-radius: 20px; */
+    /* border-bottom-right-radius: 20px; */
+/* } */
 
 .restLink{
     text-decoration: none;
