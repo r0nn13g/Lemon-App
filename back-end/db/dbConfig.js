@@ -15,8 +15,8 @@ const cn = DATABASE_URL
         host: PG_HOST,
         port: PG_PORT,
         database: PG_DATABASE,
-        user: PG_USER,
-        password: PG_PASSWORD,
+        user: PG_USER
+        // password: PG_PASSWORD,
     };
 
 const db = pgp(cn);
