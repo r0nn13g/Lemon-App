@@ -5,6 +5,7 @@ import Map from "../Components/Map";
 import Splash from "../Components/Splash";
 import Switch from '@mui/material/Switch';
 import FilterBar from "../Components/FilterBar";
+import SearchIcon from '@mui/icons-material/Search';
 import Restaurants from "../Components/Restaurants";
 import CarouselComp from "../Components/CarouselComp";
 import FloatingLinks from "../Components/FloatingLinks";
@@ -39,7 +40,7 @@ function Home({ loginText }) {
             <div className="loggedInDisplay-container">
               <div className="c-container">
                   <input id="restaurant-locator-search" type="text" placeholder="Search.."></input>
-                  <button type="submit" className="search-button" >Go</button>
+                  <button type="submit" className="search-button" ><SearchIcon /></button>
               </div>
               <div className="f-container">
                 <FilterBar />

@@ -3,6 +3,7 @@ body {
     margin: 0;
     position: relative;
     min-height: 100vh;
+    background-color: #232b36;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 

@@ -1,7 +1,13 @@
-import { Link, useNavigate } from "react-router-dom";
+import React from "react";
 import "../Styles/navBar.css";
 import logo from "../assets/dummy-logo.png";
 import userIcon from "../assets/user-icon.png";
+import TemporaryDrawer from "./TemporaryDrawer";
+import LoginIcon from '@mui/icons-material/Login';
+import { Link, useNavigate } from "react-router-dom";
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
+// import PersonIcon from '@mui/icons-material/Person';
 
 
 function NavBar({ setLoginText }) {
@@ -17,16 +23,17 @@ function NavBar({ setLoginText }) {
   
   let Login_Logout = localStorage.getItem("userID") ? (
     <div className="profile-logout-container">
-      <Link to="/" onClick={handleLogout}>Logout</Link>
-    
-      <Link to="/carts/inactive"><img className="user-icon" src={userIcon} alt="user-icon"></img>&nbsp;&nbsp;Profile</Link>
-
-      <Link to="/carts">Cart</Link>
-   
+      <Link to="/" onClick={handleLogout}><LogoutOutlinedIcon/></Link>
+      &nbsp;
+      {/* <Link to="/carts/inactive"><PersonIcon/></Link>
+      &nbsp; */}
+      <Link to="/carts"><ShoppingCartIcon/></Link>
+      <TemporaryDrawer />
     </div>
   ) : (
     <div className="login-container">
-      <Link to="/login">Login/Signup</Link>
+      <Link to="/login"><LoginIcon/></Link>
+      &nbsp;&nbsp;&nbsp;
     </div>
   );
 
@@ -48,9 +55,7 @@ function NavBar({ setLoginText }) {
       <div className="navbar-text">Our Mission</div>
       <div className="navbar-text">Contact</div> */}
       <div className="cart">
-        <div>
           {Login_Logout}
-        </div>
       </div>
       </div>
     </nav>

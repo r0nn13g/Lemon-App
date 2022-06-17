@@ -78,7 +78,7 @@
 
 input{
     height:  5px;
-    margin: 10px;
+    margin: 15px;
 }
 
 .cart-container button{
@@ -99,7 +99,7 @@ input{
 }
 
 .css-i4bv87-MuiSvgIcon-root{
-    color: red;
+    color: rgb(204, 243, 255);
 }
 
 .checkout-btn{
@@ -115,6 +115,10 @@ input{
 }
 
 @media only screen and (max-width: 600px) {
+
+    .css-i4bv87-MuiSvgIcon-root{
+        color: rgb(204, 243, 255);
+    }
 
     #delete-item-btn{
         margin-left: 50px;
@@ -165,10 +169,9 @@ input{
 }
 
 input{
-    /* display:contents; */
-    text-align: center;
-    width: 10px;
+    position: relative;
+    width: 250px;
     height:  5px;
-    margin: 10px;
+    margin: 5px;
 }
 }
