@@ -98,10 +98,6 @@ input{
     background-color: red;
 }
 
-.css-i4bv87-MuiSvgIcon-root{
-    color: rgb(204, 243, 255);
-}
-
 .checkout-btn{
     background-color: black;
     color: white;
@@ -116,9 +112,7 @@ input{
 
 @media only screen and (max-width: 600px) {
 
-    .css-i4bv87-MuiSvgIcon-root{
-        color: rgb(204, 243, 255);
-    }
+
 
     #delete-item-btn{
         margin-left: 50px;
