@@ -1,10 +1,9 @@
 .loggedInDisplay-container{
     display: grid;
-    grid-template-columns: 1fr 3fr 3fr 3fr;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
     grid-template-areas: 
     "car car car car" 
     "fil rest rest rest" 
-    "fil rest rest rest";
 }
 
 .f-container{
@@ -43,14 +42,14 @@
     background-color:rgb(78, 185, 218);
 }
 
-@media screen and (max-width: 844px) {
+@media screen and (max-width: 600px) {
     .loggedInDisplay-container{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas: 
-        "car car car" 
-        "rest rest rest"
-        "fil fil fil";
+        "car car car car" 
+        "rest rest rest rest"
+        "fil fil fil fil";
     }
     
     #restaurant-locator-search{
@@ -72,7 +71,12 @@
         grid-area: fil;
         grid-template-columns: 1fr 1fr;
     }
-
+    .r-container{
+        grid-area: rest;
+        margin-bottom: 40px;
+        place-content: center/center;
+    }
+    
     .c-container{
         white-space: nowrap;
         grid-area: car

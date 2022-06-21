@@ -1,3 +1,12 @@
+.all-restaurants-container{
+    margin-bottom: 20px;
+    display: grid;
+    justify-items: center;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+
 .restaurant-container{
     background-color: rgb(78, 111, 218);
     /* z-index: 3; */
@@ -73,9 +82,15 @@
 /* iphone 13 and iphone 13 Pro */
 /* 2532x1170 pixels at 460ppi */
 @media only screen 
-    and (device-width: 390px) 
-    and (device-height: 844px) 
-    and (-webkit-device-pixel-ratio: 3){
+    and (max-width: 600px) {
+        .all-restaurants-container{
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: auto;
+            justify-items: center;
+            margin-bottom: 20px;
+        }
 
     .restaurant-container{
         z-index: 3;

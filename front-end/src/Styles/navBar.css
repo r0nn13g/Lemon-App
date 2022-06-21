@@ -75,6 +75,15 @@ nav a {
     and (device-width: 390px) 
     and (device-height: 844px)
     and (-webkit-device-pixel-ratio: 3){
+        .all-restaurants-container{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: auto;
+            grid-gap: 30px;
+            justify-items: center;
+            margin-bottom: 20px;
+        } 
+
     .nav-container {
         margin: 0px;
         padding: 1px;
@@ -119,7 +128,7 @@ nav a {
     and (device-height: 390px) 
     and (-webkit-device-pixel-ratio: 3){
     .nav-container {
-        max-width: 544px;
+        max-width: 844px;
         margin: 0px;
         position: relative;
     }
