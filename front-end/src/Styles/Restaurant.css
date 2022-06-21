@@ -4,7 +4,7 @@
     justify-items: center;
     grid-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
+    /* grid-template-rows: auto; */
 }
 
 .restaurant-container{
@@ -81,8 +81,7 @@
 
 /* iphone 13 and iphone 13 Pro */
 /* 2532x1170 pixels at 460ppi */
-@media only screen 
-    and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
         .all-restaurants-container{
             display: grid;
             grid-gap: 20px;
