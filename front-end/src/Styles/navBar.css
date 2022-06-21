@@ -5,7 +5,7 @@
 
 .nav-container {
     z-index: 7;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     background-color: rgb(78, 111, 218);
     justify-content: space-between;
@@ -18,8 +18,8 @@
 }
 
 .home-logo img {
-    margin: 20px;
-    width: 50px;
+    margin: 10px;
+    width: 30px;
 }
 
 .navbar-text {
@@ -69,7 +69,18 @@ nav a {
     color: black;
 }
 
-@media only screen and (max-width: 600px) {
+/* iphone 13 and iphone 13 Pro */
+/* 2532x1170 pixels at 460ppi */
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px)
+    and (-webkit-device-pixel-ratio: 3){
+    .nav-container {
+        margin: 0px;
+        padding: 1px;
+        position: relative;
+    }
+
     .navbar-text {
         letter-spacing:normal;
         margin-top: 36px;
@@ -88,15 +99,56 @@ nav a {
         color: gray;
         font-size: 20px;
         white-space: inherit;
-
     }
 
+    .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+        color: black;
+    }
+    
+    .css-i4bv87-MuiSvgIcon-root {
+        color: black;
+    }
 }
 
-    @media only screen and (max-width: 600px) {
-        .nav-container {
-            margin: 0px;
-            padding: 1px;
-            position: relative;
-        }
-      }
+
+/* Landscape */
+/* iphone 13 and iphone 13 Pro */
+/* 2532x1170 pixels at 460ppi */
+@media only screen 
+    and (device-width: 844px) 
+    and (device-height: 390px) 
+    and (-webkit-device-pixel-ratio: 3){
+    .nav-container {
+        max-width: 544px;
+        margin: 0px;
+        position: relative;
+    }
+
+    .navbar-text {
+        letter-spacing:normal;
+        margin-top: 36px;
+        margin: 10px;
+        text-align: left;
+        color: white;
+        font-size: 20px;
+        white-space: inherit;
+    }
+
+    .navbar-text:after {
+        letter-spacing:normal;
+        margin-top: 36px;
+        margin: 10px;
+        text-align: left;
+        color: gray;
+        font-size: 20px;
+        white-space: inherit;
+    }
+
+    .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+        color: black;
+    }
+    
+    .css-i4bv87-MuiSvgIcon-root {
+        color: black;
+    }
+}

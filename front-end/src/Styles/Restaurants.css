@@ -7,14 +7,15 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
 }
-
-@media screen and (max-width: 600px) {
+/* iPhone 13 and iPhone 13 pro Landscape-view */
+@media screen and (max-width: 844px) {
     .all-restaurants-container{
         /* text-align: center; */
-        display: inline-block;
+        /* display: inline-block; */
         margin-bottom: 40px;
         justify-items: center;
         grid-template-rows: auto;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
+
 };
