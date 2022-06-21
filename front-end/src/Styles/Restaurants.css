@@ -1,13 +1,11 @@
 .all-restaurants-container{
-    /* border: 10px solid saddlebrown; */
-    /* text-align: center; */
     margin-bottom: 20px;
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
 }
-/* iPhone 13 and iPhone 13 pro Landscape-view */
+
 @media screen and (max-width: 844px) {
     .all-restaurants-container{
         /* text-align: center; */
@@ -15,7 +13,6 @@
         margin-bottom: 40px;
         justify-items: center;
         grid-template-rows: auto;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
-
 };
