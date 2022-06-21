@@ -1,6 +1,7 @@
-import "../Styles/map.css";
 import React from "react";
 import axios from "axios";
+import "../Styles/map.css";
+// import leaflet from 'leaflet';
 import { Icon } from 'leaflet'
 import 'leaflet/dist/leaflet.css';
 import { Link } from "react-router-dom";
@@ -10,9 +11,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
 const API = process.env.REACT_APP_API_URL;
 
-console.log(API)
-
-function Map(){
+const Map = () => {
   const [restaurants, setRestaurants] = useState([]);
     useEffect(() => {
       axios.get(`${API}/restaurants`)
@@ -23,25 +22,17 @@ function Map(){
       )
         .catch((c) => console.warn("catch", c))
   }, []);
-  
-      // console.log(restaurants);
-
-      // const linkToRestaurant = () => {
-      //   return(
-      //     <div>
-      //       <Link style={{ textDecoration: 'none', color: 'black' }} key={restaurants.id} to={`/restaurants/${restaurants.id}`} >Order Now</Link>
-      //     </div>
-      //   )
-      // };
 
   return(
     <div  className="map-container">
       <MapContainer className="map" center={[40.756211, -73.923964]} zoom={13} scrollWheelZoom={false}>
+        {/* Map Styling */}
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png"/>
 
         {restaurants.map(restaurant => (
+          // Location Markers
           <Marker 
               key={restaurant.id}
               position={[restaurant.lat, restaurant.lon]}
@@ -55,11 +46,9 @@ function Map(){
             </Popup>
           </Marker>
         ))}
-        console.log(restaurant)
       </MapContainer>
     </div>
     )
 };
-
 
 export default Map;
