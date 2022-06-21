@@ -3,6 +3,7 @@
     grid-template-columns: 1fr 2fr 2fr 2fr;
     grid-template-areas: 
     "car car car car" 
+    "fil rest rest rest"
     "fil rest rest rest" 
 }
 
@@ -45,7 +46,7 @@
 @media screen and (max-width: 600px) {
     .loggedInDisplay-container{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1 fr 1fr 1fr 1fr;
         grid-template-areas: 
         "car car car car" 
         "rest rest rest rest"
