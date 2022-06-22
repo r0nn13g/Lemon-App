@@ -33,12 +33,14 @@ body{
   height: 250px;
 }
 
-#add-to-cart-btn{
+#add-to-cart-btn {
   background-color: rgb(78, 111, 218);
   border: none;
   border-radius: 8px;
   color: rgb(255, 255, 255);
   font-size: 16px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 10px;
   line-height: 100%;
   padding: 15px 32px;
   text-align: center;
@@ -139,10 +141,11 @@ body{
     border: none;
     border-radius: 8px;
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 16px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     grid-template-columns: repeat(1, 1fr);
     line-height: 100%;
-    /* padding: 25px 40px; */
+    letter-spacing: 6px;
     text-align: center;
     transition-duration: 0.2s;
   }
@@ -172,7 +175,7 @@ body{
   background-color: rgb(78, 111, 218); 
   border: none;
   color: rgb(255, 255, 255);
-  padding: 15px 32px;
+  padding: 15px 16px;
   text-align: center;
   font-size: 16px;
   border-radius: 8px;

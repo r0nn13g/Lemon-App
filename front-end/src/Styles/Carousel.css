@@ -1,34 +1,35 @@
 .ad-container{
-    height: 200px;
-    background-color:rgb(78, 185, 218);
+    background-color:rgb(115, 218, 78);
     display: grid;
+    height: 200px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
-    "text text img";
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    "img img text";
 }
 
 .adText-container{
-    color: rgb(255, 255, 255);
+    background-color:rgb(115, 218, 78);
+    color: rgb(78, 111, 218);
     grid-area: text;
     margin: 10px;
-    background-color: rgb(78, 185, 218);
 }
 
 .adText-container h2, h4 {
     text-align: center;
-    margin: 40px;
+    font-size: 55px;
 }
 
 .adImage-container{
-    width: 100px;
+    height: 300px;
+    width: 400px;
     grid-area: img;
 
 }
 .adImage-container img {
     object-fit: contain;
-    max-width: 630px;
+    width: 1200px;
 }
 
 .hr{
@@ -37,19 +38,19 @@
 
 @media screen and (max-width: 600px) {
     .ad-container{
+        background-color:rgb(115, 218, 78);
         display: grid;
-        height: 100px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         grid-template-rows: auto;
         grid-template-areas:
         "text img img";
-        background-color:rgb(78, 185, 218);
         grid-template-columns: repeat(1, 1fr);
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        height: 100px;
     }
 
     .adText-container h2, h4 {
         text-align: center;
-        font-size: 14px;
+        font-size: 20px;
         margin: 8px;
     }
 };
