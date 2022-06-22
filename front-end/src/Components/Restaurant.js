@@ -15,7 +15,7 @@ function Restaurant( {singleRestaurant} ) {
                 {singleRestaurant.name}
             </div>
             <div className='restaurant-type'>
-                <em>{singleRestaurant.cuisine_type}</em>
+                {/* <em>{singleRestaurant.cuisine_type}</em> */}
             </div>
             <div className='restaurant-address'>
                 {singleRestaurant.add}
