@@ -112,3 +112,41 @@
         margin: 0px;
     } 
 }
+
+@media only screen and (min-width: 600px) {
+    .all-restaurants-container{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        justify-items: center;
+        margin-bottom: 20px;
+    }
+
+.restaurant-container{
+    z-index: 3;
+    color: white;
+    display: inline-block;
+    margin: 20px;
+    max-width: 344px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(78, 111, 218);
+}
+
+.restaurant-address{
+    margin-top: 10px;
+    padding-bottom:20px;
+}
+
+.restaurant-type{
+    color: orange;
+    margin: 0px;
+} 
+}
+
+@media only screen and (min-width: 1024px) {
+    .all-restaurants-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

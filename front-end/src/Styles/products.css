@@ -215,3 +215,66 @@ body{
  }
 
 }
+
+@media only screen 
+    and (max-width: 1400px){
+
+  
+  .products-container{
+    display: grid;
+    gap: 50px;
+    margin: 30px;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ 
+ .individual-product{ 
+   display: grid;
+   text-align: left;
+   grid-template-columns: repeat(1, 1fr);
+   margin: 200px;
+   padding: 10px;
+ }
+ 
+ .product-details{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   margin: 10px;
+   text-align: left;
+ }
+ 
+ #add-to-cart-btn{
+   background-color: rgb(78, 111, 218);
+   border: none;
+   border-radius: 8px;
+   color: rgb(255, 255, 255);
+   font-size: 16px;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   grid-template-columns: repeat(1, 1fr);
+   line-height: 100%;
+   letter-spacing: 6px;
+   text-align: center;
+   transition-duration: 0.2s;
+ }
+ 
+ #add-to-cart-btn:hover {
+   color: white;
+   background-color: #4CAF50; /* Green */
+ }
+
+ .restaurant-details{
+   color: rgb(78, 111, 218);
+   font-size: 12px;
+   padding: 5px;
+   text-align: center;
+   background-color: white; 
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+ #product-image{
+   display: grid;
+   justify-content: center;
+   height: 260px;
+ }
+}
