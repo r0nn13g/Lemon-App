@@ -2,11 +2,10 @@
 import React from "react";
 import axios from "axios";
 import "../Styles/products.css";
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Modal from '@mui/material/Modal';
-import Box from '@mui/material/Box';
-// import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 const API = process.env.REACT_APP_API_URL;
@@ -24,8 +23,6 @@ const style = {
 };
 
 function ProductByRestaurant({id}){
-
-
   const navigate = useNavigate();
   const [productByRestaurant, setProductByRestaurant ] = useState([]);
   const [open, setOpen] = React.useState(false);
@@ -44,7 +41,6 @@ useEffect(() => {
 )
   .catch((c) => console.warn("catch", c))
 }, [id])
-
   
   const handleAddToCart = (product) => {
     const resInfo = {
@@ -52,7 +48,6 @@ useEffect(() => {
       productID: product.id,
       restaurantID: product.restaurant_id
     };
-
 
     axios.post(`${API}/carts/addToCart`, resInfo)
       .then(
@@ -67,24 +62,18 @@ useEffect(() => {
     navigate("/carts")
   }
 
-
-
     return(
       <div className="products-container">
           {productByRestaurant.map((product, index) => (
             <div key = {index} className="individual-product">
               <img id="product-image" src="https://i.imgur.com/JRd96AZ.png" alt="mealkit-sprites"></img>
+                <h2>{product.name}</h2>
                 <div className="product-details">
-                  <h1>{product.name}</h1>
-                  <p>Portion: <b>{product.portion}</b></p>
-                  <p>Calories: <b>{product.calories}</b></p>
-                  <p>Dietary options: <b>{product.type}</b></p>
-                  <div className="dietary-restrictions">
-                    <img id="dietary-sprite" src="https://i.imgur.com/gqdeqpl.png" alt="diet-res"></img>
-                    <img id="dietary-sprite" src="https://i.imgur.com/8Lah7WN.jpg" alt="diet-res"></img>
-                  </div>
-                  <button  id="add-to-cart-btn" onClick={() => {handleAddToCart(product); handleOpen();}}>Add To Cart</button>
+                    <p>Portion: <br></br> <b>{product.portion}</b></p>
+                    <p>Calories: <br></br> <b>{product.calories}</b></p>
+                    <p>Feeds: <br></br> <b>1-2 people</b></p>
                 </div>
+                <button  id="add-to-cart-btn" onClick={() => {handleAddToCart(product); handleOpen();}}>ADD TO CART</button>
             </div>
         ))}
          <Modal

@@ -1,8 +1,8 @@
-import {useParams, useNavigate} from "react-router-dom";
-import { useEffect, useState } from 'react';
 import axios from 'axios';
 import "../Styles/products.css";
+import { useEffect, useState } from 'react';
 import ProductByRestaurant from "./ProductByRestaurant";
+import {useParams, useNavigate} from "react-router-dom";
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -22,9 +22,8 @@ function RestaurantDetails() {
   return (
     <div className="restaurant-products-container">
         <div className="restaurant-details">
-            {/* <img id="restaurant-sprite" src={restaurant.restaurant_sprites} /> */}
             <div><h1>{restaurant.name}</h1></div>
-            <div><h5>{restaurant.cuisine_type}</h5></div>
+            {/* <div><h5>{restaurant.cuisine_type}</h5></div> */}
             <div><h5>{restaurant.add}</h5></div>
         </div>
         <div className='button-link'>
