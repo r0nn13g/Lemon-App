@@ -2,6 +2,7 @@ import React from 'react';
 import '../Styles/Restaurant.css';
 import { Link } from 'react-router-dom';
 
+
 function Restaurant( {singleRestaurant} ) {
 
   return (
@@ -13,9 +14,6 @@ function Restaurant( {singleRestaurant} ) {
             </div>
             <div className='restaurant-name'>
                 {singleRestaurant.name}
-            </div>
-            <div className='restaurant-type'>
-                {/* <em>{singleRestaurant.cuisine_type}</em> */}
             </div>
             <div className='restaurant-address'>
                 {singleRestaurant.add}
