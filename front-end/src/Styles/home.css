@@ -52,7 +52,7 @@ body{
 @media screen and (max-width: 600px) {
     .loggedInDisplay-container{
         display: grid;
-        grid-template-columns: 1 fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas: 
         "car car car car" 
         "rest rest rest rest"
@@ -60,9 +60,9 @@ body{
     }
     
     #restaurant-locator-search{
-            margin: 0;
-            margin-top: 10px;
-            width: 195px;
+        margin: 0;
+        margin-top: 10px;
+        width: 195px;
     }
     .search-button{
         margin: 8px;
@@ -76,7 +76,7 @@ body{
     
     .f-container{
         grid-area: fil;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
     .r-container{
         grid-area: rest;

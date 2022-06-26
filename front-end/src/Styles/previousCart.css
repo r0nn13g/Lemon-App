@@ -91,4 +91,8 @@ body{
         margin:20px;
         text-align: center;
       }
+
+      .main {
+        padding-bottom: 300px;
+    }
 }
