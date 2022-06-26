@@ -1,8 +1,11 @@
-import React from 'react';
 import axios from 'axios';
-import {useState, useEffect} from "react";
+import React from 'react';
 import '../Styles/Restaurants.css';
 import Restaurant from './Restaurant';
+import {useState, useEffect} from "react";
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
+import { SkeletonTheme } from 'react-loading-skeleton';
 
 const API = process.env.REACT_APP_API_URL;
 
