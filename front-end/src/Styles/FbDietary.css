@@ -28,21 +28,21 @@
 
 .button-container button:hover{
     color: black;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 600px){
     
     .button-container{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         margin: 20px;
         grid-template-areas: 
-        "btn btn";
+        "btn";
     }
     
     .button-container button{
-        width: 340px;
+        min-width: 450px;
         line-height: 10px;
         grid-area: btn;
         display: grid;
