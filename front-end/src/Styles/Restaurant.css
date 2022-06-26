@@ -4,7 +4,7 @@
     justify-items: center;
     grid-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: auto; */
+    -ms-grid-column-align:inherit;
 }
 
 .restaurant-container{
@@ -83,9 +83,10 @@
 /* 2532x1170 pixels at 460ppi */
 @media only screen and (max-width: 600px) {
         .all-restaurants-container{
+            max-width: 340px;
             display: grid;
             grid-gap: 20px;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 2fr);
             grid-template-rows: auto;
             justify-items: center;
             margin-bottom: 20px;
@@ -119,13 +120,13 @@
     }
 
     .restaurant-name{
-        font-size: 14px;
+        font-size: 13px;
         margin: 10px;
     } 
 
     .image-container img{
-        width: 222px;
-        height: 133px;
+        width: 173px;
+        height: 100px;
         border-radius: 0px;
         position: relative;
     }

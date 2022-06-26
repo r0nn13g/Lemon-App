@@ -42,7 +42,7 @@
     }
     
     .button-container button{
-        width: 500px;
+        width: 340px;
         line-height: 10px;
         grid-area: btn;
         display: grid;
