@@ -235,7 +235,7 @@ body{
    display: grid;
    text-align: left;
    grid-template-columns: repeat(1, 1fr);
-   margin: 200px;
+   margin: 0px;
    padding: 10px;
  }
  
