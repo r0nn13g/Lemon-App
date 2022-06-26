@@ -1,26 +1,75 @@
 .footer{
-font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-color:rgb(110, 217, 227);
-text-align: center;
-background-color: rgb(34, 61, 148);
-position: absolute;
-bottom: 0;
-width: 100%;
-height: 4rem;
+  background-color: rgb(34, 61, 148);
+  bottom: 0;
+  color:rgb(110, 217, 227);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: 200px;
+  position: absolute;
+  width: 100%;
 }
 
 .content-container{
+  text-align: center;
+  line-height: 1px;
   margin: 25px;
+}
+
+.nyc-doe-logo{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 10px;
+  place-content: flex-start;
+}
+
+.nyc-doe-logo img{
+  margin: 10px;
+  height: 30px;
+}
+
+.nyc-gov-logo{
+  display: inline-grid;
+  grid-template-rows: 1fr;
+  place-content: center;
+}
+
+.nyc-gov-logo img{
+  margin: 10px;
+  height: 40px;
 }
 
 @media only screen and (max-width: 600px) {
   .footer{
+    height: 244px;
     position:absolute;
-    height: 2rem;
   }
 
   .content-container{
-    margin: 0px;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 10px;
+    padding: 10px;
     line-height: 5px;
+  }
+
+  .nyc-doe-logo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+    place-content: flex-start;
+  }
+
+  .nyc-doe-logo img{
+    margin: 10px;
+    height: 30px;
+  }
+
+  .nyc-gov-logo{
+    display: inline-grid;
+    grid-template-rows: 1fr;
+    place-content: center;
+  }
+
+  .nyc-gov-logo img{
+    margin: 10px;
+    height: 40px;
   }
 }

@@ -11,10 +11,10 @@
 }
 
 .adText-container{
-    /* background-color:rgb(78, 195, 218); */
+    background-color:rgb(78, 195, 218);
+    height: 400px;
     color: rgb(78, 111, 218);
     grid-area: text;
-    margin: 10px;
 }
 
 .adText-container h2, h4 {
@@ -37,6 +37,15 @@
     margin-top: 25px;
 }
 
+ul{
+    margin: 10px;
+    list-style: none;
+}
+
+li{
+    margin: 3px;
+}
+
 @media screen and (max-width: 600px) {
     .ad-container{
         background-color:rgb(78, 195, 218);
@@ -48,22 +57,30 @@
         "img text text";
         height: 100px;
     }
-
+    
     .adText-container h2, h4 {
         text-align: left;
         font-size: 20px;
-        /* margin: 8px; */
     }
 
     .adImage-container{
         height: 100px;
         width: 200px;
         grid-area: img;
-    
+        
     }
-
+    
     .adImage-container img {
         height: 150px;
         width: 200px;
+    }
+    
+    ul{
+        margin: 10px;
+        list-style: none;
+    }
+    
+    li{
+        margin: 3px;
     }
 };
