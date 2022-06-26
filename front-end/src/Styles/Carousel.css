@@ -1,5 +1,5 @@
 .ad-container{
-    background-color:rgb(115, 218, 78);
+    /* background-color:rgb(78, 195, 218); */
     display: grid;
     /* width: 1500px; */
     height: 200px;
@@ -7,11 +7,11 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
-    "img img text";
+    "img text text";
 }
 
 .adText-container{
-    background-color:rgb(115, 218, 78);
+    /* background-color:rgb(78, 195, 218); */
     color: rgb(78, 111, 218);
     grid-area: text;
     margin: 10px;
@@ -39,24 +39,31 @@
 
 @media screen and (max-width: 600px) {
     .ad-container{
-        background-color:rgb(115, 218, 78);
+        background-color:rgb(78, 195, 218);
         display: grid;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        grid-template-rows: auto;
+        /* grid-template-rows: auto; */
+        /* grid-template-columns: repeat, 1fr); */
         grid-template-areas:
-        "text img img";
-        grid-template-columns: repeat(1, 1fr);
+        "img text text";
         height: 100px;
     }
 
     .adText-container h2, h4 {
-        text-align: center;
+        text-align: left;
         font-size: 20px;
-        margin: 8px;
+        /* margin: 8px; */
+    }
+
+    .adImage-container{
+        height: 100px;
+        width: 200px;
+        grid-area: img;
+    
     }
 
     .adImage-container img {
-        height: 115px;
-        width: 220px;
+        height: 150px;
+        width: 200px;
     }
 };

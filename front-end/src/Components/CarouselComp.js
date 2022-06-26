@@ -10,7 +10,7 @@ function CarouselComp() {
         {
             headline: 'Baked Goodness 🥐',
             subtext: 'From participating locations',
-            image: indianfoodbanner
+            image: freshProduce
         },
         {
             headline: 'Dietary Variety 👏',
@@ -25,7 +25,7 @@ function CarouselComp() {
         {
             headline: 'Coming Soon 🎉',
             subtext: 'Quality goods',
-            image: indianFoodImage
+            image: freshProduce
         }
     ];
 
@@ -45,7 +45,7 @@ function CarouselComp() {
     })
   return (
     <div>
-        <Carousel speed={800} cellSpacing={0} autoplay="true" autoplayInterval={5000} wrapAround="true">
+        <Carousel speed={800} withoutControls={true} cellSpacing={0} autoplay="true" autoplayInterval={5000} wrapAround="true">
             {displayCarousel}
         </Carousel>
     </div>
