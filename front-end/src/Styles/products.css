@@ -8,7 +8,7 @@ body{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
   margin: 110px;
   gap: 150px;
