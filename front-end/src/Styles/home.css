@@ -5,21 +5,22 @@ body{
 
 .loggedInDisplay-container{
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 2fr;
+    grid-template-columns: 2fr 2fr 2fr;
     grid-template-areas: 
-    "car car car car" 
-    "fil rest rest rest"
-    "fil rest rest rest" 
+    "car car car" 
+    "rest rest rest"
+    "fil fil fil" 
 }
 
 .f-container{
     grid-area: fil;
-    /* margin-right: 80px; */
+    display: grid;
+    place-content: center;
 }
 
 .r-container{
     grid-area: rest;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     place-content: center/center;
 }
 
@@ -84,7 +85,7 @@ body{
     }
     
     .c-container{
-        white-space: nowrap;
+        /* white-space: nowrap; */
         grid-area: car
     }
     .mapView{

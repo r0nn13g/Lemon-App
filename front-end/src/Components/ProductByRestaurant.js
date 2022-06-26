@@ -66,13 +66,14 @@ useEffect(() => {
       <div className="products-container">
           {productByRestaurant.map((product, index) => (
             <div key = {index} className="individual-product">
-              <img id="product-image" src="https://i.imgur.com/JRd96AZ.png" alt="mealkit-sprites"></img>
+              <img className="product-image" src="https://i.imgur.com/JRd96AZ.png" alt="mealkit-sprites"></img>
                 <h2>{product.name}</h2>
                 <div className="product-details">
                     <p>Portion: <br></br> <b>{product.portion}</b></p>
                     <p>Calories: <br></br> <b>{product.calories}</b></p>
                     <p>Feeds: <br></br> <b>1-2 people</b></p>
                 </div>
+                <br/>
                 <button  id="add-to-cart-btn" onClick={() => {handleAddToCart(product); handleOpen();}}>ADD TO CART</button>
             </div>
         ))}

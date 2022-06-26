@@ -16,24 +16,27 @@ body{
 
 .individual-product{ 
   margin: 200px;
-  text-align: center;
+  text-align: left;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   margin:0;
   padding: 0;
 }
 
 .product-details{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    text-align: left;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10px;
+  text-align: left;
 }
 
-#product-image{
+.product-image{
   height: 250px;
+  display: grid;
+  place-items: center;
 }
 
-#add-to-cart-btn {
+#add-to-cart-btn { 
   background-color: rgb(78, 111, 218);
   border: none;
   border-radius: 8px;
@@ -145,7 +148,6 @@ body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     grid-template-columns: repeat(1, 1fr);
     line-height: 100%;
-    letter-spacing: 6px;
     text-align: center;
     transition-duration: 0.2s;
   }
@@ -217,7 +219,7 @@ body{
 }
 
 @media only screen 
-    and (max-width: 1400px){
+    and (max-width: 1000px){
 
   
   .products-container{
@@ -253,7 +255,7 @@ body{
    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    grid-template-columns: repeat(1, 1fr);
    line-height: 100%;
-   letter-spacing: 6px;
+   /* letter-spacing: 6px; */
    text-align: center;
    transition-duration: 0.2s;
  }
