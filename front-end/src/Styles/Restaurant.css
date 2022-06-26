@@ -83,7 +83,7 @@
 /* 2532x1170 pixels at 460ppi */
 @media only screen and (max-width: 600px) {
         .all-restaurants-container{
-            max-width: 340px;
+            /* max-width: 340px; */
             display: grid;
             grid-gap: 20px;
             grid-template-columns: repeat(2, 2fr);
@@ -97,14 +97,14 @@
         color: white;
         display: inline-block;
         margin: 5px;
-        max-width: 222px;
+        max-width: 173px;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         /* background-color: rgb(78, 111, 218); */
     }
     .restaurant-container:hover {
         /* z-index: 3; */
-        max-width: 222px; 
+        max-width: 173px; 
     }
    
 
