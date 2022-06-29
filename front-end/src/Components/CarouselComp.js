@@ -2,8 +2,8 @@ import React from 'react';
 import "../Styles/Carousel.css";
 import Carousel from 'nuka-carousel';
 import freshProduce from "../assets/fresh-produce.jpg";
-import indianFoodImage from "../assets/cropped-Indian-Food-wikicont-1.jpg";
-import indianfoodbanner from "../assets/Indian-food-banner.jpg";
+// import indianFoodImage from "../assets/cropped-Indian-Food-wikicont-1.jpg";
+// import indianfoodbanner from "../assets/Indian-food-banner.jpg";
 
 function CarouselComp() {
     const carouselOptions = [
