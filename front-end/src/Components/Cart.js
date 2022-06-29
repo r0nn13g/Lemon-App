@@ -5,24 +5,21 @@ import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import CheckOut from "./Checkout.js";
 
-
+// Environmental variable
 const API = process.env.REACT_APP_API_URL;
 
-
+//Populates Cart
 function Cart({ carts, setCarts, setCheckedOut}) {
   let navigate = useNavigate();
   const userID = localStorage.getItem("userID");
   
-
+//Retrieves active cart
   const getActiveCart = async () => {
     const res = await axios.get(`${API}/carts/${userID}/active`);
-
-          setCarts(res.data);
-        
+      setCarts(res.data);     
   }
 
   useEffect(() => {
-    getActiveCart()
     // axios
     //   .get(`${API}/carts/${userID}/active`)
     //   .then((res) => {
@@ -36,23 +33,22 @@ function Cart({ carts, setCarts, setCheckedOut}) {
     //   .catch((err) => {
     //     console.log(err);
     //   });
+    getActiveCart();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [userID]);
 
-  const handleDelete = () => {
-    axios.delete(`${API}/customers/${userID}/deleteItem`)
-    .then((res) => {
-      console.log("hello")
-    })
-    .catch((err) =>{
-      console.log(err);
-    });
-  };
   
+//Delete cart item by user
 
-  // const consoleLogNothing = () => {
-  //   console.log("Its working")
-  // }
-
+  // const handleDelete = () => {
+  //   axios.delete(`${API}/customers/${userID}/deleteItem`)
+  //   .then((res) => {
+  //     console.log("hello")
+  //   })
+  //   .catch((err) =>{
+  //     console.log(err);
+  //   });
+  // };
 
   const handleCheckout = async () => {
     // console.log("checkout ")
@@ -113,9 +109,8 @@ function Cart({ carts, setCarts, setCheckedOut}) {
            </div>
         )}
       </div>
-      
+     
     </div>
   );
 }
-
 export default Cart;
