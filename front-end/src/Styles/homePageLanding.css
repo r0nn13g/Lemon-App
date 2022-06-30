@@ -7,20 +7,31 @@
   margin: 10px;
 }
 
-
 #home-content-img{
-  height: 946px;
+  height: 446px;
+}
+
+.home-content-image-container{
+  display: grid;
+  margin: 10px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 @media screen and (max-width: 600px){
   .slide-show-wrapper{
-      margin-left: 40px;
-      margin-right: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
-
-#home-content-img{
-  height: 246px;
-}
+  
+  #home-content-img{
+    height: 100px;
+  }
+  
+  .home-content-image-container{
+    display: grid;
+    margin: 2px;
+    grid-template-columns: repeat(1, 1fr);
+  }
   
   }
