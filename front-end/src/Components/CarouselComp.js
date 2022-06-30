@@ -2,8 +2,6 @@ import React from 'react';
 import "../Styles/Carousel.css";
 import Carousel from 'nuka-carousel';
 import freshProduce from "../assets/fresh-produce.jpg";
-// import indianFoodImage from "../assets/cropped-Indian-Food-wikicont-1.jpg";
-// import indianfoodbanner from "../assets/Indian-food-banner.jpg";
 
 function CarouselComp() {
     const carouselOptions = [
@@ -33,12 +31,15 @@ function CarouselComp() {
         return (
             <div key={index} className='ad-container' >
                 <div className='adText-container'>
-                    <h2>
+                    <h1>
                         {option.headline}
-                    </h2>
+                    </h1>
+                    <h1>
+                        {option.subtext}
+                    </h1>
                 </div>
                 <div className='adImage-container'>
-                    <img src={option.image} alt="carousel-pic"/>
+                    {/* <img src={option.image} alt="carousel-pic"/> */}
                 </div>
             </div>
         )
