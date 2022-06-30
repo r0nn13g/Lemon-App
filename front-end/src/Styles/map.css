@@ -31,10 +31,10 @@
   }
   
   .map{
-    margin: 0;
+    margin: 5px;
     /* margin-bottom: 100px; */
     padding-bottom: 260px;
-    height: 500px;
+    height: 700px;
     text-align: center;
   }
 }

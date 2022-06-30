@@ -25,7 +25,7 @@ const Map = () => {
 
   return(
     <div  className="map-container">
-      <MapContainer className="map" center={[40.756211, -73.923964]} zoom={13} scrollWheelZoom={false}>
+      <MapContainer className="map" center={[40.756211, -73.923964]} zoom={12} scrollWheelZoom={false}>
         {/* Map Styling */}
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
