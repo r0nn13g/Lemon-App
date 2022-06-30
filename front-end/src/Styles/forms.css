@@ -5,44 +5,27 @@ margin: 0 auto;
 width: 600px;
 padding: 5px;
 margin-top: 100px;
-/* background-color: rgb(39, 219, 243); */
 }
-
-/* input[type=text] {
-    transition: width 0.4s ease-in-out;
-  }
-  
-  input[type=text]:focus {
-    width: 50%;
-  }
-
-  input[type=password] {
-    transition: width 0.4s ease-in-out;
-  }
-  
-  input[type=password]:focus {
-    width: 50%;
-  } */
 
 .form-container{
     margin-bottom: 20px;
 }
 
 input{
-    height: 20px;
-    padding: 10px;
-    margin-bottom: 10px;
+    height: 40px;
+    width: 600px;
+    padding: 20px;
+    margin: 10px;
 }
 
 .submit-btn{
    margin: 0 auto;
    margin-bottom: 10px;
-   background-color: rgb(91, 201, 203); /* Green */
+   background-color: rgb(91, 201, 203);
    border: none;
    color: rgb(255, 255, 255);
    padding: 15px 32px;
    text-align: center;
-   /* height: 40px; */
    font-size: 16px;
    border-radius: 8px;
    transition-duration: 0.2s;
@@ -51,7 +34,7 @@ input{
 
 .submit-btn:hover{
   color: white;
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
 }
 
 .sign-up-btn-container{
@@ -67,7 +50,7 @@ input{
   color:rgb(91, 201, 203);
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   form{
     display: grid;
     grid-template-columns: 1 1fr ;
@@ -76,4 +59,11 @@ input{
     padding: 5px;
     margin-top: 100px;
     }
+
+    input{
+      height: 40px;
+      width: 270px;
+      padding: 20px;
+      margin: 10px;
+  }
 }
