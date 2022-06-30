@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:wght@600;700&display=swap');
+
 .slide-show-wrapper{
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 115px;
+  margin-right: 115px;
 }
 
 .home-main-content-container{
@@ -21,11 +23,23 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+section {
+  padding: 2rem 10%;
+}
+
+section:nth-child(2) {
+  text-align: center;
+  background:  rgb(28, 101, 211);
+  color: white;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  padding: 10rem 20%;
+}
+
 @media screen and (max-width: 600px){
 
   .slide-show-wrapper{
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 45px;
+    margin-right: 45px;
   }
 
   
@@ -39,6 +53,19 @@
     grid-template-columns: repeat(1, 1fr);
   }
   .main-content-container-p{
+    /* background-image: url("../assets/donutsImage.png"); */
     margin: 5px;
+  }
+
+  section {
+    padding: 2rem 20%;
+  }
+  
+  section:nth-child(2) {
+    text-align: center;
+    background:  rgb(28, 101, 211);
+    color: white;
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+    padding: 10rem 10%;
   }
   }

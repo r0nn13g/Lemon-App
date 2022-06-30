@@ -16,7 +16,9 @@ const HomePageLanding = () => {
         </div>
       <div className="home-main-content-container">
         <div className='main-content-container-p'>
-        <p>{sampleText}</p>
+        <section>{sampleText}</section>
+        <section><h1>"Incredible app with great purpose" - The New York Chimes</h1></section>
+        <section>{sampleText}</section>
         </div>
           <br/>
           <div className="home-content-image-container">

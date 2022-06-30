@@ -17,10 +17,10 @@
   overflow: hidden;;
   transition: .5s;
 }
-
+/* box with text */
 .box > img {
   width: 100%;
-  height: calc(100% - 10vh);
+  height: calc(100% - 0vh);
   object-fit: cover; 
   transition: .5s;
 }
@@ -47,7 +47,7 @@
     width: 100%;
     padding: 3% 0%;
     box-sizing: border-box;
-    height: 35vh;
+    height: 15vh;
   }
   
   .box {
