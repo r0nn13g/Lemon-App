@@ -2,13 +2,12 @@ import React from "react";
 import "../Styles/home.css";
 import { useState } from "react";
 import Map from "../Components/Map";
-import Splash from "../Components/Splash";
 import Switch from '@mui/material/Switch';
 import FilterBar from "../Components/FilterBar";
 import SearchIcon from '@mui/icons-material/Search';
 import Restaurants from "../Components/Restaurants";
 import CarouselComp from "../Components/CarouselComp";
-import FloatingLinks from "../Components/FloatingLinks";
+import HomePageLanding from "../Components/HomePageLanding";
 
 function Home({ loginText }) {
   const [isChecked, SetIsChecked] = useState(false);
@@ -21,8 +20,7 @@ function Home({ loginText }) {
     <div>
       {!localStorage.getItem("userID") ? (
         <div className="home-container">
-          <Splash />
-          <FloatingLinks />
+          <HomePageLanding />
         </div>
         ) : (
           <div className="mapView">
