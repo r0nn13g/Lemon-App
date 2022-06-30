@@ -19,8 +19,8 @@ const HomePageLanding = () => {
         <section>{sampleText}</section>
         <section><h1>"Incredible app with great purpose" - The New York Chimes</h1></section>
         <section>{sampleText}</section>
+        <section><h1>"Changing the Environment" - The New York Toast</h1></section>
         </div>
-          <br/>
           <div className="home-content-image-container">
           <DataCard />
           <DataCard2 />

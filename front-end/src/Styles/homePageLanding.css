@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:wght@600;700&display=swap');
 
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+
 .slide-show-wrapper{
   margin-left: 115px;
   margin-right: 115px;
@@ -7,8 +12,8 @@
 
 .home-main-content-container{
   margin: 10px;
+  
 }
-
 #home-content-img{
   height: 446px;
 }
@@ -28,12 +33,12 @@ section {
   padding: 2rem 10%;
 }
 
-section:nth-child(2) {
+section:nth-child(4) {
   text-align: center;
   background:  rgb(28, 101, 211);
   color: white;
-  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
-  padding: 10rem 20%;
+  clip-path: polygon(0 40%, 100% 0, 100% 60%, 0 100%);
+  padding: 10rem 10%;
 }
 
 @media screen and (max-width: 600px){
@@ -67,7 +72,7 @@ section:nth-child(2) {
     text-align: center;
     background:  rgb(28, 101, 211);
     color: white;
-    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 40%, 100% 0, 100% 60%, 0 100%);
     padding: 10rem 10%;
   }
   }
