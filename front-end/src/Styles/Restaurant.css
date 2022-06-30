@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:wght@600;700&display=swap');
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
 .all-restaurants-container{
     margin-bottom: 20px;
     display: grid;
@@ -29,8 +35,8 @@
 .restaurant-data{
     color: white;
     text-align: left;
-    background-color: rgb(78, 111, 218);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(28, 101, 211);
+    font-family:'Open Sans', sans-serif;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -103,7 +109,6 @@
         /* background-color: rgb(78, 111, 218); */
     }
     .restaurant-container:hover {
-        /* z-index: 3; */
         max-width: 173px; 
     }
    
