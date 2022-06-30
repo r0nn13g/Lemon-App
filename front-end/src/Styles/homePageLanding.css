@@ -24,6 +24,7 @@
 }
 
 section {
+  font-family: 'Open Sans', sans-serif;
   padding: 2rem 10%;
 }
 
@@ -58,6 +59,7 @@ section:nth-child(2) {
   }
 
   section {
+    font-family: 'Open Sans', sans-serif;
     padding: 2rem 20%;
   }
   
