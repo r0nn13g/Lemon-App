@@ -11,6 +11,10 @@
   height: 446px;
 }
 
+.main-content-container-p{
+  margin: 30px;
+}
+
 .home-content-image-container{
   display: grid;
   margin: 10px;
@@ -34,5 +38,7 @@
     margin: 2px;
     grid-template-columns: repeat(1, 1fr);
   }
-  
+  .main-content-container-p{
+    margin: 5px;
+  }
   }

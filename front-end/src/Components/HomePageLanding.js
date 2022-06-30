@@ -15,13 +15,13 @@ const HomePageLanding = () => {
           <Slideshow/>
         </div>
       <div className="home-main-content-container">
-        <p id="main-content-container-p">{sampleText}</p>
+        <div className='main-content-container-p'>
+        <p>{sampleText}</p>
+        </div>
           <br/>
           <div className="home-content-image-container">
           <DataCard />
           <DataCard2 />
-          <DataCard />
-          <DataCard />
 
           <br/>
           </div>

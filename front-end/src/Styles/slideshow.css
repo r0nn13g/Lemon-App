@@ -7,15 +7,15 @@
 }
 
 .box {
-  flex: 1;
-  overflow: hidden;
-  transition: .5s;
-  margin: 1% -10%;
-  line-height: 0;
+  background-color: rgb(28, 101, 211);
   box-shadow: 0 20px 30px rgba(0,0,0,.1);
-  color: rgb(28, 101, 211);
-  background-color: rgb(255, 255, 255);
+  color: #FFFFFF;
+  flex: 1;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  line-height: 0;
+  margin: 1% -10%;
+  overflow: hidden;;
+  transition: .5s;
 }
 
 .box > img {
@@ -28,7 +28,8 @@
 .box > span {
   font-size: 3.8vh;
   display: block;
-  text-align: center;
+  margin-left: 20px;
+  /* text-align: left; */
   height: 15vh;
   line-height: 2.6;
 }
