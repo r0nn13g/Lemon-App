@@ -22,8 +22,7 @@ const Slideshow = () => {
       </div>
       <div className="box">
         <img alt="fresh-produce" src="https://upserve.com/media/sites/2/Copy-of-Reiner-4534-1024x683.jpg"></img>
-        <span>Nutritious
-        </span>
+        <span>Nutritious</span>
       </div>
     </div>
   )

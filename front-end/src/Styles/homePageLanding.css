@@ -1,0 +1,26 @@
+.slide-show-wrapper{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.home-main-content-container{
+  margin: 10px;
+}
+
+
+#home-content-img{
+  height: 946px;
+}
+
+@media screen and (max-width: 600px){
+  .slide-show-wrapper{
+      margin-left: 40px;
+      margin-right: 40px;
+  }
+
+
+#home-content-img{
+  height: 246px;
+}
+  
+  }
