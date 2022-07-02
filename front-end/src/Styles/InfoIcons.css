@@ -1,0 +1,144 @@
+.info-icons-wrapper{
+  background-color: rgb(251, 251, 251);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#info-icon-1 img{
+  text-align: center;
+}
+
+#info-icon-1 img{
+  text-align: center;
+}
+
+#info-icon-1{
+  /* margin-left: 20px;
+  margin-right: 20px; */
+  text-align: center;
+}
+#info-icon-1 h4{
+  text-align: center;
+  font-size: 12px;
+  margin: 0px;
+  white-space: nowrap;
+}
+
+#info-icon-2{
+  text-align: center;
+}
+
+#info-icon-2 h4{
+  text-align: center;
+  font-size: 12px;
+  margin: 0px;
+  white-space: nowrap;
+}
+
+#info-icon-3{
+  text-align: center;
+}
+
+#info-icon-3 h4{
+  text-align: center;
+  font-size: 12px;
+  margin: 0px;
+  white-space: nowrap;
+}
+
+#info-icon-4{
+  text-align: center;
+}
+
+#info-icon-4 h4{
+  text-align: center;
+  font-size: 12px;
+  margin: 0px;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 600px) {
+  .info-icons-wrapper{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+
+  #info-icon-1 img{
+    text-align: center;
+  }
+
+  #info-icon-1{
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    text-align: center;
+  }
+  #info-icon-1 h4{
+    text-align: center;
+    font-size: 12px;
+    margin: 0px;
+    white-space: nowrap;
+  }
+
+  #info-icon-1 p{
+    text-align: center;
+    font-size: 12px;
+    margin: 0px;
+    white-space: nowrap;
+  }
+  
+  #info-icon-2{
+    text-align: center;
+  }
+  
+  #info-icon-2 h4{
+    text-align: center;
+    font-size: 12px;
+    margin: 0px;
+    white-space: nowrap;
+  }
+
+  #info-icon-2 p{
+    text-align: center;
+    font-size: 12px;
+    margin: 0px;
+    white-space: nowrap;
+  }
+  
+  #info-icon-3{
+    text-align: center;
+  }
+  
+  #info-icon-3 h4{
+    text-align: center;
+    font-size: 12px;
+    margin: 0px;
+    white-space: nowrap;
+  }
+
+  #info-icon-3 p{
+    text-align: center;
+    font-size: 12px;
+    margin: 0px;
+    white-space: nowrap;
+  }
+  
+  #info-icon-4{
+    text-align: center;
+  }
+  
+  #info-icon-4 h4{
+    text-align: center;
+    font-size: 12px;
+    margin: 0px;
+    white-space: nowrap;
+  }
+
+  #info-icon-4 p{
+    text-align: center;
+    font-size: 12px;
+    margin: 0px;
+    white-space: nowrap;
+  }
+
+}

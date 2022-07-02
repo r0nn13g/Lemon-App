@@ -19,7 +19,8 @@ body{
 }
 
 .main-content-container-p{
-  margin: 30px;
+  background:  rgb(236, 236, 236);
+  margin: -10px;
 }
 
 .home-content-image-container{
@@ -29,7 +30,8 @@ body{
 }
 
 section {
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: Agrandir,sans-serif;
   padding: 2rem 10%;
 }
 
@@ -59,20 +61,19 @@ section:nth-child(4) {
     grid-template-columns: repeat(1, 1fr);
   }
   .main-content-container-p{
-    /* background-image: url("../assets/donutsImage.png"); */
-    margin: 5px;
+    background:  rgb(234, 234, 234);
+    margin: 0px;
   }
-
+  
   section {
     font-family: 'Open Sans', sans-serif;
-    padding: 2rem 20%;
   }
   
   section:nth-child(2) {
-    text-align: center;
     background:  rgb(28, 101, 211);
     color: white;
+    padding: 10rem 5%;
     clip-path: polygon(0 40%, 100% 0, 100% 60%, 0 100%);
-    padding: 10rem 10%;
+    text-align: center;
   }
   }
