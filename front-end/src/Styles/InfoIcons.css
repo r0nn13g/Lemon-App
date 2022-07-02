@@ -2,9 +2,7 @@
   background-color: rgb(251, 251, 251);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-}
-#info-icon-1 img{
-  text-align: center;
+  font-family: Agrandir,sans-serif;
 }
 
 #info-icon-1 img{
@@ -23,11 +21,25 @@
   white-space: nowrap;
 }
 
+#info-icon-1 p{
+  text-align: center;
+  font-size: 12px;
+  margin: 0px;
+  white-space: nowrap;
+}
+
 #info-icon-2{
   text-align: center;
 }
 
 #info-icon-2 h4{
+  text-align: center;
+  font-size: 12px;
+  margin: 0px;
+  white-space: nowrap;
+}
+
+#info-icon-2 p{
   text-align: center;
   font-size: 12px;
   margin: 0px;
@@ -45,6 +57,13 @@
   white-space: nowrap;
 }
 
+#info-icon-3 p{
+  text-align: center;
+  font-size: 12px;
+  margin: 0px;
+  white-space: nowrap;
+}
+
 #info-icon-4{
   text-align: center;
 }
@@ -56,7 +75,14 @@
   white-space: nowrap;
 }
 
-@media screen and (max-width: 600px) {
+#info-icon-4 p{
+  text-align: center;
+  font-size: 12px;
+  margin: 0px;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 800px) {
   .info-icons-wrapper{
     display: grid;
     gap: 30px;

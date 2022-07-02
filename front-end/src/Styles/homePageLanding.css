@@ -43,7 +43,7 @@ section:nth-child(4) {
   padding: 10rem 10%;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
 
   .slide-show-wrapper{
     margin-left: 45px;
