@@ -24,7 +24,6 @@ function Home({ loginText }) {
         </div>
         ) : (
           <div className="mapView">
-              <CarouselComp/>
           <Switch
             checked={isChecked}
             onChange={handleCheckChange}
@@ -36,10 +35,6 @@ function Home({ loginText }) {
             </div>
           ):(
             <div className="loggedInDisplay-container">
-              <div className="c-container">
-                  <input id="restaurant-locator-search" type="text" placeholder="Search.."></input>
-                  <button type="submit" className="search-button" ><SearchIcon /></button>
-              </div>
               <div className="f-container">
                 <FilterBar />
               </div>
@@ -48,6 +43,10 @@ function Home({ loginText }) {
               </div>
             </div>
           )}
+              <div className="c-container">
+                  <input id="restaurant-locator-search" type="text" placeholder="Subscribe"></input>
+                  <button type="submit" className="search-button" ><SearchIcon /></button>
+              </div>
         </div>
       )}
     </div>

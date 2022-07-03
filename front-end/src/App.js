@@ -9,6 +9,7 @@ import Footer from './Components/Footer';
 //import of pages that are linked to components
 
 import Home from './Pages/HomePage';
+import HomePageLanding from './Components/HomePageLanding';
 import CurrentCart from './Pages/CurrentCart';
 import Login from './Components/Login';
 import Signup from './Components/Signup';
@@ -42,6 +43,7 @@ function App() {
       <Routes>
         <Route path="*" element={<FourOFour />} />
         <Route path="/" element={<Home loginText={loginText}/>}/>
+        <Route path="/home" element={<HomePageLanding />}/>
         <Route path="/carts" element={<CurrentCart setCarts={setCarts} carts={carts}/>} setCheckedOut={setCheckedOut}/>
         <Route path='/login' element={<Login setLoginText={setLoginText} setCarts={setCarts} carts={carts}/>} />
         <Route path='/signup' element={<Signup/>} />
