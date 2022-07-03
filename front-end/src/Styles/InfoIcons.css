@@ -84,7 +84,7 @@
   font-size: 12px;
   margin: 10px;
 }
-
+/* 
 @media screen and (max-width: 1000px) {
   .info-icons-wrapper{
     display: grid;
@@ -93,7 +93,7 @@
     text-align: center;
     width: 1000px;
   }
-}
+} */
 
 @media screen and (max-width: 600px) {
   .info-icons-wrapper{

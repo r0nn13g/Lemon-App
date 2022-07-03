@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:wght@600;700&display=swap');
 
-/* html, body{
+/* body,html{
   margin: 0px;
-  font-family: 'Open Sans', sans-serif;
+  padding: 0px;
 } */
 
 #top-splash-page{
@@ -45,13 +45,11 @@ section:nth-child(4) {
   padding: 10rem 10%;
 }
 
-
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
   #top-splash-page{
     padding-top: 65px;
-    max-width: 1000px;
-    height: 1000px;
+     width: 800px;
+    height: 800px;
     object-fit:fill;
   }
 
@@ -65,12 +63,12 @@ section:nth-child(4) {
   }
   
   section {
-    width: 1000px;
+    width: 800px;
     font-family: 'Open Sans', sans-serif;
   }
   
   section:nth-child(2) {
-    width: 1000px;
+    width: 800px;
     background:  rgb(28, 101, 211);
     color: white;
     padding: 10rem 05%;
@@ -81,6 +79,10 @@ section:nth-child(4) {
 }
 
 @media only screen and (max-width: 600px){
+
+  .home-page-wrapper{
+    width: 600px;
+  }
   
   #top-splash-page{
     padding-top: 65px;

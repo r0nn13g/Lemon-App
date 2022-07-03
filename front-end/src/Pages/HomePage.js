@@ -34,9 +34,6 @@ function Home({ loginText }) {
             </div>
           ):(
             <div className="loggedInDisplay-container">
-              <div className="f-container">
-                <FilterBar />
-              </div>
               <div className="r-container"> 
                 <Restaurants />
               </div>
@@ -46,6 +43,9 @@ function Home({ loginText }) {
                   <input id="restaurant-locator-search" type="text" placeholder="Subscribe"></input>
                   <button type="submit" className="search-button" ><SearchIcon /></button>
               </div>
+              {/* <div className="f-container">
+                <FilterBar />
+              </div> */}
         </div>
       )}
     </div>
