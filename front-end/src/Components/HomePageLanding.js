@@ -4,6 +4,8 @@ import Slideshow from "./Slideshow.js";
 // import Carousel from "./CarouselComp.js";
 import DataCard from './DataCard.js';
 import DataCard2 from './DataCard2.js';
+import DataCard3 from './DataCard3.js';
+import DataCard4 from './DataCard4.js';
 import InfoIcons from './InfoIcons.js';
 import mealkitSplash from '../assets/mealkitsSplash.jpeg';
 import Map from './Map.js';
@@ -19,9 +21,6 @@ const HomePageLanding = () => {
           <DataCard />
           <DataCard2 />
           </div>
-        <div className='slide-show-wrapper'>
-          <Slideshow/>
-        </div>
       <div className="home-main-content-container">
         <div className='main-content-container-p'>
         <section>{sampleText}</section>
@@ -31,6 +30,13 @@ const HomePageLanding = () => {
         </div>
         {/* <Carousel /> */}
       </div>
+        <div className='slide-show-wrapper'>
+          <Slideshow/>
+        </div>
+      <div className="home-content-image-container">
+          <DataCard3 />
+          <DataCard4 />
+          </div>
       <Map />
     </div>
   )

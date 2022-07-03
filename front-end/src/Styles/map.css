@@ -1,5 +1,6 @@
 .map-container{
   text-align: center;
+  position: sticky;
 }
 
 .map{

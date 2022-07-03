@@ -8,6 +8,8 @@
     padding: 5px;
     display: flex;
     background-color: rgb(34, 61, 148);
+    position: fixed;
+    width: 100%;
     justify-content: space-between;
     /* border: 2px solid rgb(110, 217, 227); */
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -79,7 +81,8 @@ nav a {
     .nav-container {
         margin: 0px;
         padding: 1px;
-        position: relative;
+        position: fixed;
+        width: 100%;
     }
 
     .navbar-text {
