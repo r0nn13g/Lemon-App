@@ -5,10 +5,6 @@ html, body{
   font-family: 'Open Sans', sans-serif;
 }
 
-.home-page-wrapper{
-  /* width: 100%; */
-}
-
 #top-splash-page{
   width: 1424px;
   height: 400px;
@@ -108,8 +104,5 @@ section:nth-child(4) {
     max-width: 600px;
     height: 600px;
     object-fit:fill;
-  }
-  .map{
-    width: 590px;
   }
 }
