@@ -13,6 +13,8 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import ListItemButton from '@mui/material/ListItemButton';
 import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
+import Restaurants from './Restaurants.js';
+import { Link } from 'react-router-dom';
 
 export default function TemporaryDrawer() {
   const [state, setState] = React.useState({
@@ -38,16 +40,20 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Meal Kits', 'Locations', 'Whats New', 'Our Mission'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
+          <ListItem enablePadding>
               <ListItemIcon>
-                {index % 2 === 0 ? <RestaurantMenuIcon /> : <PushPinIcon />}
               </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
+              <Link to="/home" style={{ textDecoration: 'none' , color: 'black' }}>
+              <ListItemText primary="Home" />
+              </Link>
           </ListItem>
-        ))}
+          <ListItem enablePadding>
+              <ListItemIcon>
+              </ListItemIcon>
+              <Link to="/" style={{ textDecoration: 'none' , color: 'black' }}>
+              <ListItemText primary="Restaurants" />
+              </Link>
+          </ListItem>
       </List>
       <Divider />
       <List>

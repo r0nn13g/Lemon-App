@@ -96,6 +96,7 @@ body{
             grid-template-rows: auto;
             justify-items: center;
             margin-bottom: 20px;
+            /* padding-top: 100px; */
         }
 
     .restaurant-container{

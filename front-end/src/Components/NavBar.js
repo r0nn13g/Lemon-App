@@ -42,7 +42,7 @@ function NavBar({ setLoginText }) {
       <div className="nav-container">
 
       <div className="home-logo">
-        <Link to="/">
+        <Link to="/home">
           <img src={logo} alt="logo" />
         </Link>
 
