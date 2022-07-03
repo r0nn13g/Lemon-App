@@ -5,9 +5,9 @@ body{
 }
 
 #top-splash-page{
-  width: 1440px;
+  width: 1424px;
   height: 400px;
-  object-fit: none;
+  object-fit:none;
   object-position: 50% 70%;
 }
 
