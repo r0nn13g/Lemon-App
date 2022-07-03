@@ -102,11 +102,11 @@ section:nth-child(4) {
   }
   
 }
-@media screen and (max-width: 390px){
+@media screen and (max-width: 400px){
   #top-splash-page{
     padding-top: 65px;
-    max-width: 390px;
-    height: 390px;
+    max-width: 600px;
+    height: 600px;
     object-fit:fill;
   }
   .map{

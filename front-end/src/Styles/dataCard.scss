@@ -120,7 +120,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 400px) {
   .page-contain {
     display: flex;
     min-height: 40vh;
@@ -129,8 +129,9 @@
     padding: 0em;
     font-family: 'Open Sans', sans-serif;
   }  
-
+  
   .data-card {
+    width: 390px;
     display: flex;
     flex-direction: column;
     min-height: 20.75em;

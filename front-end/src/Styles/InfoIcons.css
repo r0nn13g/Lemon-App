@@ -85,13 +85,13 @@
   margin: 10px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .info-icons-wrapper{
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
-    /* width: 600px; */
+    width: 600px;
   }
 
   #info-icon-1 img{
