@@ -44,7 +44,7 @@
 @media screen and (max-width: 600px) {
   .container {
     display: flex;
-    width: 91%;
+    width: 546px;
     /* padding: 3% 0%; */
     box-sizing: border-box;
     height: 22vh;

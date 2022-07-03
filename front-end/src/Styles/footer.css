@@ -37,9 +37,10 @@
   height: 40px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 2000px) {
   .footer{
-    height: 244px;
+    height: 266px;
+    width: 600px;
     position:absolute;
   }
 

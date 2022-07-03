@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:wght@600;700&display=swap');
 
-body{
+html, body{
+  margin: 0px;
   font-family: 'Open Sans', sans-serif;
+}
+
+.home-page-wrapper{
+  width: 100%;
 }
 
 #top-splash-page{
@@ -26,7 +31,7 @@ body{
 
 .home-content-image-container{
   display: grid;
-  margin: 10px;
+  /* margin: 10px; */
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -44,12 +49,12 @@ section:nth-child(4) {
   padding: 10rem 10%;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 600px){
   
   #top-splash-page{
     padding-top: 65px;
-    width: 390px;
-    height: 430px;
+    max-width: 600px;
+    height: 600px;
     object-fit:fill;
   }
   
@@ -59,25 +64,28 @@ section:nth-child(4) {
   
   .home-content-image-container{
     display: grid;
-    /* margin: 2px; */
     grid-template-columns: repeat(1, 1fr);
   }
   .main-content-container-p{
+    width: 600px;
     background:  rgb(234, 234, 234);
-    margin: 0px;
   }
   
   section {
+    width: 600px;
     font-family: 'Open Sans', sans-serif;
   }
   
   section:nth-child(2) {
+    width: 600px;
     background:  rgb(28, 101, 211);
     color: white;
-    padding: 10rem 5%;
+    padding: 10rem 05%;
     clip-path: polygon(0 40%, 100% 0, 100% 60%, 0 100%);
     text-align: center;
   }
 
-  
+  .map{
+    width: 500px;
+  }
 }
