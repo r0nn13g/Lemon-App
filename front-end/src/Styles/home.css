@@ -7,7 +7,7 @@ body{
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-areas: 
-    "car car car" 
+    /* "car car car"  */
     "rest rest rest"
     "fil fil fil" 
 }
@@ -53,11 +53,10 @@ body{
 @media screen and (max-width: 600px) {
     .loggedInDisplay-container{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        "car car car car" 
-        "rest rest rest rest"
-        "fil fil fil fil";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:  
+        "rest rest rest"
+        "fil fil fil";
     }
     
     #restaurant-locator-search{
