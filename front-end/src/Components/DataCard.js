@@ -5,7 +5,7 @@ const DataCard = () => {
     return (
       <div>
         <section className="page-contain">
-          <a href="/restaurant-locator" class="data-card">
+          <a href="/" class="data-card">
             <h3>20</h3>
             <h4>participating restaurants</h4>
             <p>We parnter with SNAP 🥕 and HRA benefits to bring you quality meal kits from restaurants in your area. Click to see which restaurants are in your area 📍            </p>
