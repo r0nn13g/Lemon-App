@@ -1,7 +1,7 @@
 .container {
   display: flex;
-  width: 100%;
-  padding: 3% 3%;
+  width: 91%;
+  padding: 3% 0%;
   box-sizing: border-box;
   height: 65vh;
 }
@@ -44,17 +44,17 @@
 @media screen and (max-width: 600px) {
   .container {
     display: flex;
-    width: 100%;
-    padding: 3% 0%;
+    width: 91%;
+    /* padding: 3% 0%; */
     box-sizing: border-box;
-    height: 15vh;
+    height: 22vh;
   }
   
   .box {
     flex: 1;
     overflow: hidden;
     transition: .5s;
-    margin: 2% -10%;
+    /* margin: 2% -10%; */
     line-height: 0;
     box-shadow: 0 20px 30px rgba(0,0,0,.1);
     color: rgb(28, 101, 211);
@@ -63,7 +63,7 @@
   }
   
   .box > img {
-    width: 200%;
+    width: 100%;
     height: calc(100% - 0vh);
     object-fit: cover; 
     transition: .5s;

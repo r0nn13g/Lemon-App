@@ -5,13 +5,19 @@ import Carousel from "./CarouselComp.js";
 import DataCard from './DataCard.js';
 import DataCard2 from './DataCard2.js';
 import InfoIcons from './InfoIcons.js';
+import mealkitSplash from '../assets/mealkitsSplash.jpeg';
 
 let sampleText = "Everyone knows that NYC is the place to go if you want some delicious pizza. I mean they even have their own style of pizza! But, did you know that New York City was the birthplace of pizza in America?"
 
 const HomePageLanding = () => {
   return (
     <div className='home-page-wrapper'>
-        <Carousel />
+          <img id="top-splash-page" src={mealkitSplash} />
+          <InfoIcons />
+          <div className="home-content-image-container">
+          <DataCard />
+          <DataCard2 />
+          </div>
         <div className='slide-show-wrapper'>
           <Slideshow/>
         </div>
@@ -22,13 +28,9 @@ const HomePageLanding = () => {
         <section>{sampleText}</section>
         <section><h1>"Changing the Environment" - The New York Toast</h1></section>
         </div>
-          <div className="home-content-image-container">
-          <DataCard />
-          <DataCard2 />
-          </div>
-          <br/>
-          <InfoIcons />
+        {/* <Carousel /> */}
       </div>
+
     </div>
   )
 }

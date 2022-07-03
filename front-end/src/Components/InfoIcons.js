@@ -10,23 +10,24 @@ const InfoIcons = () => {
     <div className="info-icons-wrapper">
       <div id="info-icon-1">
         <img src={infoIcon1} alt="" />
-        <h4>No skimpin’ on the chicken!</h4>
+        <h4>Save that chicken</h4>
         <p>Or steak, or fish, or plant protein.</p>
       </div>
         <div id="info-icon-2">
         <img src={infoIcon2} alt="" />
-        <h4>No commitment whatsoever</h4>
+        <h4>No commitment.</h4>
         <p> Skipping weeks or cancelling is super easy.</p>
         </div>
           <div id="info-icon-3">
           <img src={infoIcon3} alt="" />
         <h4>The most 5-star reviews</h4>
-        <p>Our huge recipe selection wows week after week.</p>
+        <p>Our selection of meals from different restaurants 
+          wows week after week.</p>
           </div>
         <div id="info-icon-4">
         <img src={infoIcon4} alt="" />
-        <h4>Fresh and affordable</h4>
-        <p>Chef-created deliciousness from $7.49 per meal.Get started</p>
+        <h4>Fresh and FREE meal kits</h4>
+        <p>Chef-created deliciousness. Sign up to get started.</p>
    
       </div>
     </div>

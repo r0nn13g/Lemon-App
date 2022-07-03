@@ -1,8 +1,11 @@
 .info-icons-wrapper{
-  background-color: rgb(251, 251, 251);
+  background-color: rgb(229, 229, 229);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   font-family: Agrandir,sans-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
 }
 
 #info-icon-1 img{
@@ -10,25 +13,27 @@
 }
 
 #info-icon-1{
-  /* margin-left: 20px;
-  margin-right: 20px; */
+  margin-top: 40px;
+  margin-bottom: 40px;
   text-align: center;
 }
 #info-icon-1 h4{
   text-align: center;
   font-size: 12px;
   margin: 0px;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 #info-icon-1 p{
   text-align: center;
   font-size: 12px;
-  margin: 0px;
-  white-space: nowrap;
+  margin: 10px;
+  /* white-space: nowrap; */
 }
 
 #info-icon-2{
+  margin-top: 40px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -36,17 +41,19 @@
   text-align: center;
   font-size: 12px;
   margin: 0px;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 #info-icon-2 p{
   text-align: center;
   font-size: 12px;
-  margin: 0px;
-  white-space: nowrap;
+  margin: 10px;
+  /* white-space: nowrap; */
 }
 
 #info-icon-3{
+  margin-top: 40px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -54,17 +61,19 @@
   text-align: center;
   font-size: 12px;
   margin: 0px;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 #info-icon-3 p{
   text-align: center;
   font-size: 12px;
-  margin: 0px;
-  white-space: nowrap;
+  margin: 10px;
+  /* white-space: nowrap; */
 }
 
 #info-icon-4{
+  margin-top: 40px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -72,20 +81,20 @@
   text-align: center;
   font-size: 12px;
   margin: 0px;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 #info-icon-4 p{
   text-align: center;
   font-size: 12px;
-  margin: 0px;
-  white-space: nowrap;
+  margin: 10px;
+ /* padding: 10px; */
 }
 
 @media screen and (max-width: 800px) {
   .info-icons-wrapper{
     display: grid;
-    gap: 30px;
+    gap: 10px;
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
   }
@@ -139,14 +148,12 @@
     text-align: center;
     font-size: 12px;
     margin: 0px;
-    white-space: nowrap;
   }
 
   #info-icon-3 p{
     text-align: center;
     font-size: 12px;
     margin: 0px;
-    white-space: nowrap;
   }
   
   #info-icon-4{
@@ -157,14 +164,12 @@
     text-align: center;
     font-size: 12px;
     margin: 0px;
-    white-space: nowrap;
   }
 
   #info-icon-4 p{
     text-align: center;
     font-size: 12px;
     margin: 0px;
-    white-space: nowrap;
   }
 
 }
