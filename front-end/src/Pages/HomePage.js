@@ -6,7 +6,6 @@ import Switch from '@mui/material/Switch';
 import FilterBar from "../Components/FilterBar";
 import SearchIcon from '@mui/icons-material/Search';
 import Restaurants from "../Components/Restaurants";
-import CarouselComp from "../Components/CarouselComp";
 import HomePageLanding from "../Components/HomePageLanding";
 
 function Home({ loginText }) {

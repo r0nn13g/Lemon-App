@@ -29,7 +29,7 @@ function PreviousCart() {
   }
 
   console.log(oldCarts)
-
+  // eslint-disable-next-line
   let previousOrder = oldCarts.find((cart) => cart.orderNum == id );
   console.log(previousOrder)
   let previousOrderInfo = previousOrder?.items.map((item) => {
@@ -42,6 +42,7 @@ function PreviousCart() {
         </div>
     )
   })
+  console.log(previousOrderInfo)
   
     return (
       <div className="order-success-container">

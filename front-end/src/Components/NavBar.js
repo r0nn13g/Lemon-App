@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/navBar.css";
 import logo from "../assets/dummy-logo.png";
-import userIcon from "../assets/user-icon.png";
+// import userIcon from "../assets/user-icon.png";
 import TemporaryDrawer from "./TemporaryDrawer";
 import LoginIcon from '@mui/icons-material/Login';
 import { Link, useNavigate } from "react-router-dom";
