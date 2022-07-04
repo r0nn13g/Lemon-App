@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:wght@600;700&display=swap');
 
 #top-splash-page{
-  width: 600px;
+  width: 100%;
   height: 400px;
   object-fit:cover;
   object-position: 50% 70%;
@@ -39,60 +39,6 @@ section:nth-child(4) {
 }
 
 
-@media only screen and (max-width: 600px){
-  #top-splash-page{
-    width: 400px;
-    height: 400px;
-    object-fit:cover;
-    object-position: 50% 70%;
-  }
-
-  .main-content-container-p{
-    width: 600px;
-  }
-
-  .map-container{
-    width: 600px;
-  }
-} 
-
-/* @media only screen and (max-width: 600px){
-  
-  .home-page-wrapper{
-    width: 600px;
-  }
-  
-  #top-splash-page{
-    padding-top: 65px;
-    width: 390px;
-    height: 500px;
-    object-fit:fill;
-  }
-  
-  .home-content-image-container{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .main-content-container-p{
-    width: 600px;
-    background:  rgb(234, 234, 234);
-  }
-  
-  section {
-    width: 600px;
-    font-family: 'Open Sans', sans-serif;
-  }
-  
-  section:nth-child(2) {
-    width: 600px;
-    background:  rgb(28, 101, 211);
-    color: white;
-    padding: 10rem 05%;
-    clip-path: polygon(0 40%, 100% 0, 100% 60%, 0 100%);
-    text-align: center;
-  }
-   */
-/* } */
 
 @media only screen and (max-width: 600px){
 
@@ -101,7 +47,7 @@ section:nth-child(4) {
   }
 
   #top-splash-page{
-    width: 400px;
+    width: 600px;
     height: 400px;
     object-fit:cover;
     object-position: 50% 70%;
@@ -171,7 +117,7 @@ section:nth-child(4) {
   #top-splash-page{
     padding-top: 65px;
     width: 428px;
-    height: 500px;
+    height: 446px;
     object-fit:fill;
   }
   
@@ -214,7 +160,7 @@ section:nth-child(4) {
   #top-splash-page{
     padding-top: 65px;
     width: 390px;
-    height: 500px;
+    height: 446px;
     object-fit:fill;
   }
   
@@ -255,7 +201,7 @@ section:nth-child(4) {
   #top-splash-page{
     padding-top: 65px;
     width: 375px;
-    height: 375px;
+    height: 415px;
     object-fit:fill;
   }
   
