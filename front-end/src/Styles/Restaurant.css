@@ -85,13 +85,22 @@ body{
     padding-bottom:20px;
 }
 
+@media only screen and (max-width: 375px) {
+    .all-restaurants-container{
+        max-width: 325px;
+    }
+}
+
+
 /* iphone 13 and iphone 13 Pro */
 /* 2532x1170 pixels at 460ppi */
+
 @media only screen and (max-width: 600px) {
         .all-restaurants-container{
-            /* max-width: 340px; */
+            /* max-width: 380px; */
+            /* width: 100%; */
             display: grid;
-            grid-gap: 20px;
+            /* grid-gap: 20px; */
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: auto;
             justify-items: center;

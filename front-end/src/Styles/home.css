@@ -89,7 +89,7 @@ body{
         grid-area: car
     }
     .mapView{
-        width: 600px;
+        /* width: 600px; */
         text-align: center;
         letter-spacing: 1px;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
