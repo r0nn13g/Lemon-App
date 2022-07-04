@@ -1,14 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:wght@600;700&display=swap');
 
-/* body,html{
-  margin: 0px;
-  padding: 0px;
-} */
-
 #top-splash-page{
-  width: 1424px;
+  width: 600px;
   height: 400px;
-  object-fit:none;
+  object-fit:cover;
   object-position: 50% 70%;
 }
 
@@ -27,12 +22,10 @@
 
 .home-content-image-container{
   display: grid;
-  /* margin: 10px; */
   grid-template-columns: repeat(2, 1fr);
 }
 
 section {
-  /* font-family: 'Open Sans', sans-serif; */
   font-family: Agrandir,sans-serif;
   padding: 2rem 10%;
 }
@@ -45,49 +38,34 @@ section:nth-child(4) {
   padding: 10rem 10%;
 }
 
-@media only screen and (max-width: 800px) {
+
+@media only screen and (max-width: 400px){
   #top-splash-page{
-    padding-top: 65px;
-     width: 800px;
-    height: 800px;
-    object-fit:fill;
+    width: 600px;
+    height: 400px;
+    object-fit:cover;
+    object-position: 50% 70%;
   }
 
-  .home-content-image-container{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
   .main-content-container-p{
-    width: 1000px;
-    background:  rgb(234, 234, 234);
+    width: 600px;
   }
-  
-  section {
-    width: 800px;
-    font-family: 'Open Sans', sans-serif;
-  }
-  
-  section:nth-child(2) {
-    width: 800px;
-    background:  rgb(28, 101, 211);
-    color: white;
-    padding: 10rem 05%;
-    clip-path: polygon(0 40%, 100% 0, 100% 60%, 0 100%);
-    text-align: center;
-  }
-  
-}
 
-@media only screen and (max-width: 600px){
+  .map-container{
+    width: 600px;
+  }
+} 
 
+/* @media only screen and (max-width: 600px){
+  
   .home-page-wrapper{
     width: 600px;
   }
   
   #top-splash-page{
     padding-top: 65px;
-    max-width: 600px;
-    height: 600px;
+    width: 390px;
+    height: 500px;
     object-fit:fill;
   }
   
@@ -114,12 +92,6 @@ section:nth-child(4) {
     text-align: center;
   }
   
-}
-/* @media screen and (max-width: 300px){
-  #top-splash-page{
-    padding-top: 65px;
-    max-width: 370px;
-    height: 370px;
-    object-fit:fill;
-  }
-} */
+}  */
+
+ 

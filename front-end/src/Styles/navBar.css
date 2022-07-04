@@ -4,12 +4,13 @@
 }
 
 .nav-container {
+    width: 100%;
     z-index: 7;
     padding: 5px;
     display: flex;
     background-color: rgb(34, 61, 148);
     position: fixed;
-    width: 100%;
+    /* width: 38em; */
     justify-content: space-between;
     /* border: 2px solid rgb(110, 217, 227); */
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -66,9 +67,7 @@ nav a {
 /* iphone 13 and iphone 13 Pro */
 /* 2532x1170 pixels at 460ppi */
 @media only screen 
-    and (device-width: 390px) 
-    and (device-height: 844px)
-    and (-webkit-device-pixel-ratio: 3){
+    and (max-width: 400px) {
         .all-restaurants-container{
             display: grid;
             grid-template-columns: repeat(1, 1fr);
@@ -79,8 +78,9 @@ nav a {
         } 
 
     .nav-container {
+        display: flex;
         margin: 0px;
-        padding: 1px;
+        /* padding: 24px; */
         position: fixed;
         width: 100%;
     }
@@ -111,13 +111,53 @@ nav a {
 /* iphone 13 and iphone 13 Pro */
 /* 2532x1170 pixels at 460ppi */
 @media only screen 
-    and (device-width: 844px) 
-    and (device-height: 390px) 
-    and (-webkit-device-pixel-ratio: 3){
+    and (device-width: 844px){
     .nav-container {
         max-width: 844px;
         margin: 0px;
         position: relative;
+    }
+
+    .navbar-text {
+        letter-spacing:normal;
+        margin-top: 36px;
+        margin: 10px;
+        text-align: left;
+        color: white;
+        font-size: 20px;
+        white-space: inherit;
+    }
+
+    .navbar-text:after {
+        letter-spacing:normal;
+        margin-top: 36px;
+        margin: 10px;
+        text-align: left;
+        color: gray;
+        font-size: 20px;
+        white-space: inherit;
+    }
+}
+
+/* iPhone 12 / iPhone 12 Pro */
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px)
+    and (-webkit-device-pixel-ratio: 3){
+        .all-restaurants-container{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: auto;
+            grid-gap: 30px;
+            justify-items: center;
+            margin-bottom: 20px;
+        } 
+
+    .nav-container {
+        margin: 0px;
+        /* padding: 24px; */
+        position: fixed;
+        /* width: 25%; */
     }
 
     .navbar-text {

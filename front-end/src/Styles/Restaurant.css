@@ -92,7 +92,7 @@ body{
             /* max-width: 340px; */
             display: grid;
             grid-gap: 20px;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             grid-template-rows: auto;
             justify-items: center;
             margin-bottom: 20px;

@@ -123,7 +123,7 @@
 @media screen and (max-width: 400px) {
   .page-contain {
     display: flex;
-    min-height: 40vh;
+    min-height: 20vh;
     align-items: center;
     justify-content: center;
     padding: 0em;
@@ -131,7 +131,7 @@
   }  
   
   .data-card {
-    width: 390px;
+    width: 244px;
     display: flex;
     flex-direction: column;
     min-height: 20.75em;

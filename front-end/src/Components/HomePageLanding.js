@@ -15,7 +15,9 @@ let sampleText = "Everyone knows that NYC is the place to go if you want some de
 const HomePageLanding = () => {
   return (
     <div className='home-page-wrapper'>
+          <div>
           <img id="top-splash-page" src={mealkitSplash} alt="meal-kit" />
+          </div>
           <InfoIcons />
           <div className="home-content-image-container">
           <DataCard />
