@@ -3,7 +3,6 @@ import "../Styles/products.css";
 import { useEffect, useState } from 'react';
 import ProductByRestaurant from "./ProductByRestaurant";
 import {useParams, useNavigate} from "react-router-dom";
-
 const API = process.env.REACT_APP_API_URL;
 
 function RestaurantDetails() {
@@ -26,10 +25,10 @@ function RestaurantDetails() {
             {/* <div><h5>{restaurant.cuisine_type}</h5></div> */}
             <div><h5>{restaurant.add}</h5></div>
         </div>
-        <div className='button-link'>
-                <button id="back-btn" onClick={() => navigate(-1)}>Go Back</button>
-        </div>
             {<ProductByRestaurant id={id}/>}
+        {/* <div className='button-link'>
+                <button id="back-btn" onClick={() => navigate(-1)}>Go Back</button>
+        </div> */}
     </div>
   )
 };

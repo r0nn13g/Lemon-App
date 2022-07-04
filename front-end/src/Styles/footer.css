@@ -37,7 +37,7 @@
   height: 40px;
 }
 
-
+/* iPhone 12/13  */
 @media only screen and (max-width: 375px) {
   .footer{
     height: 266px;
@@ -45,6 +45,8 @@
     position:absolute;
   }
 }
+
+/* iphone 12/13 Pro Max */
 @media only screen and (max-width: 390px) {
   .footer{
     height: 266px;
@@ -53,6 +55,7 @@
   }
 }
 
+/* Apple Ipad */
 @media only screen and (max-width: 428px) {
   .footer{
     height: 266px;

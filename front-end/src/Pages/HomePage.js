@@ -3,7 +3,6 @@ import "../Styles/home.css";
 import { useState } from "react";
 import Map from "../Components/Map";
 import Switch from '@mui/material/Switch';
-import FilterBar from "../Components/FilterBar";
 import SearchIcon from '@mui/icons-material/Search';
 import Restaurants from "../Components/Restaurants";
 import HomePageLanding from "../Components/HomePageLanding";
@@ -15,6 +14,10 @@ function Home({ loginText }) {
     SetIsChecked(!isChecked);
   };
 
+  const handleCheckChange2 = () => {
+    SetIsChecked(false)
+  }
+
   return (
     <div>
       {!localStorage.getItem("userID") ? (
@@ -23,11 +26,23 @@ function Home({ loginText }) {
         </div>
         ) : (
           <div className="mapView">
+            <div className="home-banner">
+              <h1>Restaurants</h1>
+              
+              </div>
           <Switch
             checked={isChecked}
             onChange={handleCheckChange}
             inputProps={{ 'aria-label': 'controlled' }}
             /> MAP
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <Switch
+            checked={false}
+            onChange={handleCheckChange2}
+            inputProps={{ 'aria-label': 'controlled' }}
+            /> DARK 🌗
           {isChecked ? (
             <div className="map-container-checked">
               <Map/>
@@ -43,9 +58,6 @@ function Home({ loginText }) {
                   <input id="restaurant-locator-search" type="text" placeholder="Subscribe"></input>
                   <button type="submit" className="search-button" ><SearchIcon /></button>
               </div>
-              {/* <div className="f-container">
-                <FilterBar />
-              </div> */}
         </div>
       )}
     </div>
