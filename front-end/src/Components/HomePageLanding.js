@@ -33,7 +33,7 @@ const HomePageLanding = () => {
         {/* <Carousel /> */}
       </div>
         <div className='slide-show-wrapper'>
-          <Slideshow/>
+          {/* <Slideshow/> */}
         </div>
       <div className="home-content-image-container">
           <DataCard3 />

@@ -117,7 +117,7 @@ body, html{
     gap: 10px;
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
-    width: 600px;
+    width: 100%;
   }
 
   #info-icon-1 img{
