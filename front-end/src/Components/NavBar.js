@@ -1,6 +1,6 @@
 import React from "react";
 import "../Styles/navBar.css";
-import logo from "../assets/dummy-logo.png";
+import logo from "../assets/Lemon.png";
 // import userIcon from "../assets/user-icon.png";
 import TemporaryDrawer from "./TemporaryDrawer";
 import LoginIcon from '@mui/icons-material/Login';

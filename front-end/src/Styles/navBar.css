@@ -6,13 +6,10 @@
 .nav-container {
     width: 100%;
     z-index: 7;
-    padding: 5px;
     display: flex;
     background-color: rgb(34, 61, 148);
     position: fixed;
-    /* width: 38em; */
     justify-content: space-between;
-    /* border: 2px solid rgb(110, 217, 227); */
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -21,8 +18,8 @@
 }
 
 .home-logo img {
-    margin: 10px;
-    width: 30px;
+    margin: 10px 0px 10px 15px;
+    width: 50px;
 }
 
 .navbar-text {

@@ -17,7 +17,7 @@ function Footer() {
         <li>apply for benefits</li>
       </ul>
       <div className="content-container">
-      <p>Helping Hand®</p>
+      <p>Lemon®</p>
       </div>
       </div>
   )
