@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../Styles/forms.css"
+import "../Styles/signup.css"
 
 const API= process.env.REACT_APP_API_URL;
 

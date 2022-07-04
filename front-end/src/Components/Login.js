@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
-import "../Styles/forms.css";
+import "../Styles/Login.css";
 
 const API= process.env.REACT_APP_API_URL;
 
@@ -51,10 +51,10 @@ const handleSubmit = (event) => {
                 placeholder="Please enter a password"
             />
             <button className="submit-btn">Submit</button>
+        <div className="sign-up-btn-container">
+          <Link className="sign-up-btn" to="/signup">Don't have an account? Sign up!</Link>
+        </div>
       </form>
-      <div className="sign-up-btn-container">
-      <Link className="sign-up-btn" to="/signup">Don't have an account? Sign up!</Link>
-      </div>
     </div>
   );
 };
