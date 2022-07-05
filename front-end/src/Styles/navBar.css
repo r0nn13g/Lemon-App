@@ -4,6 +4,7 @@
 }
 
 .nav-container {
+    height: 40px;
     width: 100%;
     z-index: 7;
     display: flex;
@@ -18,8 +19,8 @@
 }
 
 .home-logo img {
-    margin: 10px 0px 10px 15px;
-    width: 50px;
+    margin: 5px 5px 10px 15px;
+    width: 30px;
 }
 
 .navbar-text {
