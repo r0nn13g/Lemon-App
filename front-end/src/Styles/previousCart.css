@@ -31,9 +31,9 @@ body{
 
 
 .previous-btn button{
-    background-color: rgb(91, 201, 203); /* Green */
+    background-color:  rgb(34, 61, 148); /* Green */
     border: none;
-    color: rgb(255, 255, 255);
+    color: rgb(245, 230, 21);
     padding: 15px 32px;
     text-align: center;
     /* height: 40px; */
@@ -53,7 +53,7 @@ body{
 }
 
 .order-processing-img{
-    height: 300px;
+    height: 450px;
     display:block;
     margin: 0 auto;
 }
@@ -62,9 +62,14 @@ body{
   text-align: center;
 }
 
+.order-success-container{
+    padding-top: 80px;
+}
+
+
 @media only screen and (max-width: 600px){
     .order-success-container{
-        margin-top: 80px;
+        padding-top: 80px;
     }
     
     .previous-btn{
@@ -82,13 +87,14 @@ body{
     }
 
     .order-processing-img{
-        height: 200px;
-        display:block;
+        height: 300px;
+        max-width:375px;
+        display:flex;
         margin: 0 auto;
     }
 
     .successful-order-text{
-        margin:20px;
+        margin:10px;
         text-align: center;
       }
 

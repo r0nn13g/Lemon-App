@@ -46,10 +46,11 @@ function PreviousCart() {
   
     return (
       <div className="order-success-container">
-          <img className="order-processing-img" src="https://cdn.dribbble.com/users/393062/screenshots/14492170/media/67f661f7f825b62980571026e1280675.gif" alt="vegetables-digital-transform"></img>
             <div className="successful-order-text">
-              <h2>Your order is currently being worked on!</h2>
+              <h4>Your order is currently being worked on!</h4>
                 <br></br>
+        <div></div>
+          <img className="order-processing-img" src="https://cdn.dribbble.com/users/393062/screenshots/14492170/media/67f661f7f825b62980571026e1280675.gif" alt="vegetables-digital-transform"></img>
                   Thank you for making an impact
             </div>
             {/* <div className="previous-order-container">
