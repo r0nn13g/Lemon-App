@@ -46,7 +46,7 @@ body{
 .restaurant-data:hover{
     transition-duration: 0.6s;
     color: rgb(255, 255, 255);
-    background-color: rgb(34, 61, 148);
+    background-color:rgb(9, 37, 51);
 }
 
 .image-container{

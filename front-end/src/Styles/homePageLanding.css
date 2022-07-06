@@ -30,10 +30,18 @@ section {
   padding: 2rem 10%;
 }
 
+#section-heading{
+  text-align: center;
+  background: rgb(9, 37, 51);
+  color: rgb(255, 201, 4);
+  clip-path: polygon(0 40%, 100% 0, 100% 60%, 0 100%);
+  padding: 10rem 10%;
+}
+
 section:nth-child(4) {
   text-align: center;
-  background:  rgb(28, 101, 211);
-  color: white;
+  background: rgb(9, 37, 51);
+  color:  rgb(255, 201, 4);
   clip-path: polygon(0 40%, 100% 0, 100% 60%, 0 100%);
   padding: 10rem 10%;
 }
@@ -95,8 +103,8 @@ section:nth-child(4) {
   
   section:nth-child(2) {
     width: 500px;
-    backgroUnd:  rgb(28, 101, 211);
-    color: white;
+    backgroUnd:  rgb(9, 37, 51);
+    color:  rgb(255, 201, 4);
     padding: 10rem 05%;
     clip-path: polygon(0 40%, 100% 0, 100% 60%, 0 100%);
     text-align: center;
@@ -115,7 +123,7 @@ section:nth-child(4) {
   }
   
   #top-splash-page{
-    padding-top: 65px;
+    padding-top: 30px;
     width: 428px;
     height: 446px;
     object-fit:fill;
@@ -137,8 +145,8 @@ section:nth-child(4) {
   
   section:nth-child(2) {
     width: 428px;
-    background:  rgb(28, 101, 211);
-    color: white;
+    background:  rgb(9, 37, 51);
+    color: rgb(255, 201, 4);
     padding: 10rem 05%;
     clip-path: polygon(0 40%, 100% 0, 100% 60%, 0 100%);
     text-align: center;
@@ -158,7 +166,7 @@ section:nth-child(4) {
   }
   
   #top-splash-page{
-    padding-top: 65px;
+    padding-top: 30px;
     width: 390px;
     height: 446px;
     object-fit:fill;
@@ -180,8 +188,8 @@ section:nth-child(4) {
   
   section:nth-child(2) {
     width: 390px;
-    background:  rgb(28, 101, 211);
-    color: white;
+    background:  rgb(9, 37, 51);
+    color:  rgb(255, 201, 4);
     padding: 10rem 05%;
     clip-path: polygon(0 40%, 100% 0, 100% 60%, 0 100%);
     text-align: center;
@@ -199,7 +207,7 @@ section:nth-child(4) {
   }
   
   #top-splash-page{
-    padding-top: 65px;
+    padding-top: 30px;
     width: 375px;
     height: 415px;
     object-fit:fill;
@@ -211,7 +219,6 @@ section:nth-child(4) {
   }
   .main-content-container-p{
     width: 375px;
-    background:  rgb(234, 234, 234);
   }
   
   section {
@@ -221,8 +228,8 @@ section:nth-child(4) {
   
   section:nth-child(2) {
     width: 375px;
-    background:  rgb(28, 101, 211);
-    color: white;
+    background: rgb(9, 37, 51);
+    color:  rgb(255, 201, 4);
     padding: 10rem 05%;
     clip-path: polygon(0 40%, 100% 0, 100% 60%, 0 100%);
     text-align: center;
