@@ -13,7 +13,7 @@ body{
 }
 
   .home-banner h1{
-    color: rgb(34, 61, 148);
+    color: rgb(9, 37, 51);
     text-align: center;
     /* line-height: 300%; */
   
@@ -57,20 +57,41 @@ body{
     width: 363px;
 }
 .search-button{
-    height: 44px;
+    height: 50px;
     width: 50px;
     border: none;
     margin: 0px;
-    display: inline-grid;
+    display: inline;
     color: white;
-    background-color:rgb(78, 185, 218);
+    background-color:rgb(9, 37, 51);
 }
+/* 
+.toggle-switches{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.darkmode-switch-container{
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
+.darkmode-switch{
+    height: -10px;
+}
+.mapview-switch-container{
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
+.mapView-switch{
+    height: -10px;
+} */
 
 @media screen and (max-width: 600px) {
     
       .home-banner h1{
         font-size: 20px;
-        color: blue;
+        color: rgb(9, 37, 51);
         text-align: center;
         line-height: 56px;
       
@@ -83,20 +104,44 @@ body{
         "rest rest rest"
         "fil fil fil"; */
     }
-    
-    #restaurant-locator-search{
-        margin: 0;
-        margin-top: 10px;
-        width: 195px;
+
+    .toggle-switches{
+        display: grid;
+        grid-template-columns: auto auto;
     }
-    .search-button{
-        margin: 8px;
-        height: 44px;
-        width: 50px;
+    .darkmode-switch-container{
+        margin-top: 5px;
+        margin-right: 20px;
+    }
+    
+    .darkmode-switch{
+        height: -10px;
+    }
+    .mapview-switch-container{
+        margin-top: 5px;
+        margin-right: 20px;
+    }
+    
+    .mapView-switch{
+        height: -10px;
+    }
+
+    .restaurant-search-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+    
+    .restaurant-locator-search{
+        width: 95%;
+        border-radius: 10px;
+    }
+    #search-button{
+        margin: 10px;
         border: none;
-        display: inline-grid;
+        border-radius: 10px;
         color: white;
-        background-color:rgb(78, 185, 218);
+        background-color:rgb(9, 37, 51);
     }
     
     .f-container{
