@@ -26,7 +26,7 @@ const HomePageLanding = () => {
       <div className="home-main-content-container">
         <div className='main-content-container-p'>
         <section>{sampleText}</section>
-        <section><h1>"Incredible app with great purpose" - The New York Chimes</h1></section>
+        <section id="section-heading"><h1>"Incredible app with great purpose" - The New York Chimes</h1></section>
         <section>{sampleText}</section>
         <section><h1>"Changing the Environment" - The New York Toast</h1></section>
         </div>
