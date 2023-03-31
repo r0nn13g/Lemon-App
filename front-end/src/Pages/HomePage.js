@@ -95,7 +95,7 @@ function Home({ loginText }) {
                 </div>
               </div>
               <div className="restaurant-search-container">
-              <input className="restaurant-locator-search" type="text" placeholder="...Search"></input>
+              <input className="restaurant-locator-search" type="text"  placeholder="...Search"></input>
               <button id="search-button" type="submit"  ><SearchIcon /></button>
               </div>
           {isChecked ? (

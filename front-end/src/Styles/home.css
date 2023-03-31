@@ -131,12 +131,22 @@ body{
         grid-template-columns: auto;
         grid-template-rows: auto auto;
     }
-    
+
     .restaurant-locator-search{
         width: 95%;
         border-radius: 10px;
     }
+    input[type="text"]{
+        text-align: left;
+    }
+
+    input[type="text"]::placeholder {
+                 
+        /* Firefox, Chrome, Opera */
+        text-align: left;
+    }
     #search-button{
+        text-align: center;
         margin: 10px;
         border: none;
         border-radius: 10px;
