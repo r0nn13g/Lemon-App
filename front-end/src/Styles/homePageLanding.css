@@ -16,7 +16,6 @@
 }
 
 .main-content-container-p{
-  background:  rgb(229, 229, 229);
   margin: -10px;
 }
 
@@ -135,7 +134,7 @@ section:nth-child(4) {
   }
   .main-content-container-p{
     width: 428px;
-    background:  rgb(234, 234, 234);
+    /* background:  rgb(234, 234, 234); */
   }
   
   section {
@@ -178,7 +177,7 @@ section:nth-child(4) {
   }
   .main-content-container-p{
     width: 390px;
-    background:  rgb(234, 234, 234);
+    /* background:  rgb(234, 234, 234); */
   }
   
   section {

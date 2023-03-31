@@ -4,7 +4,7 @@ body, html{
 }
 
 .info-icons-wrapper{
-  background-color: rgb(229, 229, 229);
+  /* background-color: rgb(229, 229, 229); */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   font-family: Agrandir,sans-serif;

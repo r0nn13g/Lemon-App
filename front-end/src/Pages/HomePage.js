@@ -55,7 +55,7 @@ function Home({ loginText }) {
             </div>
           )}
           { isChecked ? (
-            <div>hello</div>
+            <div>Choose a restaurant near you!</div>
           ):(
             false
           )}
