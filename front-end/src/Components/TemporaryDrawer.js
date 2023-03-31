@@ -7,13 +7,13 @@ import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import MenuIcon from '@mui/icons-material/Menu';
 import MailIcon from '@mui/icons-material/Mail';
-import PushPinIcon from '@mui/icons-material/PushPin';
+// import PushPinIcon from '@mui/icons-material/PushPin';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import ListItemButton from '@mui/material/ListItemButton';
-import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
-import Restaurants from './Restaurants.js';
+// import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
+// import Restaurants from './Restaurants.js';
 import { Link } from 'react-router-dom';
 
 export default function TemporaryDrawer() {

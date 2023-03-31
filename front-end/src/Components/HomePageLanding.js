@@ -1,6 +1,6 @@
 import React from 'react';
 import"../Styles/homePageLanding.css";
-import Slideshow from "./Slideshow.js";
+// import Slideshow from "./Slideshow.js";
 // import Carousel from "./CarouselComp.js";
 import DataCard from './DataCard.js';
 import DataCard2 from './DataCard2.js';

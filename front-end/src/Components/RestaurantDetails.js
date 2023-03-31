@@ -2,7 +2,8 @@ import axios from 'axios';
 import "../Styles/products.css";
 import { useEffect, useState } from 'react';
 import ProductByRestaurant from "./ProductByRestaurant";
-import {useParams, useNavigate} from "react-router-dom";
+import {useParams} from "react-router-dom";
+// import {useParams, useNavigate} from "react-router-dom";
 const API = process.env.REACT_APP_API_URL;
 
 function RestaurantDetails() {
@@ -16,7 +17,7 @@ function RestaurantDetails() {
             }).catch((err) => console.log(err))
         }, [id])
 
-        const navigate = useNavigate();
+        // const navigate = useNavigate();
         
   return (
     <div className="restaurant-products-container">
