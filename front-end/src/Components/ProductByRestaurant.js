@@ -84,11 +84,11 @@ useEffect(() => {
         aria-describedby="modal-modal-description"
       >
         <Box id="modal-box" sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Added to cart 
+          <Typography id="modal-modal-title" variant="h6" component="h6">
+           <b>Added to cart</b>
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            <button className="modal-button" onClick={handleGoToCart}>Go to cart</button>
+            <button className="modal-button" onClick={handleGoToCart}><b>Go to cart</b></button>
           </Typography>
         </Box>
       </Modal>

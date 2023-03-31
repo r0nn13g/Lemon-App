@@ -73,7 +73,7 @@ body{
 }
 
 #back-btn{
-  background-color: rgb(78, 111, 218); 
+  background-color: rgb(34, 61, 148); 
   border: none;
   color: rgb(255, 255, 255);
   padding: 15px 32px;
@@ -97,7 +97,7 @@ body{
 }
 
 .modal-button {
-  background-color: rgb(78, 111, 218);
+  background-color: rgb(34, 61, 148);
   border: none;
   border-radius: 8px;
   color: rgb(255, 255, 255);
@@ -141,7 +141,7 @@ body{
   }
   
   #add-to-cart-btn{
-    background-color: rgb(78, 111, 218);
+    background-color: rgb(34, 61, 148);
     border: none;
     border-radius: 8px;
     color: rgb(255, 255, 255);
@@ -175,7 +175,7 @@ body{
 
 
 #back-btn{
-  background-color: rgb(78, 111, 218); 
+  background-color: rgb(34, 61, 148); 
   border: none;
   color: rgb(255, 255, 255);
   padding: 15px 16px;
@@ -195,18 +195,20 @@ body{
 #modal-box{
   width: 200px;
   text-align: center;
-  background-color: rgb(255, 255, 255);
+  color: rgb(34, 61, 148);
+  background-color: rgba(232, 232, 232, 0.683);
+  border-radius: 20px;
   border: none;
 }
 
 .modal-button {
-  background-color: rgb(78, 111, 218);
+  background-color: rgb(34, 61, 148);
   border: none;
   color: rgb(255, 255, 255);
   padding: 15px 32px;
   text-align: center;
   /* height: 40px; */
-  font-size: 16px;
+  font-size: 12px;
   border-radius: 8px;
   transition-duration: 0.2s;
   line-height: 100%;
@@ -267,7 +269,7 @@ body{
  }
 
  .restaurant-details{
-   color: rgb(78, 111, 218);
+   color: rgb(34, 61, 148);
    font-size: 12px;
    padding: 65px;
    text-align: center;

@@ -5,9 +5,9 @@ body{
   }
   
   .home-banner{
-    padding: 30px;
+    padding: 5px;
     text-align: center;
-    height:140px;
+    height:80px;
     background: rgb(232, 221, 14) url("https://i.imgur.com/y8isvGw.png") fixed center;
     background-size: 300px;
 }

@@ -6,16 +6,26 @@ import Switch from '@mui/material/Switch';
 import SearchIcon from '@mui/icons-material/Search';
 import Restaurants from "../Components/Restaurants";
 import HomePageLanding from "../Components/HomePageLanding";
+import { FormControl, FormControlLabel, FormGroup } from "@mui/material";
 
 function Home({ loginText }) {
   const [isChecked, SetIsChecked] = useState(false);
-
-  const handleCheckChange = () => {
-    SetIsChecked(!isChecked);
+  //using state to set dark mode toggle to false as default
+  const [state, setStatte] = React.useState({
+      darkmode: false
+  });
+  //function toggles dark mode by setting state and changing class list properties
+  const toggleDarkMode = (event) => {
+    setStatte({
+      ...state,
+      [event.target.name]: event.target.checked,
+    });
+    let element = document.body;
+    element.classList.toggle("dark-mode");
   };
 
   const handleCheckChange2 = () => {
-    SetIsChecked(false)
+    SetIsChecked(!isChecked)
   }
 
   return (
@@ -28,21 +38,11 @@ function Home({ loginText }) {
           <div className="mapView">
             <div className="home-banner">
               <h1>Restaurants</h1>
-              
               </div>
-          <Switch
-            checked={isChecked}
-            onChange={handleCheckChange}
-            inputProps={{ 'aria-label': 'controlled' }}
-            /> MAP
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <Switch
-            checked={false}
-            onChange={handleCheckChange2}
-            inputProps={{ 'aria-label': 'controlled' }}
-            /> DARK 🌗
+              <FormGroup>
+                <FormControlLabel control={ <Switch checked={state.darkmode} onChange={toggleDarkMode} name="darkmode" inputProps={{ 'aria-label': 'controlled' }}/>} label="Dark Mode" />
+                <FormControlLabel control={ <Switch checked={isChecked} onChange={handleCheckChange2} inputProps={{ 'aria-label': 'controlled' }}/>} label="Map View" />
+              </FormGroup>
           {isChecked ? (
             <div className="map-container-checked">
               <Map/>
@@ -53,6 +53,11 @@ function Home({ loginText }) {
                 <Restaurants />
               </div>
             </div>
+          )}
+          { isChecked ? (
+            <div>hello</div>
+          ):(
+            false
           )}
               <div className="c-container">
                   <input id="restaurant-locator-search" type="text" placeholder="Subscribe"></input>
