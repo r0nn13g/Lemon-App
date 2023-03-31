@@ -1,4 +1,4 @@
-# Helping Hand application
+# Lemon
 
 Food insecurity in America and across the globe is a huge problem. With the rising cost of inflation and New York population growing, the situation needs to be met with an applicable solution. Meals4NYC is a platform that connects restaurants to customers who are in need of a warm meal. New York residents locate restaurants on a map and browse through restaurant options. New York residents can reserve meal-kits provided by the restaurants and check out their order.
 
