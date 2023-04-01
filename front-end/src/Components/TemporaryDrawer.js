@@ -6,14 +6,7 @@ import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import MenuIcon from '@mui/icons-material/Menu';
-import MailIcon from '@mui/icons-material/Mail';
-// import PushPinIcon from '@mui/icons-material/PushPin';
-import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import ListItemButton from '@mui/material/ListItemButton';
-// import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
-// import Restaurants from './Restaurants.js';
 import { Link } from 'react-router-dom';
 
 export default function TemporaryDrawer() {
@@ -41,36 +34,48 @@ export default function TemporaryDrawer() {
     >
       <List>
           <ListItem enablePadding>
-              <ListItemIcon>
-              </ListItemIcon>
               <Link to="/home" style={{ textDecoration: 'none' , color: 'black' }}>
               <ListItemText primary="Home" />
               </Link>
           </ListItem>
           <ListItem enablePadding>
-              <ListItemIcon>
-              </ListItemIcon>
               <Link to="/" style={{ textDecoration: 'none' , color: 'black' }}>
               <ListItemText primary="Restaurants" />
+              </Link>
+          </ListItem>
+          <ListItem enablePadding>
+              <Link to="cart" style={{ textDecoration: 'none' , color: 'black' }}>
+              <ListItemText primary="Cart" />
+              </Link>
+          </ListItem>
+          <ListItem enablePadding>
+              <Link to="/" style={{ textDecoration: 'none' , color: 'black' }}>
+              <ListItemText primary="About us" />
+              </Link>
+          </ListItem>
+          <ListItem enablePadding>
+              <Link to="/" style={{ textDecoration: 'none' , color: 'black' }}>
+              <ListItemText primary="Contact" />
+              </Link>
+          </ListItem>
+          <ListItem enablePadding>
+              <Link to="/" style={{ textDecoration: 'none' , color: 'black' }}>
+              <ListItemText primary="Sign Up" />
               </Link>
           </ListItem>
       </List>
       <Divider />
       <List>
-        {['Previous Orders', 'Profile', 'Sign up'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
+      <ListItem enablePadding>
+              <Link to="/" style={{ textDecoration: 'none' , color: 'black' }}>
+              <b>Lemon®</b>
+              <ListItemText secondary="Created by Ronnie Garcia" />
+              </Link>
           </ListItem>
-        ))}
       </List>
     </Box>
   );
-
+  
   return (
     <div>
       {['right'].map((anchor) => (
