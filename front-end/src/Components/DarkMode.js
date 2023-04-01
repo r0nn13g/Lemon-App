@@ -1,5 +1,6 @@
 import React from "react";
 import MaterialUISwitch from "./MaterialUISwitch";
+import "../Styles/darkmode.css"
 
 const DarkMode = () => {
    //using state to set dark mode toggle to false as default
@@ -18,7 +19,7 @@ const toggleDarkMode = (event) => {
 
     return (
       <div>
-         <MaterialUISwitch className="darkmode-switch" checked={state.darkmode} onChange={toggleDarkMode} label="MUI switch" name="darkmode"/>
+         <MaterialUISwitch className="darkmode-switch" checked={state.darkmode} onChange={toggleDarkMode} label="MUI switch" name="darkmode"/> *new
       </div>
     )
 }

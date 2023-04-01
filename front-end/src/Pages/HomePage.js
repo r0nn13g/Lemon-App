@@ -36,7 +36,7 @@ function Home({ loginText }) {
         ) : (
           <div className="mapView">
             <div className="home-banner">
-              <h1>Restaurants in your area!</h1>
+              <h1>Restaurants near you</h1>
               </div>
               <div className="toggle-switches">
                 <div className="mapview-switch-container">

@@ -45,7 +45,7 @@ export default function TemporaryDrawer() {
               </Link>
           </ListItem>
           <ListItem enablePadding>
-              <Link to="cart" style={{ textDecoration: 'none' , color: 'black' }}>
+              <Link to="carts" style={{ textDecoration: 'none' , color: 'black' }}>
               <ListItemText primary="Cart" />
               </Link>
           </ListItem>
@@ -64,7 +64,8 @@ export default function TemporaryDrawer() {
               <ListItemText primary="Sign Up" />
               </Link>
           </ListItem>
-          <DarkMode />
+          {/* Dark Mode Toggle switch */}
+          <DarkMode/>
       </List>
       <Divider />
       <List>
