@@ -1,13 +1,14 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import List from '@mui/material/List';
+import { Link } from 'react-router-dom';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import MenuIcon from '@mui/icons-material/Menu';
 import ListItemText from '@mui/material/ListItemText';
-import { Link } from 'react-router-dom';
+import DarkMode from '../Components/DarkMode';
 
 export default function TemporaryDrawer() {
   const [state, setState] = React.useState({
@@ -29,7 +30,7 @@ export default function TemporaryDrawer() {
     <Box
       sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
       role="presentation"
-      onClick={toggleDrawer(anchor, false)}
+      onClick={toggleDrawer(anchor, true)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
@@ -63,6 +64,7 @@ export default function TemporaryDrawer() {
               <ListItemText primary="Sign Up" />
               </Link>
           </ListItem>
+          <DarkMode />
       </List>
       <Divider />
       <List>
