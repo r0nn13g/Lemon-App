@@ -1,7 +1,7 @@
 import React from 'react'
 import PreviousCarts from '../Components/PreviousCarts'
 import SideBar from '../Components/SideBar';
-import Welcome from '../Components/Welcome';
+// import Welcome from '../Components/Welcome';
 import '../Styles/userView.css'
 
 function UserView() {

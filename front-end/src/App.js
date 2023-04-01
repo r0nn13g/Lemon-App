@@ -13,7 +13,6 @@ import HomePageLanding from './Components/HomePageLanding';
 import CurrentCart from './Pages/CurrentCart';
 import Login from './Components/Login';
 import Signup from './Components/Signup';
-import UserView from './Pages/UserView';
 import FourOFour from './Pages/Four0Four';
 import Map from './Components/Map';
 import Restaurants from './Components/Restaurants';
@@ -47,7 +46,7 @@ function App() {
         <Route path="/carts" element={<CurrentCart setCarts={setCarts} carts={carts}/>} setCheckedOut={setCheckedOut}/>
         <Route path='/login' element={<Login setLoginText={setLoginText} setCarts={setCarts} carts={carts}/>} />
         <Route path='/signup' element={<Signup/>} />
-        <Route path='/carts/inactive' element={<UserView/>} />
+        {/* <Route path='/carts/inactive' element={} /> */}
         <Route path='/restaurant-locator' element={<Map/>} />
         <Route path='/restaurants' element={<Restaurants/>}/>
         <Route path='/carts/inactive/:id' element={<PreviousCart/>}/>

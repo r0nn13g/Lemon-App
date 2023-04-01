@@ -33,9 +33,9 @@ body{
 }
 
 .restaurant-data{
-    color: black;
+    color: white;
     text-align: left;
-    background-color: rgba(231, 231, 231, 0.726);
+    background-color:rgb(9, 37, 51);
     font-family:'Open Sans', sans-serif;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -45,8 +45,8 @@ body{
 
 .restaurant-data:hover{
     transition-duration: 0.6s;
-    color: rgb(255, 255, 255);
-    background-color:rgb(9, 37, 51);
+    color: black;
+    background-color: rgba(214, 214, 214, 0.512);
 }
 
 .image-container{
