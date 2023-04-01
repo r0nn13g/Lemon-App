@@ -15,6 +15,7 @@ const toggleDarkMode = (event) => {
   });
   let element = document.body;
   element.classList.toggle("dark-mode");
+  element.classList.toggle("dark-mode-input")
 };
 
     return (

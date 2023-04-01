@@ -16,6 +16,10 @@ body {
     color: rgb(184, 184, 184);
 }
 
+.dark-mode-input input{
+    background-color: #252525;
+}
+
 .main {
     padding-bottom: 300px;
 }

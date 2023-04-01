@@ -141,8 +141,6 @@ body{
     }
 
     input[type="text"]::placeholder {
-                 
-        /* Firefox, Chrome, Opera */
         text-align: left;
     }
     #search-button{
