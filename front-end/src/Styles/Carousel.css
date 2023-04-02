@@ -1,15 +1,13 @@
-.carousel-wrapper{
-    /* position:fixed; */
-}
-
 .adText-container{
+    color: rgba(78, 195, 218, 0.932);
+    background-color:rgb(28, 101, 211);
+    width: 100%;
     padding: 20px;
     margin-top: 38px;
-    width: 100%;
+    margin-left: -53.5px;
+    font-size: 50px;
     grid-area: text;
     text-align: center;
-    color: rgb(140, 224, 228);
-    background-color:rgb(78, 160, 218);
 }
 .hr{
     margin-top: 25px;
@@ -26,7 +24,8 @@ li{
 
 @media screen and (max-width: 600px) {
     .adText-container{
-        margin-left: -40px;
+        font-size: 20px;
+        margin-left: -53.5px;
         padding:7px;
         text-align: center;
     }

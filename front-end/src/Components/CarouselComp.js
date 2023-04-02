@@ -9,16 +9,16 @@ function CarouselComp() {
             subtext: 'making good since 2023'
         },
         {
-            headline: 'New 🤘 ',
+            headline: 'new 🤘 ',
             subtext: 'Vegan options now available'
         },
         {
-            headline: 'Variety 👏 ',
-            subtext: '  In your area!'
+            headline: 'variety 👏 ',
+            subtext: '  in your area!'
         },
         {
-            headline: 'Meal Kits  🍲 ',
-            subtext: 'Free, Fresh & Prepped daily'
+            headline: 'Meals 🍲 ',
+            subtext: 'free, fresh & prepped daily'
         }
     ];
 
