@@ -5,7 +5,7 @@
 }
 #top-splash-page{
   width: 100%;
-  height: 300px;
+  height:400px;
   object-fit:cover;
   object-position: 50% 70%;
 }
@@ -51,15 +51,16 @@ section:nth-child(4) {
 
 
 @media only screen and (max-width: 600px){
-  /* .carousel-wrapper{
-    padding: 20px;
-    margin-top: 38px;
-    width: 100%;
-    position: absolute;
-  } */
+  .carousel-wrapper{
+    /* position: fixed; */
+  }
   #top-splash-page {
     width: 100%;
-    height: 300px;
+    height: 200px;
+  }
+
+  #top-splash-page img {
+    margin: -10px 20px 0px -180px;
   }
 
   .home-page-wrapper{

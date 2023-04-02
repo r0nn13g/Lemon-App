@@ -1,16 +1,8 @@
-body{
-    /* background-color: rgb(28, 28, 28); */
-    margin:0;
-    padding: 0;
-  }
-
 .loggedInDisplay-container{
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
-    grid-template-areas: 
-    /* "car car car"  */
+    grid-template-areas:  
     "rest rest rest"
-    "fil fil fil" 
 }
 
 .f-container{
@@ -20,13 +12,10 @@ body{
 }
 
 .r-container{
+    display: grid;
     grid-area: rest;
     margin-bottom: 20px;
     place-content: center/center;
-}
-
-.c-container{
-    grid-area: car
 }
 
 .mapView{
@@ -38,130 +27,67 @@ body{
 
 /* Search Bar */
 #restaurant-locator-search{
-    margin-left: 480px;
+    /* margin-left: 480px; */
     width: 363px;
 }
-#search-button{
-    height: 50px;
-    width: 50px;
-    border: none;
-    margin: 0px;
-    display: inline;
-    color: white;
-    background-color:rgb(9, 37, 51);
-}
 
-.toggle-switches{
-    display: grid;
-    grid-template-columns: auto auto;
-}
-.darkmode-switch-container{
-    margin-top: 5px;
-    margin-right: 20px;
-}
-
-.darkmode-switch{
-    height: -10px;
-}
+/* Map Toggle Switch  */
 .mapview-switch-container{
-    margin-top: 5px;
+    margin-top: 115px;
     margin-right: 20px;
 }
 
-.mapView-switch{
+.mapview-switch{
     height: -10px;
 }
 
 @media screen and (max-width: 600px) {
-    
     .mapView{
-        /* width: 600px; */
         text-align: center;
-        letter-spacing: 1px;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
+
     .home-banner h1{
         font-size: 20px;
         color: rgb(9, 37, 51);
         text-align: center;
-        line-height: 56px;
-      
+        line-height: 56px;    
     }
     
     .loggedInDisplay-container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        /* grid-template-areas:  
-        "rest rest rest"
-        "fil fil fil"; */
-    }
-
-    .toggle-switches{
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-    .darkmode-switch-container{
-        margin-top: 5px;
-        margin-right: 20px;
     }
     
-    .darkmode-switch{
-        height: -10px;
+    .mapview-switch{
+        margin-top: 50px;
     }
     .mapview-switch-container{
-        margin-top: 5px;
-        margin-right: 20px;
-    }
-    
-    .mapView-switch{
-        height: -10px;
+        margin: 0px;
     }
 
     .restaurant-search-container{
+        z-index: -1;
         display: grid;
         grid-template-columns: auto;
-        /* grid-template-rows: auto auto; */
     }
-
+    
     .restaurant-locator-search{
         width: 95%;
         border-radius: 10px;
     }
-    input[type="text"]{
-        text-align: left;
-    }
 
-    input[type="text"]::placeholder {
-        text-align: left;
-    }
-    #search-button{
-        text-align: center;
-        margin: 10px;
-        border: none;
-        border-radius: 10px;
-        color: white;
-        background-color:rgb(9, 37, 51);
-    }
     input::placeholder{
         text-align: left;
     }
+
     input[type=text]{
         text-align: left;
     }
-    
-    .f-container{
-        grid-area: fil;
-        grid-template-columns: 1fr;
-    }
+
     .r-container{
         grid-area: rest;
         margin-bottom: 40px;
         place-content: center/center;
-    }
-    
-    .c-container{
-        /* white-space: nowrap; */
-        grid-area: car
     }
 }
 
@@ -170,34 +96,11 @@ body{
 #restaurant-locator-search{
     width: 363px;
 }
-#search-button{
-    height: 50px;
-    width: 50px;
-    border: none;
-    margin: 0px;
-    display: inline;
-    color: white;
-    background-color:rgb(9, 37, 51);
-}
-
-.toggle-switches{
-    display: grid;
-    grid-template-columns: auto auto;
-}
-.darkmode-switch-container{
-    margin-top: 5px;
-    margin-right: 20px;
-}
-
-.darkmode-switch{
-    height: -10px;
-}
 .mapview-switch-container{
-    margin-top: 5px;
     margin-right: 20px;
 }
-
 .mapView-switch{
     height: -10px;
 }
+
 }

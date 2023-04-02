@@ -4,7 +4,6 @@ import { useState } from "react";
 import Map from "../Components/Map";
 import Switch from '@mui/material/Switch';
 import Restaurants from "../Components/Restaurants";
-import Carousel from "../Components/CarouselComp.js";
 import HomePageLanding from "../Components/HomePageLanding";
 
 function Home({ loginText }) {
@@ -21,14 +20,12 @@ function Home({ loginText }) {
         </div>
         ) : (
           <div className="mapView">
-            <div className="toggle-switches">
-              <div className="mapview-switch-container">
-                <Switch className="mapview-switch"checked={isChecked} onChange={handleCheckChange} name="map" /> map view
-              </div>
-            </div>
-              <div className="restaurant-search-container">
-                <input className="restaurant-locator-search" type="text" placeholder="...Search"></input>
-              </div>
+          <div className="mapview-switch-container">
+            <Switch className="mapview-switch" checked={isChecked} onChange={handleCheckChange} name="map" />
+          </div>
+          <div className="restaurant-search-container">
+            <input className="restaurant-locator-search" type="text" placeholder="...Search"></input>
+          </div>
           {isChecked ? (
             <div className="map-container-checked">
               <Map/>
