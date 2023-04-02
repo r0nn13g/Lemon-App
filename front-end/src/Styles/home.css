@@ -3,21 +3,6 @@ body{
     margin:0;
     padding: 0;
   }
-  
-  .home-banner{
-    padding: 5px;
-    text-align: center;
-    height:80px;
-    background: rgb(232, 221, 14) url("https://i.imgur.com/y8isvGw.png") fixed center;
-    background-size: 300px;
-}
-
-  .home-banner h1{
-    color: rgb(9, 37, 51);
-    text-align: center;
-    /* line-height: 300%; */
-  
-}
 
 .loggedInDisplay-container{
     display: grid;
@@ -89,7 +74,13 @@ body{
 
 @media screen and (max-width: 600px) {
     
-      .home-banner h1{
+    .mapView{
+        /* width: 600px; */
+        text-align: center;
+        letter-spacing: 1px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .home-banner h1{
         font-size: 20px;
         color: rgb(9, 37, 51);
         text-align: center;
@@ -171,12 +162,6 @@ body{
     .c-container{
         /* white-space: nowrap; */
         grid-area: car
-    }
-    .mapView{
-        /* width: 600px; */
-        text-align: center;
-        letter-spacing: 1px;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 }
 

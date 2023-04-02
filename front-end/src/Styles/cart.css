@@ -94,7 +94,6 @@ input{
 .cart-container button:hover{
     color: white;
     transition-duration: 0.2s;
-    background-color: red;
 }
 
 .checkout-btn{

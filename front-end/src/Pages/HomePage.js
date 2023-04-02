@@ -4,28 +4,15 @@ import { useState } from "react";
 import Map from "../Components/Map";
 import Switch from '@mui/material/Switch';
 import Restaurants from "../Components/Restaurants";
+import Carousel from "../Components/CarouselComp.js";
 import HomePageLanding from "../Components/HomePageLanding";
 
 function Home({ loginText }) {
   const [isChecked, SetIsChecked] = useState(false);
-  //using state to set dark mode toggle to false as default
-  const [state, setStatte] = React.useState({
-      darkmode: false
-  });
-  //function toggles dark mode by setting state and changing class list properties
-  const toggleDarkMode = (event) => {
-    setStatte({
-      ...state,
-      [event.target.name]: event.target.checked,
-    });
-    let element = document.body;
-    element.classList.toggle("dark-mode");
-  };
-
-  const handleCheckChange2 = () => {
+  
+  const handleCheckChange = () => {
     SetIsChecked(!isChecked)
   }
-
   return (
     <div>
       {!localStorage.getItem("userID") ? (
@@ -34,16 +21,13 @@ function Home({ loginText }) {
         </div>
         ) : (
           <div className="mapView">
-            <div className="home-banner">
-              <h1>Restaurants near you</h1>
+            <div className="toggle-switches">
+              <div className="mapview-switch-container">
+                <Switch className="mapview-switch"checked={isChecked} onChange={handleCheckChange} name="map" /> map view
               </div>
-              <div className="toggle-switches">
-                <div className="mapview-switch-container">
-                  <Switch className="mapview-switch"checked={isChecked} onChange={handleCheckChange2} name="map" /> map view
-                </div>
-              </div>
+            </div>
               <div className="restaurant-search-container">
-              <input className="restaurant-locator-search" type="text" placeholder="...Search"></input>
+                <input className="restaurant-locator-search" type="text" placeholder="...Search"></input>
               </div>
           {isChecked ? (
             <div className="map-container-checked">
@@ -58,9 +42,9 @@ function Home({ loginText }) {
           )}
           { isChecked ? (
             <div>Choose a restaurant near you!</div>
-          ):(
+            ):(
             true
-          )}
+              )}
               <div className="c-container">
               </div>
         </div>

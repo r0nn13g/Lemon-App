@@ -1,52 +1,37 @@
 import React from 'react';
 import "../Styles/Carousel.css";
 import Carousel from 'nuka-carousel';
-import freshProduce from "../assets/fresh-produce.jpg";
 
 function CarouselComp() {
     const carouselOptions = [
         {
-            headline: 'Baked Goodness 🥐',
-            subtext: 'From participating locations',
-            image: freshProduce
+            headline: 'Lemon 🍋 ',
+            subtext: 'making good since 2023'
         },
         {
-            headline: 'Dietary Variety 👏',
-            subtext: 'Check restaurant menu',
-            image: freshProduce
+            headline: 'New 🤘 ',
+            subtext: 'Vegan options now available'
         },
         {
-            headline: 'Meal Kits 🍲',
-            subtext: 'Prepped daily from trusted restaurants',
-            image: freshProduce
+            headline: 'Variety 👏 ',
+            subtext: '  In your area!'
         },
         {
-            headline: 'Coming Soon 🎉',
-            subtext: 'Quality goods',
-            image: freshProduce
+            headline: 'Meal Kits  🍲 ',
+            subtext: 'Free, Fresh & Prepped daily'
         }
     ];
 
     const displayCarousel = carouselOptions.map((option, index) => {
         return (
-            <div key={index} className='ad-container' >
-                <div className='adText-container'>
-                    <h1>
-                        {option.headline}
-                    </h1>
-                    <h1>
-                        {option.subtext}
-                    </h1>
-                </div>
-                <div className='adImage-container'>
-                    {/* <img src={option.image} alt="carousel-pic"/> */}
-                </div>
+            <div key={index} className='adText-container' >
+                        <b>{option.headline}{option.subtext}</b>
             </div>
         )
     })
   return (
-    <div>
-        <Carousel speed={800} withoutControls={true} cellSpacing={0} autoplay="true" autoplayInterval={5000} wrapAround="true">
+    <div className='carousel-wrapper'>
+        <Carousel speed={850} withoutControls={true} cellSpacing={0} autoplay="true" autoplayInterval={5000} wrapAround="true">
             {displayCarousel}
         </Carousel>
     </div>

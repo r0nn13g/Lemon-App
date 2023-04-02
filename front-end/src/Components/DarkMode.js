@@ -1,6 +1,5 @@
 import React from "react";
 import MaterialUISwitch from "./MaterialUISwitch";
-import "../Styles/darkmode.css"
 
 const DarkMode = () => {
    //using state to set dark mode toggle to false as default
@@ -16,6 +15,8 @@ const toggleDarkMode = (event) => {
   let element = document.body;
   element.classList.toggle("dark-mode");
   element.classList.toggle("dark-mode-input")
+  //if dark mode is toggled . remain toggled.
+    console.log(state.darkmode)
 };
 
     return (
