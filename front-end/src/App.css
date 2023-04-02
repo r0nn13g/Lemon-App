@@ -17,6 +17,7 @@ body {
 }
 
 .dark-mode-input input{
+    color: rgb(184, 184, 184);
     background-color: #252525;
 }
 

@@ -1,3 +1,9 @@
+.restaurants-display-wrapper{
+    padding-top: 40px;
+    text-align: left;
+    letter-spacing: 1px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .loggedInDisplay-container{
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
@@ -5,24 +11,11 @@
     "rest rest rest"
 }
 
-.f-container{
-    grid-area: fil;
-    display: grid;
-    place-content: center;
-}
-
 .r-container{
     display: grid;
     grid-area: rest;
     margin-bottom: 20px;
     place-content: center/center;
-}
-
-.mapView{
-    padding-top: 40px;
-    text-align: left;
-    letter-spacing: 1px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Search Bar */
@@ -42,8 +35,9 @@
 }
 
 @media screen and (max-width: 600px) {
-    .mapView{
-        text-align: center;
+    
+    .restaurants-display-wrapper{
+        text-align: left;
     }
 
     .home-banner h1{
@@ -62,17 +56,17 @@
         margin-top: 50px;
     }
     .mapview-switch-container{
+        z-index: -2;
         margin: 0px;
     }
 
     .restaurant-search-container{
-        z-index: -1;
-        display: grid;
-        grid-template-columns: auto;
+        /* display: grid;
+        grid-template-columns: auto; */
     }
     
     .restaurant-locator-search{
-        width: 95%;
+        width: 94%;
         border-radius: 10px;
     }
 

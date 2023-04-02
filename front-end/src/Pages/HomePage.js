@@ -15,16 +15,16 @@ function Home({ loginText }) {
   return (
     <div>
       {!localStorage.getItem("userID") ? (
-        <div className="home-container">
+        <div className="homepage-wrapper">
           <HomePageLanding />
         </div>
         ) : (
-          <div className="mapView">
+          <div className="restaurants-display-wrapper">
           <div className="mapview-switch-container">
             <Switch className="mapview-switch" checked={isChecked} onChange={handleCheckChange} name="map" />
           </div>
           <div className="restaurant-search-container">
-            <input className="restaurant-locator-search" type="text" placeholder="...Search"></input>
+          <input className="restaurant-locator-search" type="text" placeholder="...Search"></input>
           </div>
           {isChecked ? (
             <div className="map-container-checked">
