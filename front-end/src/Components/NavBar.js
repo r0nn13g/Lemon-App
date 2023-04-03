@@ -37,8 +37,7 @@ function NavBar({ setLoginText }) {
   );
 
   return (
-    <nav>
-      <div className="nav-container">
+      <nav className="nav-container">
         <div className="home-logo">
           <Link to="/home">
           <img src={logo} alt="logo" />
@@ -47,8 +46,7 @@ function NavBar({ setLoginText }) {
       <div className="cart">
           {Login_Logout}
       </div>
-      </div>
-    </nav>
+      </nav>
   );
 }
 

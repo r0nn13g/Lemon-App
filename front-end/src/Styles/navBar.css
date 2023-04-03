@@ -1,26 +1,30 @@
+nav{
+    margin-top: 40px;
+}
+
 .nav-btns{
     display: inline;
-    margin:100px;
+    margin:10px;
 }
 
 .nav-container {
-    height: 40px;
+    margin: 0px;
+    height: 50px;
     width: 100%;
     z-index: 7;
     display: flex;
     background-color: rgb(9, 37, 51);
     position: fixed;
     justify-content: space-between;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.home-logo {
+.home-logo {margin-top: 5px;
     justify-content: center;
 }
 
 .home-logo img {
-    margin: 5px 10px 10px 15px;
-    width: 30px;
+    margin-left: 10px;
+    height: 40px;
 }
 
 .navbar-text {
@@ -28,10 +32,6 @@
     text-align: center;
     color: white;
     font-size: 20px;
-}
-
-.navbar-text:hover {
-    color:aqua;
 }
 
 .cart {
@@ -45,7 +45,7 @@
 }
 
 .profile-logout-container a {
-    margin: 0px 15px 0px 0px;
+    margin: 0px 10px 0px 0px;
     
 }
 
@@ -58,9 +58,19 @@
 }
 
 nav a {
-    text-decoration: none;
-    color: white;
+    color:white;
 }
+
+@media only screen and (max-width: 600px) {
+    nav{
+        margin-top: 40px;
+    }
+    
+    .nav-btns{
+        display: inline;
+        margin:100px;
+    }      
+} 
 
 /* iphone 13 and iphone 13 Pro */
 /* 2532x1170 pixels at 460ppi */
@@ -76,7 +86,7 @@ nav a {
         } 
 
     .nav-container {
-        display: flex;
+        /* display: flex; */
         margin: 0px;
         /* padding: 24px; */
         position: fixed;
@@ -154,7 +164,7 @@ nav a {
     .nav-container {
         margin: 0px;
         /* padding: 24px; */
-        position: fixed;
+        /* position: fixed; */
         /* width: 25%; */
     }
 
