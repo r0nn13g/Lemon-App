@@ -10,7 +10,6 @@ import Footer from './Components/Footer';
 
 import Home from './Pages/HomePage';
 import HomePageLanding from './Components/HomePageLanding';
-import Carousel from './Components/CarouselComp.js';
 import CurrentCart from './Pages/CurrentCart';
 import Login from './Components/Login';
 import Signup from './Components/Signup';
@@ -40,7 +39,6 @@ function App() {
   return (
     <div className="main">
       <NavBar  setLoginText={setLoginText}/>
-      <Carousel/>
       <Routes>
         <Route path="*" element={<FourOFour />} />
         <Route path="/" element={<Home loginText={loginText}/>}/>

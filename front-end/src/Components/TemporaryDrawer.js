@@ -26,10 +26,6 @@ export default function TemporaryDrawer() {
     setState({ ...state, [anchor]: open });
   };
 
-   const handleDarkModeToggle = () => {
-
-   }
-
   const list = (anchor) => (
     <Box
       sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
@@ -53,6 +49,7 @@ export default function TemporaryDrawer() {
               <ListItemText primary="Cart" />
               </Link>
           </ListItem>
+          <Divider />
           <ListItem enablePadding>
               <Link to="/" style={{ textDecoration: 'none' , color: 'black' }}>
               <ListItemText primary="About us" />
@@ -82,7 +79,6 @@ export default function TemporaryDrawer() {
       </List>
     </Box>
   );
-  
   return (
     <div>
       {['right'].map((anchor) => (

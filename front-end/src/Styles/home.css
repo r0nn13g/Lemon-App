@@ -18,20 +18,9 @@
     place-content: center/center;
 }
 
-/* Search Bar */
-#restaurant-locator-search{
-    /* margin-left: 480px; */
-    width: 363px;
-}
-
 /* Map Toggle Switch  */
 .mapview-switch-container{
-    margin-top: 115px;
-    margin-right: 20px;
-}
-
-.mapview-switch{
-    height: -10px;
+    text-align: right;
 }
 
 @media screen and (max-width: 600px) {
@@ -51,50 +40,19 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    
-    .mapview-switch{
-        margin-top: 50px;
-    }
-    .mapview-switch-container{
-        z-index: -2;
-        margin: 0px;
-    }
 
-    .restaurant-search-container{
-        /* display: grid;
-        grid-template-columns: auto; */
-    }
-    
-    .restaurant-locator-search{
-        width: 94%;
-        border-radius: 10px;
+    .mapview-switch-container{
+        margin: 0px;
     }
 
     input::placeholder{
         text-align: left;
     }
 
-    input[type=text]{
-        text-align: left;
-    }
 
     .r-container{
         grid-area: rest;
         margin-bottom: 40px;
         place-content: center/center;
     }
-}
-
-@media screen and (max-width: 820px) {
-    /* Search Bar */
-#restaurant-locator-search{
-    width: 363px;
-}
-.mapview-switch-container{
-    margin-right: 20px;
-}
-.mapView-switch{
-    height: -10px;
-}
-
 }

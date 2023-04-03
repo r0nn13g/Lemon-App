@@ -20,12 +20,9 @@ function Home({ loginText }) {
         </div>
         ) : (
           <div className="restaurants-display-wrapper">
-          <div className="mapview-switch-container">
-            <Switch className="mapview-switch" checked={isChecked} onChange={handleCheckChange} name="map" />
-          </div>
-          <div className="restaurant-search-container">
-          <input className="restaurant-locator-search" type="text" placeholder="...Search"></input>
-          </div>
+            <div className="mapview-switch-container">
+            Map View  <Switch className="mapview-switch" checked={isChecked} onChange={handleCheckChange} name="map" />
+            </div>
           {isChecked ? (
             <div className="map-container-checked">
               <Map/>
@@ -44,10 +41,10 @@ function Home({ loginText }) {
               )}
               <div className="c-container">
               </div>
-        </div>
+          </div>
       )}
     </div>
   );
-}
+};
 
 export default Home;
