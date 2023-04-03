@@ -12,8 +12,8 @@
 @media screen and (max-width: 600px) {
     .adText-container{
         font-size: 18.5px;
-        margin-left: -53.5px;
-        padding: 10px;
+        margin-left: -34px;
+        padding: 1px;
         text-align: center;
     }
 };
