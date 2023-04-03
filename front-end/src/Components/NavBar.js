@@ -1,13 +1,12 @@
 import React from "react";
 import "../Styles/navBar.css";
 import logo from "../assets/Lemon.png";
-// import userIcon from "../assets/user-icon.png";
+import PersonIcon from '@mui/icons-material/Person';
 import TemporaryDrawer from "./TemporaryDrawer";
 import LoginIcon from '@mui/icons-material/Login';
 import { Link, useNavigate } from "react-router-dom";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
-// import PersonIcon from '@mui/icons-material/Person';
 
 
 function NavBar({ setLoginText }) {
@@ -25,8 +24,8 @@ function NavBar({ setLoginText }) {
     <div className="profile-logout-container">
       <Link to="/" onClick={handleLogout}><LogoutOutlinedIcon/></Link>
       &nbsp;
-      {/* <Link to="/carts/inactive"><PersonIcon/></Link>
-      &nbsp; */}
+      <Link to="/carts/inactive"><PersonIcon/></Link>
+      &nbsp;
       <Link to="/carts"><ShoppingCartIcon/></Link>
       <TemporaryDrawer />
     </div>
@@ -40,20 +39,11 @@ function NavBar({ setLoginText }) {
   return (
     <nav>
       <div className="nav-container">
-
-      <div className="home-logo">
-        <Link to="/home">
+        <div className="home-logo">
+          <Link to="/home">
           <img src={logo} alt="logo" />
-        </Link>
-
-        {/* <Link style={{ textDecoration: 'none', color: 'white' }} component={Link} to={`/`}>
-                <h4 className="nav-btns">Our Mission</h4>
-        </Link> */}
-      </div>
-      {/* <div className="navbar-text">Products</div>
-      <div className="navbar-text">Locations</div>
-      <div className="navbar-text">Our Mission</div>
-      <div className="navbar-text">Contact</div> */}
+          </Link>
+        </div>
       <div className="cart">
           {Login_Logout}
       </div>
