@@ -34,14 +34,9 @@ function Home({ loginText }) {
               </div>
             </div>
           )}
-          { isChecked ? (
-            <div>Choose a restaurant near you!</div>
-            ):(
-            true
-              )}
-              <div className="c-container">
+            <div className="c-container">
               </div>
-          </div>
+            </div>
       )}
     </div>
   );

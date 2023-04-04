@@ -22,13 +22,12 @@ const Map = () => {
       )
         .catch((c) => console.warn("catch", c))
   }, []);
-
   return(
     <div  className="map-container">
-      <MapContainer className="map" center={[40.756211, -73.923964]} zoom={12} scrollWheelZoom={false}>
-        {/* Map Styling */}
+      {/* Map Styling */}
+      <MapContainer className="map" center={[40.756211, -73.923164]} zoom={13} scrollWheelZoom={false}>
         <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          attribution='Lemon 2023®'
           url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png"/>
 
         {restaurants.map(restaurant => (

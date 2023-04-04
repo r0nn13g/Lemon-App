@@ -1,6 +1,6 @@
 .footer{
   bottom: 0;
-  height: 200px;
+  height: 100px;
   position: absolute;
   width: 100%;
 }
@@ -15,7 +15,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 10px;
-  place-content: flex-start;
+  place-content: right;
 }
 
 .nyc-doe-logo img{
@@ -24,9 +24,10 @@
 }
 
 .nyc-gov-logo{
+  padding-left: 980px;
   display: inline-grid;
   grid-template-rows: 1fr;
-  place-content: center;
+  place-content: right;
 }
 
 .nyc-gov-logo img{
@@ -62,8 +63,11 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .nyc-gov-logo{
+    padding-left: 200px;
+  }
   .footer{
-    height: 266px;
+    height: 180px;
     /* width: 600px; */
     position:absolute;
   }
