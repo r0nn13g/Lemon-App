@@ -7,6 +7,7 @@ import Modal from '@mui/material/Modal';
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Typography from '@mui/material/Typography';
+import mealkitImage from '../assets/mealkit-products-image.png';
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -66,14 +67,15 @@ useEffect(() => {
       <div className="products-container">
           {productByRestaurant.map((product, index) => (
             <div key = {index} className="individual-product">
-              <img className="product-image" src="https://i.imgur.com/JRd96AZ.png" alt="mealkit-sprites"></img>
+              <img className="product-image" src={mealkitImage} alt="mealkit-sprites"></img>
+                <div className="product-name">
                 <h2>{product.name}</h2>
+                </div>
                 <div className="product-details">
                     <p>Portion: <br></br> <b>{product.portion}</b></p>
                     <p>Calories: <br></br> <b>{product.calories}</b></p>
                     <p>Feeds: <br></br> <b>1-2 people</b></p>
                 </div>
-                <br/>
                 <button  id="add-to-cart-btn" onClick={() => {handleAddToCart(product); handleOpen();}}>ADD TO CART</button>
             </div>
         ))}

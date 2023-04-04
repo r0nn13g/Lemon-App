@@ -1,11 +1,6 @@
-body{
-  margin:0;
-  padding: 0;
-}
-
 .products-container{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   align-items: baseline;
   justify-content: center;
@@ -14,7 +9,7 @@ body{
 }
 
 .individual-product{ 
-  margin: 200px;
+  /* margin: 200px; */
   text-align: left;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -30,23 +25,25 @@ body{
 }
 
 .product-image{
-  height: 250px;
+  margin: 0 auto;
+  text-align: center;
+  height: 333px;
   display: grid;
   place-items: center;
 }
 
 #add-to-cart-btn { 
-  background-color: rgb(0, 0, 0);
   border: none;
   border-radius: 8px;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 16px;
-  font-family:'Open sans', sans-serif;
   letter-spacing: 1px;
   line-height: 100%;
   padding: 15px 32px;
   text-align: center;
-  transition-duration: 1.2s;
+  transition-duration: 1.0s;
+  color: rgb(255, 255, 255);
+    background-color: rgb(34, 61, 148);
 }
 
 #add-to-cart-btn:hover {
@@ -64,7 +61,7 @@ body{
   font-size: 16px;
   color: rgb(34, 61, 148);
   text-align: center;
-  padding-top: 50px;
+  padding-top: 38px;
   height: 180px;
   background: rgb(232, 221, 14) url("https://i.imgur.com/y8isvGw.png") fixed center;
   background-size: 300px;
@@ -117,7 +114,6 @@ body{
      display: grid;
      gap: 50px;
      margin: 30px;
-     justify-content: center;
      grid-template-columns: repeat(1, 1fr);
   }
   
@@ -125,9 +121,11 @@ body{
     display: grid;
     text-align: left;
     grid-template-columns: repeat(1, 1fr);
-    margin: 200px;
-    margin:0;
-    padding: 10px;
+  }
+
+  .product-name{
+    font-size: 22px;
+    margin-left: 10px;
   }
   
   .product-details{
@@ -138,15 +136,14 @@ body{
   }
   
   #add-to-cart-btn{
-    background-color: rgb(34, 61, 148);
+    margin: 0px 10px 0px 10px;
     border: none;
-    border-radius: 8px;
-    color: rgb(255, 255, 255);
     font-size: 16px;
-    grid-template-columns: repeat(1, 1fr);
     line-height: 100%;
+    border-radius: 8px;
     text-align: center;
     transition-duration: 0.2s;
+    grid-template-columns: repeat(1, 1fr);
   }
   
   #add-to-cart-btn:hover {
@@ -155,18 +152,15 @@ body{
   }
 
   .restaurant-details{
-    color: rgb(78, 111, 218);
     font-size: 12px;
-    padding: 82px;
+    padding: 57px;
     text-align: center;
-    background-color: white; 
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 
   #product-image{
     display: grid;
     justify-content: center;
-    height: 260px;
+    height: 110px;
   }
 
 
@@ -213,66 +207,5 @@ body{
  .modal-button:hover{
   color: white;
   background-color: rgb(59, 88, 183);
- }
-
-}
-
-@media only screen 
-    and (max-width: 1000px){
-
-  
-  .products-container{
-    display: grid;
-    gap: 50px;
-    margin: 30px;
-    justify-content: center;
-    grid-template-columns: repeat(1, 1fr);
- }
- 
- .individual-product{ 
-   display: grid;
-   text-align: left;
-   grid-template-columns: repeat(1, 1fr);
-   margin: 0px;
-   padding: 10px;
- }
- 
- .product-details{
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   margin: 10px;
-   text-align: left;
- }
- 
- #add-to-cart-btn{
-   background-color:  rgb(9, 37, 51);
-   border: none;
-   border-radius: 8px;
-   color: rgb(255, 255, 255);
-   font-size: 16px;
-   grid-template-columns: repeat(1, 1fr);
-   line-height: 100%;
-   /* letter-spacing: 6px; */
-   text-align: center;
-   transition-duration: 0.2s;
- }
- 
- #add-to-cart-btn:hover {
-   color: white;
-   background-color: #4CAF50; /* Green */
- }
-
- .restaurant-details{
-   color: rgb(34, 61, 148);
-   font-size: 12px;
-   padding: 65px;
-   text-align: center;
-   background-color: white; 
- }
-
- #product-image{
-   display: grid;
-   justify-content: center;
-   height: 260px;
  }
 }

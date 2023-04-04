@@ -6,26 +6,26 @@ function CarouselComp() {
     const carouselOptions = [
         {
             headline: 'Lemon 🍋 ',
-            subtext: 'making good since 2023'
+            subtext: '♻️ making good since we could 👩‍🍳'
         },
         {
             headline: 'new 🤘 ',
-            subtext: 'Vegan options now available'
+            subtext: '🥥 vegan options now available 🍋'
         },
         {
             headline: 'variety 👏 ',
-            subtext: '  in your area!'
+            subtext: '🍍 variety in your area! 🌶'
         },
         {
             headline: 'Meals 🍲 ',
-            subtext: 'free, fresh & prepped daily'
+            subtext: '🥙 free, fresh & prepped daily 🍱'
         }
     ];
 
     const displayCarousel = carouselOptions.map((option, index) => {
         return (
             <div key={index} className='adText-container' >
-                        <b>{option.headline}{option.subtext}</b>
+                        <b>{option.subtext}</b>
             </div>
         )
     })
