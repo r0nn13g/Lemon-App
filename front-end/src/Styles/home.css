@@ -19,6 +19,7 @@
 
 /* Map Toggle Switch  */
 .mapview-switch-container{
+    margin: 10px 0px 0px 0px;
     text-align: right;
 }
 
@@ -41,7 +42,7 @@
     }
 
     .mapview-switch-container{
-        margin: 0px;
+        margin: 10px;
     }
 
     input::placeholder{
