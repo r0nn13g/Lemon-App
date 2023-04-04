@@ -8,6 +8,7 @@ import DataCard4 from './DataCard4.js';
 import InfoIcons from './InfoIcons.js';
 import Carousel from "./CarouselComp.js";
 // import mealkitSplash from '../assets/mealkitsSplash.jpeg';
+import splashPageImage from '../assets/splash-page-image-banner.webp'
 
 let sampleText = "Everyone knows that NYC is the place to go if you want some delicious pizza. I mean they even have their own style of pizza! But, did you know that New York City was the birthplace of pizza in America?"
 
@@ -16,6 +17,9 @@ const HomePageLanding = () => {
     <div className='home-page-wrapper'>
           <div className='carousel-wrapper'>
             <Carousel />
+          </div>
+          <div className='splash-page-image-container'>
+            <img src={splashPageImage} alt="healthy-salad-bowl-yellow-background" />
           </div>
           <div className='info-icons-container'>
             <InfoIcons />
