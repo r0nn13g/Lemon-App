@@ -34,9 +34,7 @@ function Home({ loginText }) {
               </div>
             </div>
           )}
-            <div className="c-container">
-              </div>
-            </div>
+        </div>
       )}
     </div>
   );

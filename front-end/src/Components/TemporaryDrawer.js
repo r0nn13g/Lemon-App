@@ -45,23 +45,23 @@ export default function TemporaryDrawer() {
               </Link>
           </ListItem>
           <ListItem enablePadding>
-              <Link to="carts" style={{ textDecoration: 'none' , color: 'black' }}>
+              <Link to="/carts" style={{ textDecoration: 'none' , color: 'black' }}>
               <ListItemText primary="Cart" />
               </Link>
           </ListItem>
           <Divider />
           <ListItem enablePadding>
-              <Link to="/" style={{ textDecoration: 'none' , color: 'black' }}>
+              <Link to="/about-us" style={{ textDecoration: 'none' , color: 'black' }}>
               <ListItemText primary="About us" />
               </Link>
           </ListItem>
           <ListItem enablePadding>
-              <Link to="/" style={{ textDecoration: 'none' , color: 'black' }}>
+              <Link to="/contact" style={{ textDecoration: 'none' , color: 'black' }}>
               <ListItemText primary="Contact" />
               </Link>
           </ListItem>
           <ListItem enablePadding>
-              <Link to="/" style={{ textDecoration: 'none' , color: 'black' }}>
+              <Link to="/signup" style={{ textDecoration: 'none' , color: 'black' }}>
               <ListItemText primary="Sign Up" />
               </Link>
           </ListItem>
