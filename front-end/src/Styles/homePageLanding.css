@@ -41,7 +41,7 @@ section {
 #section-heading{
   text-align: center;
   background:rgb(28, 101, 211);
-  color: rgba(255, 255, 0, 0.932);
+  color: rgb(255, 243, 5);
   clip-path: polygon(0 40%, 100% 0, 100% 60%, 0 100%);
   padding: 10rem 10%;
 }
@@ -49,7 +49,7 @@ section {
 section:nth-child(4) {
   text-align: center;
   background: rgb(28, 101, 211);
-  color:  rgba(255, 255, 0, 0.932);
+  color:  rgb(255, 243, 5);
   clip-path: polygon(0 40%, 100% 0, 100% 60%, 0 100%);
   padding: 10rem 10%;
 }

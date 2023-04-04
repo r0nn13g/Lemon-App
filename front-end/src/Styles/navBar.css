@@ -13,7 +13,7 @@ nav{
     width: 100%;
     z-index: 7;
     display: flex;
-    background-color: rgb(9, 37, 51);
+    background-color: rgb(28, 101, 211);
     position: fixed;
     justify-content: space-between;
 }

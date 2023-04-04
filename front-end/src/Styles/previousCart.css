@@ -1,5 +1,5 @@
-body{
-  background-color: rgb(254, 254, 254);
+.main {
+    padding-bottom: 200px;
 }
 
 .previous-order-container{
@@ -99,6 +99,6 @@ body{
       }
 
       .main {
-        padding-bottom: 300px;
+        padding-bottom: 266px;
     }
 }
