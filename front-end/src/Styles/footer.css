@@ -1,20 +1,13 @@
 .footer{
   bottom: 0;
-  height: 100px;
-  position: absolute;
+  height: 50px;
+  position: sticky;
   width: 100%;
-}
-
-.content-container{
-  text-align: center;
-  line-height: 1px;
-  margin: 10px;
 }
 
 .nyc-doe-logo{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 10px;
   place-content: right;
 }
 
@@ -35,40 +28,24 @@
   height: 40px;
 }
 
-/* iPhone 12/13  */
-@media only screen and (max-width: 375px) {
-  .footer{
-    height: 266px;
-    /* width: 375px; */
-    position:absolute;
-  }
-}
-
-/* iphone 12/13 Pro Max */
-@media only screen and (max-width: 390px) {
-  .footer{
-    height: 266px;
-    /* width: 390px; */
-    position:absolute;
-  }
-}
-
-/* Apple Ipad */
-@media only screen and (max-width: 428px) {
-  .footer{
-    height: 266px;
-    /* width: 400px; */
-    position:absolute;
-  }
+.content-container{
+  text-align: center;
+  line-height: 1px;
+  margin: 10px;
+  padding-bottom: 20px;
 }
 
 @media only screen and (max-width: 600px) {
+  .footer{
+    margin-top: 10px;
+    position: sticky;
+  }
   .nyc-gov-logo{
     padding-left: 200px;
   }
-  .footer{
-    height: 180px;
-    /* width: 600px; */
-    position:absolute;
+
+  .content-container{
+    text-align: center;
+    padding-bottom: 10px;
   }
 }
