@@ -40,6 +40,7 @@
     .checkout-container {
         width: 100px;
         grid-template-columns: repeat(1, 1fr);
+        padding-right: 0px;
         margin-bottom: 100px;
         display: table;
         margin: 0 auto;
