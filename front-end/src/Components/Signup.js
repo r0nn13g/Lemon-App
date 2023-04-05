@@ -32,7 +32,7 @@ function Signup() {
 
     return (
         <div className="form-container">
-            <form onSubmit={handleSubmit}>
+            <form id="sign-up-form" onSubmit={handleSubmit}>
             <label htmlFor="first name">First Name:</label>
             <input
                 id="Fname"
