@@ -68,7 +68,7 @@ function Cart({ carts, setCarts, setCheckedOut}) {
       <div className="active-cart" key={product.orderNumber} >
         <div className="order-num-container">
           <h2>Cart</h2>
-          {/* <h6>Order: # {product.orderNumber}</h6> */}
+          <h6>Order: # {product.orderNumber}</h6>
         </div>
           {product.items.map((item) => {
             return (

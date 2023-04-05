@@ -28,7 +28,7 @@ function CheckOut({ carts, handleCheckout }) {
       <h3>Order Summary</h3>
       <p>Items: {carts[0]?.items.length} </p>
       <button onClick={() => {handleCheckout();handleOpen();}}>
-        checkout</button>
+        Reserve</button>
       <Modal
         open={open}
         onClose={handleClose}
