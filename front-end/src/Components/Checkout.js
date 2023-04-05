@@ -24,19 +24,11 @@ function CheckOut({ carts, handleCheckout }) {
   // console.log(carts);
   return (
     <div className="checkout-container">
-      <h1>Order Summary</h1>
       <hr />
-
-      <p>Total number of meals: {carts[0]?.items.length} </p>
-      {/* <p>Kinds of meals: </p> */}
-      <button
-        onClick={() => {
-          handleCheckout();
-          handleOpen();
-        }}
-      >
-        Checkout
-      </button>
+      <h3>Order Summary</h3>
+      <p>Items: {carts[0]?.items.length} </p>
+      <button onClick={() => {handleCheckout();handleOpen();}}>
+        checkout</button>
       <Modal
         open={open}
         onClose={handleClose}

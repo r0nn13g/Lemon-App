@@ -1,168 +1,98 @@
+.cart-is-active{
+    margin-top: 0px;
+}
 .active-cart{
-    /* display: grid; */
-    margin-top: 5vh;
+    padding-top: 50px;
 }
-
-.active-empty-cart{
-    display: grid;
-    max-height: 100vh;
-}
-
-.active-cart-check{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: baseline;
-    justify-items: center;
-}
-
-.restaurant-name{
-    margin: 10px;
-}
-
-#food-img {
-    width: 150px;
-}
-
-#meal-img{
-    flex:1;
-}
-
-.meal-details{
-    margin: 20px;
-    flex: 1.5;
-}
-
-.meal-container{
-    display: flex;
+.cart-item{
+    display:grid;
     width: 100%;
-    align-items: center;
-    margin: 40px;
-    /* margin-right: 10vw; */
-    margin-bottom: 5px;
-    border-radius: 18px;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "img rest type";
 }
-
-.meal-container:nth-child(even){
-    /* background-color: rgba(91, 201, 203, 0.312); */
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.227);
-}
-
-.meal-container button {
-    background: none;
-    border: none;
-    padding: none;
-}
-
-.meal-container img{
-    width: 200px;
-}
-
-#order-num{
+.order-num-container{
+    display: inline;
+    margin: 0 auto;
     text-align: center;
-    font-weight: 100;
-    margin: 10px;
+}
+.food-img-container{
+    display: grid;
+    grid-area: img;
+    margin: 0 auto;
+}
+#meal-kit{
+    height: 120px;
+    margin: 0 auto;
 }
 
-.cart-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    max-height: 100%;
+.restaurant-name-container{
+    display: grid;
+    grid-area: rest;
+    line-height: 60px;
+    text-align: center;
 }
-
+.meal-details{
+    display: grid;
+    grid-area: type;
+    line-height: 60px;
+    margin: 0 auto;
+}
+.meal-details h6{
+    white-space: nowrap;
+}
 #delete-item-btn{
-    margin: 10px;
+    width: 22px;
 }
 
-input{
-    height:  5px;
-    margin: 15px;
-}
+@media screen and (max-width: 600px){
 
-.cart-container button{
-    background-color:  rgb(78, 111, 218);
-    border: none;
-    color: rgb(255, 255, 255);
-    padding: 15px 32px;
-    text-align: center;
-    font-size: 16px;
-    border-radius: 8px;
-    line-height: 100%;
-}
-
-.cart-container button:hover{
-    color: white;
-    transition-duration: 0.2s;
-}
-
-.checkout-btn{
-    background-color: black;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    /* border: 1px solid black; */
-}
-
-.active-cart-checkout-btn{
-    border: 2px solid black;
-}
-
-@media only screen and (max-width: 600px) {
-    .active-cart-check{
-        display: inline-block;
-        margin-bottom: 200px;
+    .cart-is-active{
+        margin-top: 0px;
     }
-    
-    .active-empty-cart{
+    .active-cart{
+        padding-top: 50px;
+    }
+    .cart-item{
+        display:grid;
+        width: 100%;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "img rest type";
+    }
+    .order-num-container{
+        display: inline;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .food-img-container{
         display: grid;
-        max-height: 200px;
+        grid-area: img;
+        margin: 0 auto;
+    }
+    #meal-kit{
+        height: 120px;
+        margin: 0 auto;
     }
 
-    .cart-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        /* max-height: 50px; */
-        /* grid-template-rows: repeat(1, 1fr); */
-    }
-    
-        #delete-item-btn{
-            margin-left: 50px;
-            text-align: center;
-            width: 200px;
-        }
-
-    .meal-container{
-        align-items:flex-start;
-        border-radius: 18px;
+    .restaurant-name-container{
         display: grid;
-        grid-template-rows: repeat(1, 2fr);
-        overflow: scroll;
-        text-align: left;
-        width: 300px;
+        grid-area: rest;
+        line-height: 60px;
+        text-align: center;
     }
-
-    .meal-container img{
+    .meal-details{
         display: grid;
-        margin-left: 80px;
-        height: 200px;
+        grid-area: type;
+        line-height: 60px;
+        margin: 0 auto;
     }
-
-.meal-container:nth-child(even){
-    /* background-color: rgba(91, 201, 203, 0.312); */
-    box-shadow: none;
-}
-
-#order-num{
-    margin:40px;
-    text-align: left;
-}
-
-input{
-    text-align: center;
-    position: relative;
-    width: 20px;
-    height:  5px;
-    margin: 5px;
-}
+    .meal-details h6{
+        white-space: nowrap;
+    }
+    #delete-item-btn{
+        width: 22px;
+    }
 }

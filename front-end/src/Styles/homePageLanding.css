@@ -44,6 +44,7 @@ section {
 }
 
 #section-heading{
+  box-sizing: border-box;
   text-align: center;
   background:rgb(28, 101, 211);
   color: rgb(255, 243, 5);
@@ -52,6 +53,7 @@ section {
 }
 
 section:nth-child(4) {
+  box-sizing: border-box;
   text-align: center;
   background: rgb(28, 101, 211);
   color:  rgb(255, 243, 5);

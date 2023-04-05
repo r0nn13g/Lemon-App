@@ -17,7 +17,9 @@ body {
     background-color: #252525;
 }
 
-
+* {
+    box-sizing: border-box;
+}
 
 
 

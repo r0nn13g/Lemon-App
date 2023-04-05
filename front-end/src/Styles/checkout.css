@@ -2,8 +2,7 @@
     display: grid;
     align-items: center;
     justify-items: center;
-    max-width: 300px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.127);
+    width: 100px;
     background-color: rgba(241, 240, 240, 0.289);
     border-radius: 15px;
     height: 200px;
@@ -12,7 +11,7 @@
 .checkout-container button {
     width: 300px;
     height: 50px;
-    background-color: black;
+    background-color: rgb(28, 101, 211);
     border: none;
     color: rgb(255, 255, 255);
     margin: 0px;
@@ -40,7 +39,7 @@
 
     .checkout-container {
         grid-template-columns: repeat(1, 1fr);
-        margin-bottom: 50px;
+        margin-bottom: 100px;
         display: table;
         max-width: 300px;
         border-radius: none;
@@ -52,18 +51,14 @@
 
     .checkout-container button {
         width: 300px;
-        height: 50px;
-        background-color: black;
+        height: 30px;
         border: none;
         color: rgb(255, 255, 255);
-        margin-top: 30px;
-        align-content: center;
-        justify-content: center;
+        margin-top: 10px;
         font-size: 26px;
         border-radius: 8px;
         transition-duration: 0.2s;
         line-height: 100%;
-        margin-bottom: 30px;
     }
 
     #order-details{

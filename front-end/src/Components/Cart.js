@@ -1,6 +1,6 @@
 import "../Styles/cart.css";
 import axios from "axios";
-import food_container from "../assets/food_container.png"
+import food_container from "../assets/mealkit-products-image.png"
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import CheckOut from "./Checkout.js";
@@ -65,52 +65,47 @@ function Cart({ carts, setCarts, setCheckedOut}) {
 
   const activeCart = carts?.map((product) => {
     return (
-      <div key={product.orderNumber} className="active-cart">
-        <div id="order-details">
-          <div id="order-num"><h1>Order: # {product.orderNumber}</h1></div>
-          
+      <div className="active-cart" key={product.orderNumber} >
+        <div className="order-num-container">
+          <h2>Cart</h2>
+          {/* <h6>Order: # {product.orderNumber}</h6> */}
+        </div>
           {product.items.map((item) => {
             return (
-              <div key={item.id} className="meal-container">
-                  <img id="food-img" src={food_container} alt="food icon"/>
-                <div className="restaurant-name"><h2>{product.restaurant}</h2></div>
-                <div className="meal-details">
-                  <p>Dietary: <b>{item.name}</b></p>
-                  <div id="quantity">
+              <div key={item.id} className="cart-item">
+                  <div className="food-img-container">
+                    <img id="meal-kit" src={food_container} alt="food icon"/>
                   </div>
+                  <div className="restaurant-name-container">
+                  <h5>{product.restaurant}</h5>
+                  </div>
+                <div className="meal-details">
+                  <h5>{item.name}</h5>
                 </div>
-                  <input type="number" id="cart-quantity" name="quantity" value="1" min="1" max={item.quantity}/>
-                  {/* <button onClick={()=>handleDelete()} id="delete-item-btn">Delete</button> */}
-                <hr />
+                  {/* <button onClick={()=>handleDelete()} id="delete-item-btn">x</button> */}
               </div>
             );
           })}
-        </div>
       </div>
     );
   })
 
   return (
     <div className="cart-container">
-
-      <div>
+      <div className="cart-is-active">
         {carts[0]?.items.length < 1 ? (
-          <div className="active-empty-cart">          
+        <div className="active-empty-cart">          
           <Link to="/"> Start your order </Link>
-          </div>
+        </div>
           ): (
-            <div className="active-cart-check">
-             <div>
-             {activeCart}
-             </div>
-             
-             <CheckOut carts={carts} handleCheckout={handleCheckout}/>
+        <div className="active-cart-check">
+            {activeCart}
+            <CheckOut carts={carts} handleCheckout={handleCheckout}/>
            {/* <button className="checkout-btn" onClick={handleCheckout}>Checkout</button>  */}
-           </div>
+          </div>
         )}
       </div>
-     
     </div>
   );
-}
+};
 export default Cart;
