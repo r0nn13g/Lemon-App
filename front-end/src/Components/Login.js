@@ -51,8 +51,8 @@ const handleSubmit = (event) => {
                 placeholder="..password"
             />
             <button className="submit-btn">Submit</button>
-        <div className="sign-up-btn-container">
-          <Link className="sign-up-btn" to="/signup">Don't have an account? Sign up!</Link>
+        <div className="sign-up-link-container">
+          <Link className="sign-up-link" to="/signup">Don't have an account? Sign up!</Link>
         </div>
       </form>
     </div>
