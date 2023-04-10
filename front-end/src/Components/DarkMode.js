@@ -16,7 +16,6 @@ const toggleDarkMode = (event) => {
   element.classList.toggle("dark-mode");
   element.classList.toggle("dark-mode-input")
 };
-
     return (
       <div>
          <MaterialUISwitch className="darkmode-switch" checked={color.darkmode} onChange={toggleDarkMode} label="MUI switch" name="darkmode"/> *new

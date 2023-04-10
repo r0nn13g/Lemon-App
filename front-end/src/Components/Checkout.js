@@ -4,6 +4,7 @@ import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
+//assigned styling properties for modal at checkout submission
 const style = {
   position: "absolute",
   top: "50%",
@@ -16,19 +17,18 @@ const style = {
   p: 4,
 };
 
+//react component handles checkout at submission
 function CheckOut({ carts, handleCheckout }) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-  // console.log(carts);
   return (
     <div className="checkout-container">
       <hr />
       <h3>Order Summary</h3>
       <p>Items: {carts[0]?.items.length} </p>
-      <button onClick={() => {handleCheckout();handleOpen();}}>
-        Reserve</button>
+      <button onClick={() => {handleCheckout();handleOpen();}}>Reserve</button>
       <Modal
         open={open}
         onClose={handleClose}

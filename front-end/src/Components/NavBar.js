@@ -33,6 +33,7 @@ function NavBar({ setLoginText }) {
     <div className="login-container">
       <Link to="/login"><LoginIcon/></Link>
       &nbsp;&nbsp;&nbsp;
+      <TemporaryDrawer />
     </div>
   );
 

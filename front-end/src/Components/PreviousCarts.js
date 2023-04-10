@@ -19,20 +19,15 @@ function PreviousCarts() {
         console.log(err);
       });
   }, [userID]);
-  // console.log("trigger",oldCarts)
-
   let previousOrders = oldCarts.map((cart) => {
     return (
-    
       <div className="info-container" key={cart.orderNum} >
           <Link className="pre-cart-link" to={`/carts/inactive/${cart.orderNum}`}> 
             <h3>Order #: {cart.orderNum}</h3>
             <h3>Restaurant: {cart.restaurants} 
             </h3>
             </Link>
-          
           {cart.items.map((products)=>{
-            // console.log(products)
             return(
               <div key={products.id}>
               <div className="info-name">Meal Type: {products.name}</div>
@@ -44,7 +39,6 @@ function PreviousCarts() {
   
     );
   });
-  
 
   return (
     <div className="po-container">

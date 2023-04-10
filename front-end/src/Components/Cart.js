@@ -49,9 +49,9 @@ function Cart({ carts, setCarts, setCheckedOut}) {
   //     console.log(err);
   //   });
   // };
-
-  const handleCheckout = async () => {
-    // console.log("checkout ")
+  
+  //asynchronous function makes put request at cart submission
+  const handleCheckout = async () => {  
     await getActiveCart();
     axios.put(`${API}/carts/submit`, {userID})
     .then((res) => {
@@ -63,6 +63,7 @@ function Cart({ carts, setCarts, setCheckedOut}) {
   }
   console.log(carts)
 
+  //Cart elements displayed on /carts 
   const activeCart = carts?.map((product) => {
     return (
       <div className="active-cart" key={product.orderNumber} >

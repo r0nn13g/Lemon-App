@@ -2,6 +2,7 @@ import React from 'react';
 import "../Styles/Carousel.css";
 import Carousel from 'nuka-carousel';
 
+//Carousel Banner Component
 function CarouselComp() {
     const carouselOptions = [
         {
@@ -21,7 +22,7 @@ function CarouselComp() {
             subtext: '🥙 free, fresh & prepped daily 🍱'
         }
     ];
-
+    //Iterating through carousel options and displaying .subtext of each option
     const displayCarousel = carouselOptions.map((option, index) => {
         return (
             <div key={index} className='adText-container' >
@@ -29,6 +30,7 @@ function CarouselComp() {
             </div>
         )
     })
+    //returns a Carousel imported from nuka
   return (
     <div className='carousel-wrapper'>
         <Carousel speed={850} withoutControls={true} cellSpacing={0} autoplay="true" autoplayInterval={5000} wrapAround="true">
