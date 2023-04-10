@@ -34,33 +34,33 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-          <ListItem enablePadding>
+          <ListItem enablepadding>
               <Link to="/home" style={{ textDecoration: 'none' , color: 'black' }}>
               <ListItemText primary="Home" />
               </Link>
           </ListItem>
-          <ListItem enablePadding>
+          <ListItem enablepadding>
               <Link to="/" style={{ textDecoration: 'none' , color: 'black' }}>
               <ListItemText primary="Restaurants" />
               </Link>
           </ListItem>
-          <ListItem enablePadding>
+          <ListItem enablepadding>
               <Link to="/carts" style={{ textDecoration: 'none' , color: 'black' }}>
               <ListItemText primary="Cart" />
               </Link>
           </ListItem>
           <Divider />
-          <ListItem enablePadding>
+          <ListItem enablepadding>
               <Link to="/about-us" style={{ textDecoration: 'none' , color: 'black' }}>
               <ListItemText primary="About us" />
               </Link>
           </ListItem>
-          <ListItem enablePadding>
+          <ListItem enablepadding>
               <Link to="/contact" style={{ textDecoration: 'none' , color: 'black' }}>
               <ListItemText primary="Contact" />
               </Link>
           </ListItem>
-          <ListItem enablePadding>
+          <ListItem enablepadding>
               <Link to="/signup" style={{ textDecoration: 'none' , color: 'black' }}>
               <ListItemText primary="Sign Up" />
               </Link>
@@ -70,7 +70,7 @@ export default function TemporaryDrawer() {
       </List>
       <Divider />
       <List>
-      <ListItem enablePadding>
+      <ListItem enablepadding>
               <Link to="/" style={{ textDecoration: 'none' , color: 'black' }}>
               <b>Lemon®</b>
               <ListItemText secondary="Created by Ronnie Garcia" />
