@@ -24,7 +24,7 @@ function RestaurantDetails() {
         <div className="restaurant-details">
             <div><h1>{restaurant.name}</h1></div>
             <div><h5>{restaurant.cuisine_type}</h5></div>
-            <div><h5>{restaurant.add}</h5></div>
+            <div><h5>{restaurant.addy}</h5></div>
         </div>
             {<ProductByRestaurant id={id}/>}
         <div className='button-link'>
