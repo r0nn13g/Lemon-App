@@ -20,22 +20,22 @@ function NavBar({ setLoginText }) {
   };
 
   
-  let Login_Logout = localStorage.getItem("userID") ? (
-    <div className="profile-logout-container">
-      <Link to="/" onClick={handleLogout}><LogoutOutlinedIcon/></Link>
-      &nbsp;
-      <Link to="/carts/inactive"><PersonIcon/></Link>
-      &nbsp;
-      <Link to="/carts"><ShoppingCartIcon/></Link>
-      <TemporaryDrawer />
-    </div>
-  ) : (
-    <div className="login-container">
-      <Link to="/login"><LoginIcon/></Link>
-      &nbsp;&nbsp;&nbsp;
-      <TemporaryDrawer />
-    </div>
-  );
+  // let Login_Logout = localStorage.getItem("userID") ? (
+  //   <div className="profile-logout-container">
+  //     <Link to="/" onClick={handleLogout}><LogoutOutlinedIcon/></Link>
+  //     &nbsp;
+  //     <Link to="/carts/inactive"><PersonIcon/></Link>
+  //     &nbsp;
+  //     <Link to="/carts"><ShoppingCartIcon/></Link>
+  //     <TemporaryDrawer />
+  //   </div>
+  // ) : (
+  //   <div className="login-container">
+  //     <Link to="/login"><LoginIcon/></Link>
+  //     &nbsp;&nbsp;&nbsp;
+  //     <TemporaryDrawer />
+  //   </div>
+  // );
 
   return (
       <nav className="nav-container">
@@ -45,10 +45,35 @@ function NavBar({ setLoginText }) {
           </Link>
         </div>
       <div className="cart">
-          {Login_Logout}
+      <div className="login-container">
+       <Link to="/login"><LoginIcon/></Link>
+       &nbsp;&nbsp;&nbsp;
+       <TemporaryDrawer />
+      </div>
+          {/* {Login_Logout} */}
       </div>
       </nav>
   );
 }
 
 export default NavBar;
+
+
+
+  //   return (
+  // <div className="profile-logout-container">
+  //   <Link to="/" onClick={handleLogout}><LogoutOutlinedIcon/></Link>
+  //   &nbsp;
+  //   <Link to="/carts/inactive"><PersonIcon/></Link>
+  //   &nbsp;
+  //   <Link to="/carts"><ShoppingCartIcon/></Link>
+  //   <TemporaryDrawer />
+  // </div>
+
+  //   <nav className="nav-container">
+  //   </nav>
+  //     <div className="home-logo">
+  //       <Link to="/home">
+  //       <img src={logo} alt="logo" />
+  //       </Link>
+  //     </div>
