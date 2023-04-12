@@ -6,11 +6,7 @@ INSERT INTO customers (Fname, Lname, username, password, phoneNum) VALUES
 
 INSERT INTO carts (customer_id, is_active) VALUES
 (1, true),
-(2, true),
-(3, false),
-(3, true),
-(3, false),
-(2, false);
+(2, true);
 
 
 INSERT INTO restaurants (name, cuisine_type, restaurant_sprites, addy, lat, lon) VALUES
@@ -85,12 +81,5 @@ INSERT INTO products (restaurant_id, name, description, portion, calories, quant
 (20, 'The Halal Guys','Pre Packaged balanced meal kit', '12oz', 280, 1);
 
 INSERT INTO order_details (carts_id, products_id, quantity) VALUES
-(3, 1, 1),
-(4, 21, 3),
-(1, 17, 5),
-(2, 3, 6),
-(1, 5, 3),
-(5, 9, 1),
-(6, 12, 3),
-(3, 4, 1),
-(3, 6, 4);
+(1, 1, 1),
+(2, 21, 3);

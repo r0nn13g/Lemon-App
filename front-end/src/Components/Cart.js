@@ -72,16 +72,17 @@ function Cart({ carts, setCarts, setCheckedOut}) {
           <h6>Order: # {product.orderNumber}</h6>
         </div>
           {product.items.map((item) => {
+        console.log(product)
             return (
               <div key={item.id} className="cart-item">
                   <div className="food-img-container">
                     <img id="meal-kit" src={food_container} alt="food icon"/>
                   </div>
                   <div className="restaurant-name-container">
-                  <h5>{product.restaurant}</h5>
+                  <h5>{item.name}</h5>
                   </div>
                 <div className="meal-details">
-                  <h5>{item.name}</h5>
+                  <h5>{item.quantity}</h5>
                 </div>
                   {/* <button onClick={()=>handleDelete()} id="delete-item-btn">x</button> */}
               </div>

@@ -50,7 +50,9 @@ import mealkitImage from '../assets/mealkit-products-image.png';
         };
         //makes a post request to api using axios and post method
         axios.post(`${API}/carts/addToCart`, resInfo)
-          .then(() => {
+        .then(
+          () => {
+
           },
             (err) => console.error(err)
             ).catch((err) => console.warn("catch err", err))
@@ -67,7 +69,7 @@ import mealkitImage from '../assets/mealkit-products-image.png';
                 <div key = {index} className="individual-product">
                   <img className="product-image" src={mealkitImage} alt="mealkit-sprites"></img>
                     <div className="product-name">
-                    <h2>{product.description}</h2>
+                    <em><h5>{product.description}</h5></em>
                     </div>
                       <div className="product-details">
                           <p>Portion: <br></br> <b>{product.portion}</b></p>
